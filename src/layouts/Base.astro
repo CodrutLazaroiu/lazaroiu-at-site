@@ -1,0 +1,76 @@
+---
+import '@fontsource/ibm-plex-sans/400.css';
+import '@fontsource/ibm-plex-sans/400-italic.css';
+import '@fontsource/ibm-plex-sans/600.css';
+import '@fontsource/ibm-plex-mono/400.css';
+// Loaded on every page for the endonym language switcher (العربية, 한국어).
+// unicode-range subsetting means only the needed glyph subsets download.
+import '@fontsource/noto-naskh-arabic/400.css';
+import '@fontsource/noto-sans-kr/400.css';
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { getDict, localePath } from '../i18n';
+import { SITE_URL, OWNER } from '../config';
+
+interface Props {
+  locale: string;
+  title: string;
+  description: string;
+  /** Locale-less path of this page, e.g. '/advisory/'. */
+  path: string;
+  /** Locales in which this page exists (including the current one). */
+  alternates?: string[];
+  active?: 'advisory' | 'research' | 'about' | 'contact';
+}
+
+const { locale, title, description, path, alternates = ['en'], active } = Astro.props;
+const t = getDict(locale);
+const canonical = `${SITE_URL}${localePath(locale, path)}`;
+const ogLocales: Record<string, string> = {
+  en: 'en_US',
+  de: 'de_AT',
+  it: 'it_IT',
+  ar: 'ar_AR',
+  ko: 'ko_KR',
+};
+---
+
+<!doctype html>
+<html lang={locale} dir={t.dir}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="author" content={OWNER} />
+    <link rel="canonical" href={canonical} />
+    {
+      alternates.map((l) => (
+        <link rel="alternate" hreflang={l} href={`${SITE_URL}${localePath(l, path)}`} />
+      ))
+    }
+    <link rel="alternate" hreflang="x-default" href={`${SITE_URL}${path}`} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={OWNER} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={`${SITE_URL}/og.png`} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content={ogLocales[locale] ?? 'en_US'} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#0C1626" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <Header locale={locale} path={path} alternates={alternates} active={active} />
+    <main id="main">
+      <slot />
+    </main>
+    <Footer locale={locale} path={path} alternates={alternates} />
+  </body>
+</html>

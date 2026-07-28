@@ -1,0 +1,22 @@
+﻿---
+import '@fontsource/noto-sans-kr/400.css';
+import '@fontsource/noto-sans-kr/600.css';
+import Base from '../../layouts/Base.astro';
+import ContactPage from '../../components/pages/ContactPage.astro';
+import { getDict } from '../../i18n';
+
+const locale = 'ko';
+const t = getDict(locale);
+---
+
+<Base
+  locale={locale}
+  title={t.contact.metaTitle}
+  description={t.contact.metaDescription}
+  path="/contact/"
+  alternates={['en', 'de', 'it', 'ar', 'ko']}
+  active="contact"
+>
+  <ContactPage locale={locale} />
+</Base>
+

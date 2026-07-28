@@ -1,0 +1,112 @@
+export interface Pillar {
+  num: string;
+  title: string;
+  text: string;
+  href: string;
+  cta: string;
+}
+
+export interface AboutRow {
+  label: string;
+  text: string;
+}
+
+export interface Service {
+  num: string;
+  title: string;
+  text: string;
+}
+
+export interface Dictionary {
+  locale: string;
+  dir: 'ltr' | 'rtl';
+  siteName: string;
+
+  nav: {
+    advisory: string;
+    research: string;
+    about: string;
+    contact: string;
+  };
+
+  footer: {
+    linkedin: string;
+    impressum: string;
+    datenschutz: string;
+  };
+
+  home: {
+    metaTitle: string;
+    metaDescription: string;
+    eyebrow: string;
+    eyebrowShort: string;
+    h1: string;
+    lede: string;
+    pillars: Pillar[];
+    paper: {
+      eyebrow: string;
+      title: string;
+      thesis: string;
+      cta: string;
+      ctaShort: string;
+      href: string;
+    };
+  };
+
+  advisory: {
+    metaTitle: string;
+    metaDescription: string;
+    eyebrow: string;
+    h1: string;
+    lede: string;
+    servicesLabel: string;
+    services: Service[];
+    trackRecordLabel: string;
+    trackRecord: string[];
+    closing: string;
+  };
+
+  research?: {
+    metaTitle: string;
+    metaDescription: string;
+    eyebrow: string;
+    h1: string;
+    lede: string;
+    paper: {
+      eyebrow: string;
+      title: string;
+      thesis: string;
+      summary: string[];
+      ssrnLabel: string;
+      ssrnUrl: string;
+      ssrnPending: string;
+    };
+  };
+
+  /**
+   * For locales whose Research page stays in English (AR/KO launch scope),
+   * a translated one-paragraph abstract shown above the English summary.
+   */
+  researchAbstract?: string;
+
+  about: {
+    metaTitle: string;
+    metaDescription: string;
+    eyebrow: string;
+    h1: string;
+    lede: string;
+    portraitAlt: string;
+    portraitCaption: string;
+    rows: AboutRow[];
+  };
+
+  contact: {
+    metaTitle: string;
+    metaDescription: string;
+    eyebrow: string;
+    h1: string;
+    lede: string;
+    emailLabel: string;
+    linkedinLabel: string;
+  };
+}

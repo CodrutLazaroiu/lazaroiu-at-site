@@ -1,0 +1,18 @@
+---
+import Base from '../../layouts/Base.astro';
+import HomePage from '../../components/pages/HomePage.astro';
+import { getDict } from '../../i18n';
+
+const locale = 'de';
+const t = getDict(locale);
+---
+
+<Base
+  locale={locale}
+  title={t.home.metaTitle}
+  description={t.home.metaDescription}
+  path="/"
+  alternates={['en', 'de', 'it', 'ar', 'ko']}
+>
+  <HomePage locale={locale} />
+</Base>

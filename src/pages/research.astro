@@ -1,0 +1,19 @@
+---
+import Base from '../layouts/Base.astro';
+import ResearchPage from '../components/pages/ResearchPage.astro';
+import { getDict } from '../i18n';
+
+const locale = 'en';
+const t = getDict(locale);
+---
+
+<Base
+  locale={locale}
+  title={t.research!.metaTitle}
+  description={t.research!.metaDescription}
+  path="/research/"
+  alternates={['en', 'de', 'it', 'ar', 'ko']}
+  active="research"
+>
+  <ResearchPage locale={locale} />
+</Base>

@@ -1,0 +1,125 @@
+/* D3 — Corridor Dark. Tokens taken verbatim from the selected design renders. */
+:root {
+  --bg: #0c1626;
+  --bg-raise: #101c33;
+  --text: #e8eaf0;
+  --text-body: #c8cedd;
+  --muted: #9aa3b5;
+  --muted-hero: #a9b2c4;
+  --gold: #d9a441;
+  --line: rgba(232, 234, 240, 0.1);
+  --line-strong: rgba(232, 234, 240, 0.12);
+  --line-img: rgba(232, 234, 240, 0.16);
+  --card: rgba(255, 255, 255, 0.02);
+  --font-sans: 'IBM Plex Sans', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+  --pad-x: 56px;
+}
+
+/* Locale font stacks. The AR/KO font files are only imported on those routes. */
+html[lang='ar'] {
+  --font-sans: 'Noto Naskh Arabic', 'IBM Plex Sans', system-ui, sans-serif;
+}
+
+html[lang='ko'] {
+  --font-sans: 'Noto Sans KR', 'IBM Plex Sans', system-ui, sans-serif;
+}
+
+/* Arabic script joins letters; tracking would break ligatures and shaping. */
+html[lang='ar'] * {
+  letter-spacing: 0 !important;
+}
+
+/* IBM Plex Mono has no Arabic glyphs; render mono-styled Arabic text in Naskh. */
+html[lang='ar'] .mono {
+  font-family: var(--font-sans);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+main {
+  flex: 1;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: var(--text);
+}
+
+a:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+
+::selection {
+  background: rgba(217, 164, 65, 0.35);
+}
+
+/* Shared patterns from the renders */
+.eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 600;
+}
+
+.mono {
+  font-family: var(--font-mono);
+}
+
+.container {
+  padding-inline: var(--pad-x);
+}
+
+/* Skip link for keyboard navigation */
+.skip-link {
+  position: absolute;
+  inset-inline-start: 8px;
+  top: -48px;
+  z-index: 10;
+  background: var(--bg-raise);
+  color: var(--text);
+  padding: 10px 16px;
+  font-size: 13px;
+  text-decoration: none;
+  border: 1px solid var(--gold);
+  transition: top 0.15s;
+}
+
+.skip-link:focus {
+  top: 8px;
+}
+
+@media (max-width: 820px) {
+  :root {
+    --pad-x: 22px;
+  }
+
+  .eyebrow {
+    font-size: 10px;
+    letter-spacing: 0.2em;
+  }
+}

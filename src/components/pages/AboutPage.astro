@@ -1,0 +1,174 @@
+---
+import { Picture } from 'astro:assets';
+import portrait from '../../assets/portrait.jpg';
+import { getDict } from '../../i18n';
+
+interface Props {
+  locale: string;
+}
+
+const { locale } = Astro.props;
+const t = getDict(locale);
+---
+
+<section class="about">
+  <div class="portrait">
+    <Picture
+      src={portrait}
+      formats={['avif', 'webp']}
+      fallbackFormat="jpg"
+      widths={[360, 720]}
+      sizes="(max-width: 820px) calc(100vw - 44px), 360px"
+      alt={t.about.portraitAlt}
+    />
+    <p class="caption mono">{t.about.portraitCaption}</p>
+  </div>
+  <div class="content">
+    <p class="eyebrow">{t.about.eyebrow}</p>
+    <h1>{t.about.h1}</h1>
+    <p class="lede">{t.about.lede}</p>
+    <dl class="rows">
+      {
+        t.about.rows.map((row) => (
+          <div class="row">
+            <dt>{row.label}</dt>
+            <dd>{row.text}</dd>
+          </div>
+        ))
+      }
+    </dl>
+  </div>
+</section>
+
+<style>
+  .about {
+    padding: 64px var(--pad-x) 72px;
+    display: grid;
+    grid-template-columns: 360px 1fr;
+    gap: 60px;
+    align-items: start;
+  }
+
+  .portrait :global(img) {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid var(--line-img);
+    filter: saturate(0.9);
+  }
+
+  .caption {
+    font-size: 11.5px;
+    color: var(--muted);
+    margin-top: 10px;
+  }
+
+  h1 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.15;
+    margin: 14px 0 10px;
+  }
+
+  .lede {
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--muted);
+    margin: 0 0 28px;
+  }
+
+  .rows {
+    margin: 0;
+  }
+
+  .row {
+    border-top: 1px solid var(--line-strong);
+    padding: 15px 0;
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    gap: 24px;
+  }
+
+  .row:last-child {
+    border-bottom: 1px solid var(--line-strong);
+  }
+
+  dt {
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 600;
+    padding-top: 2px;
+  }
+
+  dd {
+    font-size: 14.5px;
+    line-height: 1.65;
+    color: var(--text-body);
+    margin: 0;
+  }
+
+  @media (max-width: 820px) {
+    .about {
+      padding: 40px var(--pad-x) 0;
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+
+    /* Mobile render order: eyebrow, h1, lede, portrait, rows */
+    .portrait {
+      order: 2;
+    }
+
+    .content {
+      display: contents;
+    }
+
+    .content > .eyebrow,
+    .content > h1,
+    .content > .lede {
+      order: 1;
+    }
+
+    .content > .rows {
+      order: 3;
+    }
+
+    h1 {
+      font-size: 27px;
+      line-height: 1.2;
+      margin: 12px 0 8px;
+    }
+
+    .lede {
+      font-size: 13.5px;
+      margin-bottom: 22px;
+    }
+
+    .caption {
+      font-size: 11px;
+      margin: 8px 0 26px;
+    }
+
+    .row {
+      grid-template-columns: 1fr;
+      gap: 6px;
+      padding: 14px 0;
+    }
+
+    .row:last-child {
+      border-bottom: none;
+      padding-bottom: 22px;
+    }
+
+    dt {
+      font-size: 10px;
+      letter-spacing: 0.16em;
+    }
+
+    dd {
+      font-size: 13.5px;
+    }
+  }
+</style>

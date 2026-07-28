@@ -1,0 +1,20 @@
+﻿---
+import Base from '../../layouts/Base.astro';
+import AboutPage from '../../components/pages/AboutPage.astro';
+import { getDict } from '../../i18n';
+
+const locale = 'it';
+const t = getDict(locale);
+---
+
+<Base
+  locale={locale}
+  title={t.about.metaTitle}
+  description={t.about.metaDescription}
+  path="/about/"
+  alternates={['en', 'de', 'it', 'ar', 'ko']}
+  active="about"
+>
+  <AboutPage locale={locale} />
+</Base>
+

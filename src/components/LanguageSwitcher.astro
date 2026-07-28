@@ -1,0 +1,165 @@
+---
+import { locales, localePath } from '../i18n';
+
+interface Props {
+  locale: string;
+  /** Locale-less path of the current page, e.g. '/advisory/'. */
+  path: string;
+  /** Locales in which this page exists. */
+  alternates: string[];
+  variant: 'header' | 'footer';
+}
+
+const { locale, path, alternates, variant } = Astro.props;
+
+// Endonyms only — no ISO codes anywhere visible.
+const endonyms: Record<string, string> = {
+  en: 'English',
+  de: 'Deutsch',
+  it: 'Italiano',
+  ar: 'العربية',
+  ko: '한국어',
+};
+---
+
+{
+  variant === 'header' ? (
+    <details class="lang">
+      <summary aria-label={`Language: ${endonyms[locale]}`}>
+        <span lang={locale}>{endonyms[locale]}</span>
+        <span class="chevron" aria-hidden="true">▾</span>
+      </summary>
+      <ul class="menu" role="list">
+        {locales.map((l) => (
+          <li>
+            {l === locale ? (
+              <span class="option current" lang={l} aria-current="true">
+                {endonyms[l]}
+              </span>
+            ) : alternates.includes(l) ? (
+              <a class="option" href={localePath(l, path)} lang={l} hreflang={l}>
+                {endonyms[l]}
+              </a>
+            ) : (
+              <a class="option muted" href={localePath(l, '/')} lang={l} hreflang={l}>
+                {endonyms[l]}
+              </a>
+            )}
+          </li>
+        ))}
+      </ul>
+    </details>
+  ) : (
+    <div class="inline">
+      {locales.map((l, i) => (
+        <>
+          {i > 0 && <span aria-hidden="true"> · </span>}
+          {l === locale ? (
+            <b lang={l}>{endonyms[l]}</b>
+          ) : alternates.includes(l) ? (
+            <a href={localePath(l, path)} lang={l} hreflang={l}>
+              {endonyms[l]}
+            </a>
+          ) : (
+            <a class="muted" href={localePath(l, '/')} lang={l} hreflang={l}>
+              {endonyms[l]}
+            </a>
+          )}
+        </>
+      ))}
+    </div>
+  )
+}
+
+<style>
+  /* The Arabic and Korean endonyms render in their own site fonts everywhere. */
+  [lang='ar'] {
+    font-family: 'Noto Naskh Arabic', sans-serif;
+  }
+
+  [lang='ko'] {
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  .lang {
+    position: relative;
+    font-size: 12.5px;
+  }
+
+  summary {
+    list-style: none;
+    cursor: pointer;
+    color: var(--muted);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 2px 0;
+  }
+
+  summary::-webkit-details-marker {
+    display: none;
+  }
+
+  summary:hover {
+    color: var(--text);
+  }
+
+  .lang[open] summary {
+    color: var(--text);
+  }
+
+  .chevron {
+    font-size: 9px;
+    color: var(--gold);
+  }
+
+  .menu {
+    position: absolute;
+    inset-inline-end: 0;
+    top: calc(100% + 10px);
+    margin: 0;
+    padding: 6px 0;
+    list-style: none;
+    background: var(--bg-raise);
+    border: 1px solid var(--line);
+    border-top: 2px solid var(--gold);
+    min-width: 130px;
+    z-index: 20;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  }
+
+  .option {
+    display: block;
+    padding: 7px 16px;
+    color: var(--muted);
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  a.option:hover {
+    color: var(--text);
+    background: rgba(255, 255, 255, 0.03);
+  }
+
+  .option.current {
+    color: var(--gold);
+  }
+
+  .inline {
+    color: var(--muted);
+  }
+
+  .inline b {
+    color: var(--text);
+  }
+
+  .inline a {
+    color: var(--muted);
+    text-decoration: none;
+  }
+
+  .inline a:hover {
+    color: var(--text);
+    text-decoration: underline;
+  }
+</style>

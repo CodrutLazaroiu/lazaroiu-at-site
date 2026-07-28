@@ -1,0 +1,35 @@
+---
+import '@fontsource/noto-naskh-arabic/400.css';
+import '@fontsource/noto-naskh-arabic/600.css';
+import Base from '../../layouts/Base.astro';
+import ResearchPage from '../../components/pages/ResearchPage.astro';
+import { getDict } from '../../i18n';
+import en from '../../i18n/en';
+
+// Launch scope (brief Section 4): Research remains in English for AR, with a
+// translated abstract paragraph above the English summary.
+const locale = 'ar';
+const t = getDict(locale);
+---
+
+<Base
+  locale={locale}
+  title={en.research!.metaTitle}
+  description={en.research!.metaDescription}
+  path="/research/"
+  alternates={['en', 'de', 'it', 'ar', 'ko']}
+  active="research"
+>
+  <div class="research-en" dir="ltr">
+    <ResearchPage locale={locale} translatedAbstract={t.researchAbstract} />
+  </div>
+</Base>
+
+<style>
+  /* English research content stays LTR, in the Latin site font. */
+  .research-en {
+    text-align: start;
+    --font-sans: 'IBM Plex Sans', system-ui, sans-serif;
+    font-family: var(--font-sans);
+  }
+</style>

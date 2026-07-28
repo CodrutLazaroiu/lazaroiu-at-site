@@ -1,0 +1,21 @@
+---
+import '@fontsource/noto-naskh-arabic/400.css';
+import '@fontsource/noto-naskh-arabic/600.css';
+import Base from '../../layouts/Base.astro';
+import AdvisoryPage from '../../components/pages/AdvisoryPage.astro';
+import { getDict } from '../../i18n';
+
+const locale = 'ar';
+const t = getDict(locale);
+---
+
+<Base
+  locale={locale}
+  title={t.advisory.metaTitle}
+  description={t.advisory.metaDescription}
+  path="/advisory/"
+  alternates={['en', 'de', 'it', 'ar', 'ko']}
+  active="advisory"
+>
+  <AdvisoryPage locale={locale} />
+</Base>

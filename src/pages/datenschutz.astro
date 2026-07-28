@@ -1,0 +1,15 @@
+---
+import Base from '../layouts/Base.astro';
+import DatenschutzPage from '../components/pages/DatenschutzPage.astro';
+
+const locale = 'en';
+---
+
+<Base
+  locale={locale}
+  title="Datenschutzerklärung — Ioan-Codrut Lazaroiu"
+  description="Datenschutzerklärung — keine Cookies, kein Tracking, keine Formulare. Privacy policy — no cookies, no tracking, no forms."
+  path="/datenschutz/"
+>
+  <DatenschutzPage />
+</Base>
