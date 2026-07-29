@@ -101,8 +101,8 @@ const ko: Dictionary = {
     trackRecordLabel: '실적',
     trackRecord: [
       '유럽, 중동, 북·서아프리카, 중앙아시아의 에너지 인프라에서 20년간 실행을 담당했으며, 자본 프로젝트 포트폴리오는 85억 유로를 상회합니다.',
-      'OMV, Wood Group, Nabucco, ILF에서 시니어 직책을 역임했습니다.',
-      '현재: 유럽 국경 간 파이프라인 그룹의 전사적 리스크 거버넌스 전환 프로젝트를 수행하는 독립 어드바이저.',
+      'OMV, Wood Group, Nabucco, ILF Consulting Engineers에서 시니어 직책을 역임했습니다.',
+      '현재: 유럽 국경 간 파이프라인 그룹의 전사적 거버넌스 전환 프로젝트를 수행하는 독립 어드바이저.',
     ],
     closing: '개발 중: Microsoft 365 네이티브 전사적 리스크 거버넌스 플랫폼. 세부 사항은 문의 바랍니다.',
   },

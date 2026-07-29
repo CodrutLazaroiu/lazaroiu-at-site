@@ -98,8 +98,8 @@ const de: Dictionary = {
     trackRecordLabel: 'Track Record',
     trackRecord: [
       'Zwanzig Jahre Executive-Delivery in der Energieinfrastruktur in Europa, dem Nahen Osten, Nord- und Westafrika und Zentralasien; ein Kapitalprojekt-Portfolio von über 8,5 Milliarden Euro.',
-      'Senior-Positionen bei OMV, Wood Group, Nabucco und ILF.',
-      'Aktuell: unabhängiger Berater eines Enterprise-Risk-Governance-Transformationsmandats für eine europäische grenzüberschreitende Pipelinegruppe.',
+      'Senior-Positionen bei OMV, Wood Group, Nabucco und ILF Consulting Engineers.',
+      'Aktuell: unabhängiger Berater eines Enterprise-Governance-Transformationsmandats für eine europäische grenzüberschreitende Pipelinegruppe.',
     ],
     closing:
       'In Entwicklung: eine Microsoft-365-native Plattform für Enterprise Risk Governance. Details auf Anfrage.',
