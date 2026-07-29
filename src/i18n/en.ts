@@ -92,7 +92,7 @@ const en: Dictionary = {
       {
         num: '05',
         title: 'Cross-border governance',
-        text: 'Governance for multi-jurisdiction operators: one risk language across regulators, shareholders, and borders.',
+        text: 'Governance for multi-jurisdiction operators: one enterprise, transformed and governed as one, across regulators, shareholders, and borders.',
       },
     ],
     trackRecordLabel: 'Track record',

@@ -92,7 +92,7 @@ const de: Dictionary = {
       {
         num: '05',
         title: 'Grenzüberschreitende Governance',
-        text: 'Governance für Betreiber in mehreren Jurisdiktionen: eine Risikosprache über Regulatoren, Eigentümer und Grenzen hinweg.',
+        text: 'Governance für Betreiber in mehreren Jurisdiktionen: ein Unternehmen, als eines transformiert und geführt — über Regulatoren, Eigentümer und Grenzen hinweg.',
       },
     ],
     trackRecordLabel: 'Track Record',

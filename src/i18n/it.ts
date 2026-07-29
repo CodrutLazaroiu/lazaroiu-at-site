@@ -92,7 +92,7 @@ const it: Dictionary = {
       {
         num: '05',
         title: 'Governance transfrontaliera',
-        text: 'Governance per operatori multi-giurisdizione: un unico linguaggio del rischio tra regolatori, azionisti e confini.',
+        text: 'Governance per operatori multi-giurisdizione: un’unica impresa, trasformata e governata come tale, tra regolatori, azionisti e confini.',
       },
     ],
     trackRecordLabel: 'Track record',
