@@ -63,7 +63,7 @@ const en: Dictionary = {
   advisory: {
     metaTitle: 'Advisory — Ioan-Codrut Lazaroiu',
     metaDescription:
-      'Enterprise risk governance design and transformation mandates, risk culture and ownership models, executive reporting, asset-integrity and capital-project risk, cross-border governance.',
+      'Enterprise risk governance design and transformation mandates, risk culture and ownership models, executive reporting, asset management and project delivery, cross-border governance.',
     eyebrow: 'Advisory',
     h1: 'Advisory',
     lede: 'Mandates for boards and executive teams of energy-infrastructure operators, investors, and advisors.',
@@ -86,8 +86,8 @@ const en: Dictionary = {
       },
       {
         num: '04',
-        title: 'Asset-integrity and capital-project risk',
-        text: 'Integrity and project-risk governance for terminals, tank storage, refineries, and pipeline systems — design through turnaround.',
+        title: 'Asset management and project delivery',
+        text: 'Owner-side transformation of asset management and capital-project delivery — terminals, tank storage, refineries, and pipeline systems, from design through turnaround.',
       },
       {
         num: '05',
@@ -150,15 +150,15 @@ const en: Dictionary = {
       },
       {
         label: 'Senior roles',
-        text: 'OMV (Austria, Romania, UAE, Tunisia) · Wood Group · Nabucco · ILF.',
+        text: 'OMV (Austria, Romania, UAE, Tunisia) · Wood Group · Nabucco · ILF Consulting Engineers.',
       },
       {
         label: 'Current',
-        text: 'Independent advisor on an enterprise risk governance transformation mandate for a European cross-border pipeline group.',
+        text: 'Independent advisor on an enterprise governance transformation mandate for a European cross-border pipeline group.',
       },
       {
         label: 'Education',
-        text: 'Engineering, Technical University of Construction, Bucharest · Economics degree, Bucharest · MIT Sloan School of Management — Executive Programme in General Management (January 2027 module).',
+        text: 'Engineering, Technical University of Construction, Bucharest · Bachelor in Economics, Spiru Haret University, Bucharest · MIT Sloan School of Management — Executive Programme in General Management, Cohort 15.',
       },
       {
         label: 'Credentials',

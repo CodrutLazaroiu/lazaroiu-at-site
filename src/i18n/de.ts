@@ -63,7 +63,7 @@ const de: Dictionary = {
   advisory: {
     metaTitle: 'Beratung — Ioan-Codrut Lazaroiu',
     metaDescription:
-      'Gestaltung und Transformation von Enterprise Risk Governance, Risikokultur und Ownership, Executive Reporting, Asset Integrity und Kapitalprojekt-Risiko, grenzüberschreitende Governance.',
+      'Gestaltung und Transformation von Enterprise Risk Governance, Risikokultur und Ownership, Executive Reporting, Asset Management und Projektabwicklung, grenzüberschreitende Governance.',
     eyebrow: 'Beratung',
     h1: 'Beratung',
     lede: 'Mandate für Vorstände und Führungsteams von Betreibern, Investoren und Beratern der Energieinfrastruktur.',
@@ -86,8 +86,8 @@ const de: Dictionary = {
       },
       {
         num: '04',
-        title: 'Asset Integrity und Kapitalprojekt-Risiko',
-        text: 'Integritäts- und Projektrisiko-Governance für Terminals, Tanklager, Raffinerien und Pipelinesysteme — von der Planung bis zum Turnaround.',
+        title: 'Asset Management und Projektabwicklung',
+        text: 'Transformation von Asset Management und Kapitalprojekt-Abwicklung auf Eigentümerseite — Terminals, Tanklager, Raffinerien und Pipelinesysteme, von der Planung bis zum Turnaround.',
       },
       {
         num: '05',
@@ -149,15 +149,15 @@ const de: Dictionary = {
       },
       {
         label: 'Senior-Positionen',
-        text: 'OMV (Österreich, Rumänien, VAE, Tunesien) · Wood Group · Nabucco · ILF.',
+        text: 'OMV (Österreich, Rumänien, VAE, Tunesien) · Wood Group · Nabucco · ILF Consulting Engineers.',
       },
       {
         label: 'Aktuell',
-        text: 'Unabhängiger Berater eines Enterprise-Risk-Governance-Transformationsmandats für eine europäische grenzüberschreitende Pipelinegruppe.',
+        text: 'Unabhängiger Berater eines Enterprise-Governance-Transformationsmandats für eine europäische grenzüberschreitende Pipelinegruppe.',
       },
       {
         label: 'Ausbildung',
-        text: 'Ingenieurstudium, Technische Universität für Bauwesen, Bukarest · Wirtschaftsstudium, Bukarest · MIT Sloan School of Management — Executive Programme in General Management (Modul Jänner 2027).',
+        text: 'Ingenieurstudium, Technische Universität für Bauwesen, Bukarest · Bachelor in Wirtschaftswissenschaften, Spiru-Haret-Universität, Bukarest · MIT Sloan School of Management — Executive Programme in General Management, Kohorte 15.',
       },
       {
         label: 'Qualifikationen',

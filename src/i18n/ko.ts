@@ -66,7 +66,7 @@ const ko: Dictionary = {
   advisory: {
     metaTitle: '자문 — Ioan-Codrut Lazaroiu',
     metaDescription:
-      '전사적 리스크 거버넌스 설계와 전환, 리스크 문화와 오너십, 경영진 보고, 자산 건전성과 자본 프로젝트 리스크, 국경 간 거버넌스.',
+      '전사적 리스크 거버넌스 설계와 전환, 리스크 문화와 오너십, 경영진 보고, 자산 관리와 프로젝트 수행, 국경 간 거버넌스.',
     eyebrow: '자문',
     h1: '자문',
     lede: '에너지 인프라 운영사·투자자·자문사의 이사회와 경영진을 위한 프로젝트를 수행합니다.',
@@ -89,8 +89,8 @@ const ko: Dictionary = {
       },
       {
         num: '04',
-        title: '자산 건전성 및 자본 프로젝트 리스크',
-        text: '터미널, 저장 탱크, 정유소, 파이프라인 시스템의 건전성·프로젝트 리스크 거버넌스 — 설계부터 턴어라운드까지.',
+        title: '자산 관리 및 프로젝트 수행',
+        text: '발주자 측 자산 관리와 자본 프로젝트 수행의 전환 — 터미널, 저장 탱크, 정유소, 파이프라인 시스템을 설계부터 턴어라운드까지.',
       },
       {
         num: '05',
@@ -130,15 +130,15 @@ const ko: Dictionary = {
       },
       {
         label: '주요 경력',
-        text: 'OMV (오스트리아, 루마니아, UAE, 튀니지) · Wood Group · Nabucco · ILF.',
+        text: 'OMV (오스트리아, 루마니아, UAE, 튀니지) · Wood Group · Nabucco · ILF Consulting Engineers.',
       },
       {
         label: '현재',
-        text: '유럽 국경 간 파이프라인 그룹의 전사적 리스크 거버넌스 전환 프로젝트를 수행하는 독립 어드바이저.',
+        text: '유럽 국경 간 파이프라인 그룹의 전사적 거버넌스 전환 프로젝트를 수행하는 독립 어드바이저.',
       },
       {
         label: '학력',
-        text: '공학, 부쿠레슈티 건설기술대학교 · 경제학 학위, 부쿠레슈티 · MIT Sloan School of Management — Executive Programme in General Management (2027년 1월 모듈).',
+        text: '공학, 부쿠레슈티 건설기술대학교 · 경제학 학사, 부쿠레슈티 스피루 하레트 대학교 · MIT Sloan School of Management — Executive Programme in General Management, 15기.',
       },
       {
         label: '자격',

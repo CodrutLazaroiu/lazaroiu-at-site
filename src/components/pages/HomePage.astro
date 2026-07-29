@@ -11,13 +11,17 @@ const t = getDict(locale);
 ---
 
 <section class="hero">
-  <CorridorLine />
   <div class="hero-inner">
     <p class="eyebrow"><span class="full">{t.home.eyebrow}</span><span class="short">{t.home.eyebrowShort}</span></p>
     <h1>{t.home.h1}</h1>
     <p class="lede">{t.home.lede}</p>
   </div>
 </section>
+
+<!-- The corridor line lives in its own band so it never crosses text. -->
+<div class="corridor-band" aria-hidden="true">
+  <CorridorLine />
+</div>
 
 <section class="pillars container" aria-label={`${t.nav.advisory} · ${t.nav.research} · ${t.nav.about}`}>
   {
@@ -56,12 +60,17 @@ const t = getDict(locale);
 
   .hero {
     position: relative;
-    padding: 96px var(--pad-x) 84px;
-    overflow: hidden;
+    padding: 96px var(--pad-x) 36px;
   }
 
   .hero-inner {
     position: relative;
+  }
+
+  .corridor-band {
+    position: relative;
+    height: 140px;
+    overflow: hidden;
   }
 
   h1 {
@@ -184,7 +193,11 @@ const t = getDict(locale);
     }
 
     .hero {
-      padding: 48px var(--pad-x) 40px;
+      padding: 48px var(--pad-x) 20px;
+    }
+
+    .corridor-band {
+      height: 90px;
     }
 
     h1 {

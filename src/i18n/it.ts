@@ -63,7 +63,7 @@ const it: Dictionary = {
   advisory: {
     metaTitle: 'Advisory — Ioan-Codrut Lazaroiu',
     metaDescription:
-      'Progettazione e trasformazione della enterprise risk governance, cultura del rischio e ownership, reporting executive, integrità degli asset e rischio dei progetti capitale, governance transfrontaliera.',
+      'Progettazione e trasformazione della enterprise risk governance, cultura del rischio e ownership, reporting executive, asset management e delivery dei progetti, governance transfrontaliera.',
     eyebrow: 'Advisory',
     h1: 'Advisory',
     lede: 'Mandati per consigli e team executive di operatori, investitori e advisor delle infrastrutture energetiche.',
@@ -86,8 +86,8 @@ const it: Dictionary = {
       },
       {
         num: '04',
-        title: 'Integrità degli asset e rischio dei progetti capitale',
-        text: 'Governance dell’integrità e del rischio di progetto per terminal, stoccaggi, raffinerie e sistemi di pipeline — dalla progettazione al turnaround.',
+        title: 'Asset management e delivery dei progetti',
+        text: 'Trasformazione lato proprietario dell’asset management e della delivery dei progetti capitale — terminal, stoccaggi, raffinerie e sistemi di pipeline, dalla progettazione al turnaround.',
       },
       {
         num: '05',
@@ -149,15 +149,15 @@ const it: Dictionary = {
       },
       {
         label: 'Ruoli senior',
-        text: 'OMV (Austria, Romania, EAU, Tunisia) · Wood Group · Nabucco · ILF.',
+        text: 'OMV (Austria, Romania, EAU, Tunisia) · Wood Group · Nabucco · ILF Consulting Engineers.',
       },
       {
         label: 'Attuale',
-        text: 'Advisor indipendente per un mandato di trasformazione della enterprise risk governance di un gruppo europeo di pipeline transfrontaliere.',
+        text: 'Advisor indipendente per un mandato di trasformazione della enterprise governance di un gruppo europeo di pipeline transfrontaliere.',
       },
       {
         label: 'Formazione',
-        text: 'Ingegneria, Università Tecnica di Costruzioni, Bucarest · Laurea in Economia, Bucarest · MIT Sloan School of Management — Executive Programme in General Management (modulo di gennaio 2027).',
+        text: 'Ingegneria, Università Tecnica di Costruzioni, Bucarest · Laurea in Economia, Università Spiru Haret, Bucarest · MIT Sloan School of Management — Executive Programme in General Management, Coorte 15.',
       },
       {
         label: 'Credenziali',
