@@ -123,9 +123,9 @@ const de: Dictionary = {
         'Nicht die technische Machbarkeit, sondern das Nachfragerisiko ist die bindende Restriktion der Transition.',
         'Die zentrale Aufgabe des Betreibers ist daher das Stapeln von Instrumenten über Grenzen hinweg: Kapazitätsprodukte, Verträge und regulatorische Instrumente so auszurichten, dass die Optionalität des Korridors erhalten bleibt und nicht verschlossen wird.',
       ],
-      ssrnLabel: 'SSRN',
+      pdfLabel: 'Paper lesen (PDF, 12 Seiten)',
       ssrnUrl: '',
-      ssrnPending: 'SSRN-Link — folgt',
+      ssrnRecordLabel: 'SSRN-Eintrag ↗',
     },
   },
 

@@ -123,9 +123,9 @@ const it: Dictionary = {
         'Il vincolo stringente della transizione è il rischio di domanda, non la fattibilità tecnica.',
         'Il compito che definisce l’operatore è quindi l’impilamento di strumenti attraverso i confini: allineare capacità, contratti e strumenti regolatori perché l’opzionalità del corridoio sia preservata e non preclusa.',
       ],
-      ssrnLabel: 'SSRN',
+      pdfLabel: 'Leggi il paper (PDF, 12 pagine)',
       ssrnUrl: '',
-      ssrnPending: 'Link SSRN — in arrivo',
+      ssrnRecordLabel: 'Scheda SSRN ↗',
     },
   },
 

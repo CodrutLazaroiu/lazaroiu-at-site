@@ -123,10 +123,10 @@ const en: Dictionary = {
         'Demand risk, not technical feasibility, is the binding constraint on the transition.',
         'The operator’s defining task is therefore instrument-stacking across borders: aligning capacity, contracts, and regulatory instruments so the corridor’s optionality is preserved rather than foreclosed.',
       ],
-      ssrnLabel: 'SSRN',
+      pdfLabel: 'Read the paper (PDF, 12 pages)',
       // SSRN URL placeholder — insert when assigned, before the LinkedIn announcement.
       ssrnUrl: '',
-      ssrnPending: 'SSRN link — forthcoming',
+      ssrnRecordLabel: 'SSRN record ↗',
     },
   },
 

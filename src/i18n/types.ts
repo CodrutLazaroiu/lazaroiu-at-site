@@ -77,11 +77,16 @@ export interface Dictionary {
       title: string;
       thesis: string;
       summary: string[];
-      ssrnLabel: string;
+      pdfLabel: string;
       ssrnUrl: string;
-      ssrnPending: string;
+      ssrnRecordLabel: string;
     };
   };
+
+  /** PDF button label for locales without a full research dictionary (AR/KO). */
+  researchPdfLabel?: string;
+  /** SSRN record label for locales without a full research dictionary (AR/KO). */
+  researchSsrnRecordLabel?: string;
 
   /**
    * For locales whose Research page stays in English (AR/KO launch scope),
