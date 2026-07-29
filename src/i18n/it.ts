@@ -72,7 +72,7 @@ const it: Dictionary = {
       {
         num: '01',
         title: 'Enterprise risk governance',
-        text: 'Mandati di progettazione e trasformazione: architettura di governance, propensione al rischio e il modello operativo che li collega alle decisioni.',
+        text: 'Mandati di progettazione e trasformazione: architettura di governance, propensione al rischio e il modello operativo che le collega alle decisioni.',
       },
       {
         num: '02',
@@ -87,7 +87,7 @@ const it: Dictionary = {
       {
         num: '04',
         title: 'Asset management e delivery dei progetti',
-        text: 'Trasformazione lato proprietario dell’asset management e della delivery dei progetti capitale — terminal, stoccaggi, raffinerie e sistemi di pipeline, dalla progettazione al turnaround.',
+        text: 'Trasformazione lato proprietario dell’asset management e della delivery dei progetti di investimento — terminal, parchi serbatoi, raffinerie e sistemi di pipeline, dalla progettazione al turnaround.',
       },
       {
         num: '05',
@@ -97,7 +97,7 @@ const it: Dictionary = {
     ],
     trackRecordLabel: 'Track record',
     trackRecord: [
-      'Vent’anni di delivery executive nelle infrastrutture energetiche in Europa, Medio Oriente, Africa settentrionale e occidentale e Asia centrale; un portafoglio di progetti capitale superiore a 8,5 miliardi di euro.',
+      'Vent’anni di delivery executive nelle infrastrutture energetiche in Europa, Medio Oriente, Africa settentrionale e occidentale e Asia centrale; un portafoglio di progetti di investimento superiore a 8,5 miliardi di euro.',
       'Ruoli senior in OMV, Wood Group, Nabucco e ILF Consulting Engineers.',
       'Attualmente: advisor indipendente per un mandato di trasformazione della enterprise governance di un gruppo europeo di pipeline transfrontaliere.',
     ],
@@ -118,7 +118,7 @@ const it: Dictionary = {
         'Molecules of Optionality — Why Europe’s Pipeline Transition Is a Capital-Allocation Problem, Not an Engineering One',
       thesis: '«Il tubo è sostituibile; il corridoio no.»',
       summary: [
-        'I corridoi europei di gasdotti sono convenzionalmente analizzati come asset ingegneristici; il paper li tratta come opzioni con prezzo errato su quattro possibili futuri molecolari.',
+        'I corridoi europei di pipeline sono convenzionalmente analizzati come asset ingegneristici; il paper li tratta come opzioni con prezzo errato su quattro possibili futuri molecolari.',
         'Il corridoio — autorizzato, contrattualizzato e fisicamente continuo attraverso i confini — è l’asset che non può essere ricostruito; il tubo al suo interno sì.',
         'Il vincolo stringente della transizione è il rischio di domanda, non la fattibilità tecnica.',
         'Il compito che definisce l’operatore è quindi l’impilamento di strumenti attraverso i confini: allineare capacità, contratti e strumenti regolatori perché l’opzionalità del corridoio sia preservata e non preclusa.',
@@ -145,7 +145,7 @@ const it: Dictionary = {
       },
       {
         label: 'Portafoglio',
-        text: 'Portafoglio di progetti capitale superiore a 8,5 miliardi di euro — progettazione, costruzione, commissioning e turnaround di terminal, stoccaggi, raffinerie e sistemi internazionali di pipeline.',
+        text: 'Portafoglio di progetti di investimento superiore a 8,5 miliardi di euro — progettazione, costruzione, commissioning e turnaround di terminal, parchi serbatoi, raffinerie e sistemi internazionali di pipeline.',
       },
       {
         label: 'Ruoli senior',

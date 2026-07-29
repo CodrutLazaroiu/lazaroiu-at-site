@@ -44,7 +44,7 @@ const de: Dictionary = {
       {
         num: '03',
         title: 'Profil',
-        text: 'Zwanzig Jahre Executive-Delivery in Europa, dem Nahen Osten, Nord- und Westafrika und Zentralasien.',
+        text: 'Zwanzig Jahre Umsetzungsverantwortung auf Führungsebene in Europa, dem Nahen Osten, Nord- und Westafrika und Zentralasien.',
         href: '/about/',
         cta: '→ /de/about',
       },
@@ -97,9 +97,9 @@ const de: Dictionary = {
     ],
     trackRecordLabel: 'Track Record',
     trackRecord: [
-      'Zwanzig Jahre Executive-Delivery in der Energieinfrastruktur in Europa, dem Nahen Osten, Nord- und Westafrika und Zentralasien; ein Kapitalprojekt-Portfolio von über 8,5 Milliarden Euro.',
+      'Zwanzig Jahre Umsetzungsverantwortung auf Führungsebene in der Energieinfrastruktur in Europa, dem Nahen Osten, Nord- und Westafrika und Zentralasien; ein Kapitalprojekt-Portfolio von über 8,5 Milliarden Euro.',
       'Senior-Positionen bei OMV, Wood Group, Nabucco und ILF Consulting Engineers.',
-      'Aktuell: unabhängiger Berater eines Enterprise-Governance-Transformationsmandats für eine europäische grenzüberschreitende Pipelinegruppe.',
+      'Unabhängiges Beratungsmandat zur Enterprise-Governance-Transformation für eine europäische grenzüberschreitende Pipelinegruppe.',
     ],
     closing:
       'In Entwicklung: eine Microsoft-365-native Plattform für Enterprise Risk Governance. Details auf Anfrage.',
@@ -153,11 +153,11 @@ const de: Dictionary = {
       },
       {
         label: 'Aktuell',
-        text: 'Unabhängiger Berater eines Enterprise-Governance-Transformationsmandats für eine europäische grenzüberschreitende Pipelinegruppe.',
+        text: 'Unabhängiges Beratungsmandat zur Enterprise-Governance-Transformation für eine europäische grenzüberschreitende Pipelinegruppe.',
       },
       {
         label: 'Ausbildung',
-        text: 'Ingenieurstudium, Technische Universität für Bauwesen, Bukarest · Bachelor in Wirtschaftswissenschaften, Spiru-Haret-Universität, Bukarest · MIT Sloan School of Management — Executive Programme in General Management, Kohorte 15.',
+        text: 'Ingenieurstudium, Technische Universität für Bauwesen, Bukarest · Bachelor in Wirtschaftswissenschaften, Spiru-Haret-Universität, Bukarest · MIT Sloan School of Management — Executive Programme in General Management, Cohort 15.',
       },
       {
         label: 'Qualifikationen',
