@@ -1,11 +1,9 @@
 ---
-import '@fontsource/noto-naskh-arabic/400.css';
-import '@fontsource/noto-naskh-arabic/600.css';
 import Base from '../../layouts/Base.astro';
 import AboutPage from '../../components/pages/AboutPage.astro';
 import { getDict } from '../../i18n';
 
-const locale = 'ar';
+const locale = 'ro';
 const t = getDict(locale);
 ---
 
@@ -19,3 +17,4 @@ const t = getDict(locale);
 >
   <AboutPage locale={locale} />
 </Base>
+

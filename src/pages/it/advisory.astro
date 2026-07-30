@@ -1,4 +1,4 @@
-﻿---
+---
 import Base from '../../layouts/Base.astro';
 import AdvisoryPage from '../../components/pages/AdvisoryPage.astro';
 import { getDict } from '../../i18n';
@@ -12,7 +12,7 @@ const t = getDict(locale);
   title={t.advisory.metaTitle}
   description={t.advisory.metaDescription}
   path="/advisory/"
-  alternates={['en', 'de', 'it', 'ar', 'ko']}
+  alternates={['en', 'de', 'it', 'ro', 'ar', 'ko']}
   active="advisory"
 >
   <AdvisoryPage locale={locale} />

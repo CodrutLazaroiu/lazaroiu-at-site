@@ -1,4 +1,4 @@
-﻿---
+---
 import Base from '../../layouts/Base.astro';
 import ContactPage from '../../components/pages/ContactPage.astro';
 import { getDict } from '../../i18n';
@@ -12,7 +12,7 @@ const t = getDict(locale);
   title={t.contact.metaTitle}
   description={t.contact.metaDescription}
   path="/contact/"
-  alternates={['en', 'de', 'it', 'ar', 'ko']}
+  alternates={['en', 'de', 'it', 'ro', 'ar', 'ko']}
   active="contact"
 >
   <ContactPage locale={locale} />

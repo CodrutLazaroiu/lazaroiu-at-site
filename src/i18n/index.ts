@@ -2,13 +2,14 @@ import type { Dictionary } from './types';
 import en from './en';
 import de from './de';
 import it from './it';
+import ro from './ro';
 import ar from './ar';
 import ko from './ko';
 
-export const locales = ['en', 'de', 'it', 'ar', 'ko'] as const;
+export const locales = ['en', 'de', 'it', 'ro', 'ar', 'ko'] as const;
 export type Locale = (typeof locales)[number];
 
-const dictionaries: Partial<Record<Locale, Dictionary>> = { en, de, it, ar, ko };
+const dictionaries: Partial<Record<Locale, Dictionary>> = { en, de, it, ro, ar, ko };
 
 export function getDict(locale: string): Dictionary {
   return dictionaries[locale as Locale] ?? en;

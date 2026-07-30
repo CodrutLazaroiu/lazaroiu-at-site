@@ -5,7 +5,7 @@ export default defineConfig({
   site: 'https://lazaroiu.at',
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'de', 'it', 'ar', 'ko'],
+    locales: ['en', 'de', 'it', 'ro', 'ar', 'ko'],
     routing: {
       prefixDefaultLocale: false,
     },
@@ -14,7 +14,7 @@ export default defineConfig({
     sitemap({
       i18n: {
         defaultLocale: 'en',
-        locales: { en: 'en', de: 'de', it: 'it', ar: 'ar', ko: 'ko' },
+        locales: { en: 'en', de: 'de', it: 'it', ro: 'ro', ar: 'ar', ko: 'ko' },
       },
     }),
   ],

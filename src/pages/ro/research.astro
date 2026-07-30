@@ -1,9 +1,9 @@
 ---
-import Base from '../layouts/Base.astro';
-import ResearchPage from '../components/pages/ResearchPage.astro';
-import { getDict } from '../i18n';
+import Base from '../../layouts/Base.astro';
+import ResearchPage from '../../components/pages/ResearchPage.astro';
+import { getDict } from '../../i18n';
 
-const locale = 'en';
+const locale = 'ro';
 const t = getDict(locale);
 ---
 
@@ -17,3 +17,4 @@ const t = getDict(locale);
 >
   <ResearchPage locale={locale} />
 </Base>
+
