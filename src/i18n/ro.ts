@@ -118,7 +118,7 @@ const ro: Dictionary = {
         'Molecules of Optionality — Why Europe’s Pipeline Transition Is a Capital-Allocation Problem, Not an Engineering One',
       thesis: '„Conducta se poate înlocui; coridorul nu.”',
       summary: [
-        'Coridoarele europene de conducte sunt analizate în mod convențional ca active inginerești; lucrarea le tratează ca opțiuni evaluate greșit asupra a patru viitoruri moleculare posibile.',
+        'Coridoarele europene de conducte sunt analizate în mod convențional ca active inginerești; lucrarea le tratează ca opțiuni evaluate greșit, în raport cu patru viitoruri moleculare posibile.',
         'Coridorul — autorizat, contractat și continuu fizic peste granițe — este activul care nu poate fi reconstruit; conducta din interiorul lui, da.',
         'Constrângerea determinantă a tranziției este riscul de cerere, nu fezabilitatea tehnică.',
         'Sarcina definitorie a operatorului este, prin urmare, suprapunerea instrumentelor peste granițe: alinierea capacității, a contractelor și a instrumentelor de reglementare astfel încât opționalitatea coridorului să fie păstrată, nu închisă.',
