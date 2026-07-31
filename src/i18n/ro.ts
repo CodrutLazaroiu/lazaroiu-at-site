@@ -49,15 +49,25 @@ const ro: Dictionary = {
         cta: '→ /ro/about',
       },
     ],
-    paper: {
-      eyebrow: 'Working paper · august 2026',
-      title:
-        'Molecules of Optionality — Why Europe’s Pipeline Transition Is a Capital-Allocation Problem, Not an Engineering One',
-      thesis: '„Conducta se poate înlocui; coridorul nu.”',
-      cta: 'Abstract și link SSRN → /ro/research',
-      ctaShort: 'Abstract + SSRN → /ro/research',
-      href: '/research/',
-    },
+    papers: [
+      {
+        eyebrow: 'Working paper · august 2026',
+        title:
+          'Molecules of Optionality — Why Europe’s Pipeline Transition Is a Capital-Allocation Problem, Not an Engineering One',
+        thesis: '„Conducta se poate înlocui; coridorul nu.”',
+        cta: 'Abstract și link SSRN → /ro/research',
+        ctaShort: 'Abstract + SSRN → /ro/research',
+        href: '/research/',
+      },
+      {
+        eyebrow: 'Working paper · august 2026',
+        title: 'The Settlement Layer — The Missing Financial Infrastructure of the Circular Economy',
+        thesis: '„Returnarea este o decontare, nu o virtute.”',
+        cta: 'Abstract și link SSRN → /ro/research',
+        ctaShort: 'Abstract + SSRN → /ro/research',
+        href: '/research/',
+      },
+    ],
   },
 
   advisory: {
@@ -108,25 +118,44 @@ const ro: Dictionary = {
   research: {
     metaTitle: 'Cercetare & Publicații — Ioan-Codrut Lazaroiu',
     metaDescription:
-      'Lucrări de cercetare independente despre infrastructură, alocarea capitalului și risc. Lucrarea actuală: Molecules of Optionality (august 2026).',
+      'Lucrări de cercetare independente despre infrastructură, alocarea capitalului și risc. Lucrările actuale: Molecules of Optionality și The Settlement Layer (august 2026).',
     eyebrow: 'Cercetare & Publicații',
     h1: 'Cercetare & Publicații',
     lede: 'Lucrări de cercetare independente despre infrastructură, alocarea capitalului și risc.',
-    paper: {
-      eyebrow: 'Working paper · august 2026',
-      title:
-        'Molecules of Optionality — Why Europe’s Pipeline Transition Is a Capital-Allocation Problem, Not an Engineering One',
-      thesis: '„Conducta se poate înlocui; coridorul nu.”',
-      summary: [
-        'Coridoarele europene de conducte sunt analizate în mod convențional ca active inginerești; lucrarea le tratează ca opțiuni evaluate greșit, în raport cu patru viitoruri moleculare posibile.',
-        'Coridorul — autorizat, contractat și continuu fizic peste granițe — este activul care nu poate fi reconstruit; conducta din interiorul lui, da.',
-        'Constrângerea determinantă a tranziției este riscul de cerere, nu fezabilitatea tehnică.',
-        'Sarcina definitorie a operatorului este, prin urmare, suprapunerea instrumentelor peste granițe: alinierea capacității, a contractelor și a instrumentelor de reglementare astfel încât opționalitatea coridorului să fie păstrată, nu închisă.',
-      ],
-      pdfLabel: 'Citește lucrarea (PDF, 12 pagini)',
-      ssrnUrl: '',
-      ssrnRecordLabel: 'Pagina SSRN ↗',
-    },
+    papers: [
+      {
+        eyebrow: 'Working paper · august 2026',
+        title:
+          'Molecules of Optionality — Why Europe’s Pipeline Transition Is a Capital-Allocation Problem, Not an Engineering One',
+        thesis: '„Conducta se poate înlocui; coridorul nu.”',
+        summary: [
+          'Coridoarele europene de conducte sunt analizate în mod convențional ca active inginerești; lucrarea le tratează ca opțiuni evaluate greșit, în raport cu patru viitoruri moleculare posibile.',
+          'Coridorul — autorizat, contractat și continuu fizic peste granițe — este activul care nu poate fi reconstruit; conducta din interiorul lui, da.',
+          'Constrângerea determinantă a tranziției este riscul de cerere, nu fezabilitatea tehnică.',
+          'Sarcina definitorie a operatorului este, prin urmare, suprapunerea instrumentelor peste granițe: alinierea capacității, a contractelor și a instrumentelor de reglementare astfel încât opționalitatea coridorului să fie păstrată, nu închisă.',
+        ],
+        pdfLabel: 'Citește lucrarea (PDF, 12 pagini)',
+        pdfHref: '/papers/Lazaroiu_Molecules-of-Optionality_2026.pdf',
+        ssrnUrl: '',
+        ssrnRecordLabel: 'Pagina SSRN ↗',
+      },
+      {
+        eyebrow: 'Working paper · august 2026',
+        title: 'The Settlement Layer — The Missing Financial Infrastructure of the Circular Economy',
+        thesis: '„Returnarea este o decontare, nu o virtute.”',
+        summary: [
+          'Sistemele europene de retur demonstrează un mecanism financiar: acolo unde de nereturnare se leagă o consecință obligatorie, ambalajele revin în proporție de 85–99 la sută; acolo unde nu, bunăvoința eșuează.',
+          'Piesa lipsă este stratul de decontare — registrul comun de identitate, obligație și compensare care ar permite unei creanțe să circule peste granițe, categorii și sisteme rivale.',
+          'Reglementarea care se aplică acum va multiplica circuitele naționale fără a le conecta.',
+          'Lucrarea evaluează cele cinci instrumente folosite astăzi, localizează cele trei rosturi unde decontarea se oprește și încheie cu patru teste pentru operatori, comercianți și investitori: operează un circuit, intră în strat, păstrează opțiunea — sau nu construi.',
+        ],
+        linkNote: 'Aplică cadrul din Molecules of Optionality (2026) economiei circulare.',
+        pdfLabel: 'Citește lucrarea (PDF, 16 pagini)',
+        pdfHref: '/papers/Lazaroiu_The-Settlement-Layer_2026.pdf',
+        ssrnUrl: '',
+        ssrnRecordLabel: 'Pagina SSRN ↗',
+      },
+    ],
   },
 
   about: {

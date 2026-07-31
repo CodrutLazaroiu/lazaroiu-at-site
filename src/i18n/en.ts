@@ -49,15 +49,25 @@ const en: Dictionary = {
         cta: '→ /about',
       },
     ],
-    paper: {
-      eyebrow: 'Working Paper · August 2026',
-      title:
-        'Molecules of Optionality — Why Europe’s Pipeline Transition Is a Capital-Allocation Problem, Not an Engineering One',
-      thesis: '“The pipe is replaceable; the corridor is not.”',
-      cta: 'Abstract and SSRN link → /research',
-      ctaShort: 'Abstract + SSRN → /research',
-      href: '/research/',
-    },
+    papers: [
+      {
+        eyebrow: 'Working Paper · August 2026',
+        title:
+          'Molecules of Optionality — Why Europe’s Pipeline Transition Is a Capital-Allocation Problem, Not an Engineering One',
+        thesis: '“The pipe is replaceable; the corridor is not.”',
+        cta: 'Abstract and SSRN link → /research',
+        ctaShort: 'Abstract + SSRN → /research',
+        href: '/research/',
+      },
+      {
+        eyebrow: 'Working Paper · August 2026',
+        title: 'The Settlement Layer — The Missing Financial Infrastructure of the Circular Economy',
+        thesis: '“Return is a settlement, not a virtue.”',
+        cta: 'Abstract and SSRN link → /research',
+        ctaShort: 'Abstract + SSRN → /research',
+        href: '/research/',
+      },
+    ],
   },
 
   advisory: {
@@ -108,26 +118,45 @@ const en: Dictionary = {
   research: {
     metaTitle: 'Research & Publications — Ioan-Codrut Lazaroiu',
     metaDescription:
-      'Independent working papers on infrastructure, capital allocation, and risk. Current paper: Molecules of Optionality (August 2026).',
+      'Independent working papers on infrastructure, capital allocation, and risk. Current papers: Molecules of Optionality and The Settlement Layer (August 2026).',
     eyebrow: 'Research & Publications',
     h1: 'Research & Publications',
     lede: 'Independent working papers on infrastructure, capital allocation, and risk.',
-    paper: {
-      eyebrow: 'Working Paper · August 2026',
-      title:
-        'Molecules of Optionality — Why Europe’s Pipeline Transition Is a Capital-Allocation Problem, Not an Engineering One',
-      thesis: '“The pipe is replaceable; the corridor is not.”',
-      summary: [
-        'European pipeline corridors are conventionally analysed as engineering assets; the paper treats them as mispriced options on four possible molecular futures.',
-        'The corridor — permitted, contracted, and physically continuous across borders — is the asset that cannot be rebuilt; the pipe within it can.',
-        'Demand risk, not technical feasibility, is the binding constraint on the transition.',
-        'The operator’s defining task is therefore instrument-stacking across borders: aligning capacity, contracts, and regulatory instruments so the corridor’s optionality is preserved rather than foreclosed.',
-      ],
-      pdfLabel: 'Read the paper (PDF, 12 pages)',
-      // SSRN URL placeholder — insert when assigned, before the LinkedIn announcement.
-      ssrnUrl: '',
-      ssrnRecordLabel: 'SSRN record ↗',
-    },
+    papers: [
+      {
+        eyebrow: 'Working Paper · August 2026',
+        title:
+          'Molecules of Optionality — Why Europe’s Pipeline Transition Is a Capital-Allocation Problem, Not an Engineering One',
+        thesis: '“The pipe is replaceable; the corridor is not.”',
+        summary: [
+          'European pipeline corridors are conventionally analysed as engineering assets; the paper treats them as mispriced options on four possible molecular futures.',
+          'The corridor — permitted, contracted, and physically continuous across borders — is the asset that cannot be rebuilt; the pipe within it can.',
+          'Demand risk, not technical feasibility, is the binding constraint on the transition.',
+          'The operator’s defining task is therefore instrument-stacking across borders: aligning capacity, contracts, and regulatory instruments so the corridor’s optionality is preserved rather than foreclosed.',
+        ],
+        pdfLabel: 'Read the paper (PDF, 12 pages)',
+        pdfHref: '/papers/Lazaroiu_Molecules-of-Optionality_2026.pdf',
+        // SSRN URL placeholder — insert when assigned, before the LinkedIn announcement.
+        ssrnUrl: '',
+        ssrnRecordLabel: 'SSRN record ↗',
+      },
+      {
+        eyebrow: 'Working Paper · August 2026',
+        title: 'The Settlement Layer — The Missing Financial Infrastructure of the Circular Economy',
+        thesis: '“Return is a settlement, not a virtue.”',
+        summary: [
+          'European return systems prove a financial mechanism: wherever a binding consequence attaches to non-return, containers come back at 85–99 per cent; wherever none does, goodwill fails.',
+          'The missing piece is the settlement layer — the shared register of identity, obligation, and clearing that would let a claim travel across borders, categories, and rival systems.',
+          'The regulation now applying will multiply national loops without connecting them.',
+          'The paper prices the five instruments in use today, locates the three seams where settlement stops, and closes with four tests for operators, merchants, and investors: run a loop, join the layer, hold the option, or don’t build.',
+        ],
+        linkNote: 'Applies the framework of Molecules of Optionality (2026) to the circular economy.',
+        pdfLabel: 'Read the paper (PDF, 16 pages)',
+        pdfHref: '/papers/Lazaroiu_The-Settlement-Layer_2026.pdf',
+        ssrnUrl: '',
+        ssrnRecordLabel: 'SSRN record ↗',
+      },
+    ],
   },
 
   about: {

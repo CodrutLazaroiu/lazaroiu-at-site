@@ -52,15 +52,25 @@ const ko: Dictionary = {
         cta: '→ /ko/about',
       },
     ],
-    paper: {
-      eyebrow: '워킹 페이퍼 · 2026년 8월',
-      title:
-        'Molecules of Optionality — Why Europe’s Pipeline Transition Is a Capital-Allocation Problem, Not an Engineering One',
-      thesis: '“파이프는 대체할 수 있어도, 회랑은 대체할 수 없다.”',
-      cta: '초록 및 SSRN 링크 → /ko/research',
-      ctaShort: '초록 + SSRN → /ko/research',
-      href: '/research/',
-    },
+    papers: [
+      {
+        eyebrow: '워킹 페이퍼 · 2026년 8월',
+        title:
+          'Molecules of Optionality — Why Europe’s Pipeline Transition Is a Capital-Allocation Problem, Not an Engineering One',
+        thesis: '“파이프는 대체할 수 있어도, 회랑은 대체할 수 없다.”',
+        cta: '초록 및 SSRN 링크 → /ko/research',
+        ctaShort: '초록 + SSRN → /ko/research',
+        href: '/research/',
+      },
+      {
+        eyebrow: '워킹 페이퍼 · 2026년 8월',
+        title: 'The Settlement Layer — The Missing Financial Infrastructure of the Circular Economy',
+        thesis: '“반환은 미덕이 아니라 정산이다.”',
+        cta: '초록 및 SSRN 링크 → /ko/research',
+        ctaShort: '초록 + SSRN → /ko/research',
+        href: '/research/',
+      },
+    ],
   },
 
   advisory: {
@@ -107,7 +117,7 @@ const ko: Dictionary = {
     closing: '개발 중: Microsoft 365 네이티브 전사적 리스크 거버넌스 플랫폼. 세부 사항은 문의 바랍니다.',
   },
 
-  researchPdfLabel: '논문 읽기 (PDF, 12쪽)',
+  researchPdfLabels: ['논문 읽기 (PDF, 12쪽)', '논문 읽기 (PDF, 16쪽)'],
   researchSsrnRecordLabel: 'SSRN 페이지 ↗',
 
   researchAbstract:

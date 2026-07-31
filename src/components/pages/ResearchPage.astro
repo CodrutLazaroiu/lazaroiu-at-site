@@ -1,13 +1,12 @@
 ---
 import { getDict } from '../../i18n';
 import en from '../../i18n/en';
-import { PAPER_PDF } from '../../config';
 
 interface Props {
   locale: string;
   /**
    * Per brief Section 4: AR/KO launch scope keeps Research in English with a
-   * translated abstract paragraph. Pass that paragraph here when applicable.
+   * translated abstract paragraph (first paper). Pass it here when applicable.
    */
   translatedAbstract?: string;
 }
@@ -16,9 +15,10 @@ const { locale, translatedAbstract } = Astro.props;
 const t = getDict(locale);
 // Research page content falls back to English where a locale ships core pages only.
 const r = t.research ?? en.research!;
-const pdfLabel = t.research?.paper.pdfLabel ?? t.researchPdfLabel ?? en.research!.paper.pdfLabel;
-const ssrnRecordLabel =
-  t.research?.paper.ssrnRecordLabel ?? t.researchSsrnRecordLabel ?? en.research!.paper.ssrnRecordLabel;
+const pdfLabelFor = (i: number) =>
+  t.research?.papers[i].pdfLabel ?? t.researchPdfLabels?.[i] ?? en.research!.papers[i].pdfLabel;
+const ssrnLabelFor = (i: number) =>
+  t.research?.papers[i].ssrnRecordLabel ?? t.researchSsrnRecordLabel ?? en.research!.papers[i].ssrnRecordLabel;
 ---
 
 <section class="head container">
@@ -28,27 +28,38 @@ const ssrnRecordLabel =
 </section>
 
 <section class="papers container">
-  <article class="paper">
-    <p class="eyebrow paper-eyebrow">{r.paper.eyebrow}</p>
-    <h2>{r.paper.title}</h2>
-    <p class="thesis">{r.paper.thesis}</p>
-    {translatedAbstract && <p class="summary translated" lang={locale}>{translatedAbstract}</p>}
-    <div class="summary" lang="en">
-      {r.paper.summary.map((sentence) => <p>{sentence}</p>)}
-    </div>
-    <div class="actions">
-      <a class="btn" href={PAPER_PDF} target="_blank" rel="noopener">{pdfLabel}</a>
-      {
-        r.paper.ssrnUrl ? (
-          <a class="ssrn mono" href={r.paper.ssrnUrl} rel="noopener" target="_blank">
-            {ssrnRecordLabel}
+  {
+    r.papers.map((paper, i) => (
+      <article class="paper">
+        <p class="eyebrow paper-eyebrow">{paper.eyebrow}</p>
+        <h2>{paper.title}</h2>
+        <p class="thesis">{paper.thesis}</p>
+        {i === 0 && translatedAbstract && (
+          <p class="summary translated" lang={locale}>
+            {translatedAbstract}
+          </p>
+        )}
+        <div class="summary" lang={t.research ? locale : 'en'}>
+          {paper.summary.map((sentence) => (
+            <p>{sentence}</p>
+          ))}
+        </div>
+        {paper.linkNote && <p class="link-note">{paper.linkNote}</p>}
+        <div class="actions">
+          <a class="btn" href={paper.pdfHref} target="_blank" rel="noopener">
+            {pdfLabelFor(i)}
           </a>
-        ) : (
-          <span class="ssrn ssrn-pending mono">{ssrnRecordLabel}</span>
-        )
-      }
-    </div>
-  </article>
+          {paper.ssrnUrl ? (
+            <a class="ssrn mono" href={paper.ssrnUrl} rel="noopener" target="_blank">
+              {ssrnLabelFor(i)}
+            </a>
+          ) : (
+            <span class="ssrn ssrn-pending mono">{ssrnLabelFor(i)}</span>
+          )}
+        </div>
+      </article>
+    ))
+  }
 </section>
 
 <style>
@@ -73,6 +84,10 @@ const ssrnRecordLabel =
 
   .papers {
     margin: 44px 0 72px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
   }
 
   .paper {
@@ -113,6 +128,14 @@ const ssrnRecordLabel =
 
   .summary.translated {
     color: var(--muted-hero);
+  }
+
+  .link-note {
+    font-size: 12.5px;
+    line-height: 1.6;
+    color: var(--muted);
+    font-style: italic;
+    margin: 4px 0 0;
   }
 
   /* The translated abstract keeps its locale's script font and direction. */
@@ -181,6 +204,8 @@ const ssrnRecordLabel =
 
     .papers {
       margin: 28px 0 40px;
+      grid-template-columns: 1fr;
+      gap: 14px;
     }
 
     .paper {

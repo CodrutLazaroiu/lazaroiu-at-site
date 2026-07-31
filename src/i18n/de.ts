@@ -49,15 +49,25 @@ const de: Dictionary = {
         cta: '→ /de/about',
       },
     ],
-    paper: {
-      eyebrow: 'Working Paper · August 2026',
-      title:
-        'Molecules of Optionality — Why Europe’s Pipeline Transition Is a Capital-Allocation Problem, Not an Engineering One',
-      thesis: '„Das Rohr ist ersetzbar; der Korridor nicht.“',
-      cta: 'Abstract und SSRN-Link → /de/research',
-      ctaShort: 'Abstract + SSRN → /de/research',
-      href: '/research/',
-    },
+    papers: [
+      {
+        eyebrow: 'Working Paper · August 2026',
+        title:
+          'Molecules of Optionality — Why Europe’s Pipeline Transition Is a Capital-Allocation Problem, Not an Engineering One',
+        thesis: '„Das Rohr ist ersetzbar; der Korridor nicht.“',
+        cta: 'Abstract und SSRN-Link → /de/research',
+        ctaShort: 'Abstract + SSRN → /de/research',
+        href: '/research/',
+      },
+      {
+        eyebrow: 'Working Paper · August 2026',
+        title: 'The Settlement Layer — The Missing Financial Infrastructure of the Circular Economy',
+        thesis: '„Rückgabe ist Verrechnung, keine Tugend.“',
+        cta: 'Abstract und SSRN-Link → /de/research',
+        ctaShort: 'Abstract + SSRN → /de/research',
+        href: '/research/',
+      },
+    ],
   },
 
   advisory: {
@@ -108,25 +118,44 @@ const de: Dictionary = {
   research: {
     metaTitle: 'Forschung & Publikationen — Ioan-Codrut Lazaroiu',
     metaDescription:
-      'Unabhängige Working Papers zu Infrastruktur, Kapitalallokation und Risiko. Aktuelles Papier: Molecules of Optionality (August 2026).',
+      'Unabhängige Working Papers zu Infrastruktur, Kapitalallokation und Risiko. Aktuelle Papiere: Molecules of Optionality und The Settlement Layer (August 2026).',
     eyebrow: 'Forschung & Publikationen',
     h1: 'Forschung & Publikationen',
     lede: 'Unabhängige Working Papers zu Infrastruktur, Kapitalallokation und Risiko.',
-    paper: {
-      eyebrow: 'Working Paper · August 2026',
-      title:
-        'Molecules of Optionality — Why Europe’s Pipeline Transition Is a Capital-Allocation Problem, Not an Engineering One',
-      thesis: '„Das Rohr ist ersetzbar; der Korridor nicht.“',
-      summary: [
-        'Europäische Pipelinekorridore werden üblicherweise als Ingenieursassets analysiert; das Papier behandelt sie als fehlbepreiste Optionen auf vier mögliche molekulare Zukünfte.',
-        'Der Korridor — genehmigt, kontrahiert und physisch durchgängig über Grenzen hinweg — ist das Asset, das nicht neu errichtet werden kann; das Rohr darin schon.',
-        'Nicht die technische Machbarkeit, sondern das Nachfragerisiko ist die bindende Restriktion der Transition.',
-        'Die zentrale Aufgabe des Betreibers ist daher das Stapeln von Instrumenten über Grenzen hinweg: Kapazitätsprodukte, Verträge und regulatorische Instrumente so auszurichten, dass die Optionalität des Korridors erhalten bleibt und nicht verschlossen wird.',
-      ],
-      pdfLabel: 'Paper lesen (PDF, 12 Seiten)',
-      ssrnUrl: '',
-      ssrnRecordLabel: 'SSRN-Eintrag ↗',
-    },
+    papers: [
+      {
+        eyebrow: 'Working Paper · August 2026',
+        title:
+          'Molecules of Optionality — Why Europe’s Pipeline Transition Is a Capital-Allocation Problem, Not an Engineering One',
+        thesis: '„Das Rohr ist ersetzbar; der Korridor nicht.“',
+        summary: [
+          'Europäische Pipelinekorridore werden üblicherweise als Ingenieursassets analysiert; das Papier behandelt sie als fehlbepreiste Optionen auf vier mögliche molekulare Zukünfte.',
+          'Der Korridor — genehmigt, kontrahiert und physisch durchgängig über Grenzen hinweg — ist das Asset, das nicht neu errichtet werden kann; das Rohr darin schon.',
+          'Nicht die technische Machbarkeit, sondern das Nachfragerisiko ist die bindende Restriktion der Transition.',
+          'Die zentrale Aufgabe des Betreibers ist daher das Stapeln von Instrumenten über Grenzen hinweg: Kapazitätsprodukte, Verträge und regulatorische Instrumente so auszurichten, dass die Optionalität des Korridors erhalten bleibt und nicht verschlossen wird.',
+        ],
+        pdfLabel: 'Paper lesen (PDF, 12 Seiten)',
+        pdfHref: '/papers/Lazaroiu_Molecules-of-Optionality_2026.pdf',
+        ssrnUrl: '',
+        ssrnRecordLabel: 'SSRN-Eintrag ↗',
+      },
+      {
+        eyebrow: 'Working Paper · August 2026',
+        title: 'The Settlement Layer — The Missing Financial Infrastructure of the Circular Economy',
+        thesis: '„Rückgabe ist Verrechnung, keine Tugend.“',
+        summary: [
+          'Europäische Rückgabesysteme belegen einen finanziellen Mechanismus: Wo an die Nicht-Rückgabe eine verbindliche Konsequenz geknüpft ist, kommen Gebinde zu 85–99 Prozent zurück; wo keine besteht, scheitert der gute Wille.',
+          'Was fehlt, ist der Settlement-Layer — das gemeinsame Register von Identität, Verpflichtung und Verrechnung, das einen Anspruch über Grenzen, Kategorien und konkurrierende Systeme hinweg wandern ließe.',
+          'Die nun greifende Regulierung wird nationale Kreisläufe vervielfachen, ohne sie zu verbinden.',
+          'Das Papier bepreist die fünf heute gebräuchlichen Instrumente, verortet die drei Nahtstellen, an denen die Verrechnung endet, und schließt mit vier Tests für Betreiber, Händler und Investoren: einen Kreislauf betreiben, dem Layer beitreten, die Option halten — oder nicht bauen.',
+        ],
+        linkNote: 'Wendet den Rahmen von Molecules of Optionality (2026) auf die Kreislaufwirtschaft an.',
+        pdfLabel: 'Paper lesen (PDF, 16 Seiten)',
+        pdfHref: '/papers/Lazaroiu_The-Settlement-Layer_2026.pdf',
+        ssrnUrl: '',
+        ssrnRecordLabel: 'SSRN-Eintrag ↗',
+      },
+    ],
   },
 
   about: {

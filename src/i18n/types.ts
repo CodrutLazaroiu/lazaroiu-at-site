@@ -17,6 +17,28 @@ export interface Service {
   text: string;
 }
 
+export interface HomePaperTeaser {
+  eyebrow: string;
+  title: string;
+  thesis: string;
+  cta: string;
+  ctaShort: string;
+  href: string;
+}
+
+export interface ResearchPaper {
+  eyebrow: string;
+  title: string;
+  thesis: string;
+  summary: string[];
+  /** Optional smaller-type line linking the paper to related work. */
+  linkNote?: string;
+  pdfLabel: string;
+  pdfHref: string;
+  ssrnUrl: string;
+  ssrnRecordLabel: string;
+}
+
 export interface Dictionary {
   locale: string;
   dir: 'ltr' | 'rtl';
@@ -43,14 +65,7 @@ export interface Dictionary {
     h1: string;
     lede: string;
     pillars: Pillar[];
-    paper: {
-      eyebrow: string;
-      title: string;
-      thesis: string;
-      cta: string;
-      ctaShort: string;
-      href: string;
-    };
+    papers: HomePaperTeaser[];
   };
 
   advisory: {
@@ -72,19 +87,11 @@ export interface Dictionary {
     eyebrow: string;
     h1: string;
     lede: string;
-    paper: {
-      eyebrow: string;
-      title: string;
-      thesis: string;
-      summary: string[];
-      pdfLabel: string;
-      ssrnUrl: string;
-      ssrnRecordLabel: string;
-    };
+    papers: ResearchPaper[];
   };
 
-  /** PDF button label for locales without a full research dictionary (AR/KO). */
-  researchPdfLabel?: string;
+  /** Per-paper PDF button labels for locales without a full research dictionary (AR/KO). */
+  researchPdfLabels?: string[];
   /** SSRN record label for locales without a full research dictionary (AR/KO). */
   researchSsrnRecordLabel?: string;
 

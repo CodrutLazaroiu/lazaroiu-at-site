@@ -40,14 +40,19 @@ const t = getDict(locale);
   }
 </section>
 
-<section class="paper">
-  <p class="eyebrow paper-eyebrow">{t.home.paper.eyebrow}</p>
-  <p class="paper-title">{t.home.paper.title}</p>
-  <p class="paper-thesis">{t.home.paper.thesis}</p>
-  <a class="paper-cta mono" href={localePath(locale, t.home.paper.href)}>
-    <span class="full">{t.home.paper.cta}</span><span class="short">{t.home.paper.ctaShort}</span>
-  </a>
-</section>
+{
+  t.home.papers.map((paper) => (
+    <section class="paper">
+      <p class="eyebrow paper-eyebrow">{paper.eyebrow}</p>
+      <p class="paper-title">{paper.title}</p>
+      <p class="paper-thesis">{paper.thesis}</p>
+      <a class="paper-cta mono" href={localePath(locale, paper.href)}>
+        <span class="full">{paper.cta}</span>
+        <span class="short">{paper.ctaShort}</span>
+      </a>
+    </section>
+  ))
+}
 
 <style>
   .full {
@@ -147,6 +152,10 @@ const t = getDict(locale);
     padding: 34px 40px 38px;
   }
 
+  .paper + .paper {
+    margin-top: 20px;
+  }
+
   .paper-eyebrow {
     letter-spacing: 0.2em;
   }
@@ -240,6 +249,10 @@ const t = getDict(locale);
     .paper {
       margin: 24px var(--pad-x) 0;
       padding: 24px 22px 28px;
+    }
+
+    .paper + .paper {
+      margin-top: 14px;
     }
 
     .paper-eyebrow {

@@ -52,15 +52,25 @@ const ar: Dictionary = {
         cta: '→ /ar/about',
       },
     ],
-    paper: {
-      eyebrow: 'ورقة عمل · أغسطس 2026',
-      title:
-        'Molecules of Optionality — Why Europe’s Pipeline Transition Is a Capital-Allocation Problem, Not an Engineering One',
-      thesis: '«الأنبوب قابل للاستبدال؛ أمّا الممرّ فلا.»',
-      cta: 'الملخّص ورابط SSRN → /ar/research',
-      ctaShort: 'الملخّص + SSRN → /ar/research',
-      href: '/research/',
-    },
+    papers: [
+      {
+        eyebrow: 'ورقة عمل · أغسطس 2026',
+        title:
+          'Molecules of Optionality — Why Europe’s Pipeline Transition Is a Capital-Allocation Problem, Not an Engineering One',
+        thesis: '«الأنبوب قابل للاستبدال؛ أمّا الممرّ فلا.»',
+        cta: 'الملخّص ورابط SSRN → /ar/research',
+        ctaShort: 'الملخّص + SSRN → /ar/research',
+        href: '/research/',
+      },
+      {
+        eyebrow: 'ورقة عمل · أغسطس 2026',
+        title: 'The Settlement Layer — The Missing Financial Infrastructure of the Circular Economy',
+        thesis: '«الإرجاع تسوية، لا فضيلة.»',
+        cta: 'الملخّص ورابط SSRN → /ar/research',
+        ctaShort: 'الملخّص + SSRN → /ar/research',
+        href: '/research/',
+      },
+    ],
   },
 
   advisory: {
@@ -107,7 +117,7 @@ const ar: Dictionary = {
     closing: 'قيد التطوير: منصة لحوكمة مخاطر المؤسسات مبنية على Microsoft 365. التفاصيل عند الطلب.',
   },
 
-  researchPdfLabel: 'قراءة الورقة (PDF، 12 صفحة)',
+  researchPdfLabels: ['قراءة الورقة (PDF، 12 صفحة)', 'قراءة الورقة (PDF، 16 صفحة)'],
   researchSsrnRecordLabel: 'سجل SSRN ↗',
 
   researchAbstract:
