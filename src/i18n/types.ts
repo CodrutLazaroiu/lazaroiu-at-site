@@ -31,8 +31,6 @@ export interface ResearchPaper {
   title: string;
   thesis: string;
   summary: string[];
-  /** Optional smaller-type line linking the paper to related work. */
-  linkNote?: string;
   pdfLabel: string;
   pdfHref: string;
   ssrnUrl: string;

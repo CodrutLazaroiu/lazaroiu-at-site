@@ -44,7 +44,6 @@ const ssrnLabelFor = (i: number) =>
             <p>{sentence}</p>
           ))}
         </div>
-        {paper.linkNote && <p class="link-note">{paper.linkNote}</p>}
         <div class="actions">
           <a class="btn" href={paper.pdfHref} target="_blank" rel="noopener">
             {pdfLabelFor(i)}
@@ -130,14 +129,6 @@ const ssrnLabelFor = (i: number) =>
 
   .summary.translated {
     color: var(--muted-hero);
-  }
-
-  .link-note {
-    font-size: 12.5px;
-    line-height: 1.6;
-    color: var(--muted);
-    font-style: italic;
-    margin: 4px 0 0;
   }
 
   /* The translated abstract keeps its locale's script font and direction. */
