@@ -6,12 +6,12 @@ interface Props {
   locale: string;
   /**
    * Per brief Section 4: AR/KO launch scope keeps Research in English with a
-   * translated abstract paragraph (first paper). Pass it here when applicable.
+   * translated abstract paragraph per paper. Pass them here when applicable.
    */
-  translatedAbstract?: string;
+  translatedAbstracts?: string[];
 }
 
-const { locale, translatedAbstract } = Astro.props;
+const { locale, translatedAbstracts } = Astro.props;
 const t = getDict(locale);
 // Research page content falls back to English where a locale ships core pages only.
 const r = t.research ?? en.research!;
@@ -34,9 +34,9 @@ const ssrnLabelFor = (i: number) =>
         <p class="eyebrow paper-eyebrow">{paper.eyebrow}</p>
         <h2>{paper.title}</h2>
         <p class="thesis">{paper.thesis}</p>
-        {i === 0 && translatedAbstract && (
+        {translatedAbstracts?.[i] && (
           <p class="summary translated" lang={locale}>
-            {translatedAbstract}
+            {translatedAbstracts[i]}
           </p>
         )}
         <div class="summary" lang={t.research ? locale : 'en'}>
@@ -87,14 +87,16 @@ const ssrnLabelFor = (i: number) =>
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-    align-items: start;
   }
 
+  /* Cards stretch to equal height; actions pin to the bottom for symmetry. */
   .paper {
     background: var(--bg-raise);
     border: 1px solid var(--line);
     border-top: 2px solid var(--gold);
     padding: 34px 40px 38px;
+    display: flex;
+    flex-direction: column;
   }
 
   .paper-eyebrow {
@@ -154,7 +156,8 @@ const ssrnLabelFor = (i: number) =>
     align-items: center;
     flex-wrap: wrap;
     gap: 22px;
-    margin-top: 22px;
+    margin-top: auto;
+    padding-top: 22px;
   }
 
   .btn {

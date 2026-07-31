@@ -97,9 +97,10 @@ export interface Dictionary {
 
   /**
    * For locales whose Research page stays in English (AR/KO launch scope),
-   * a translated one-paragraph abstract shown above the English summary.
+   * translated one-paragraph abstracts shown above the English summary,
+   * one per paper (same order as research.papers).
    */
-  researchAbstract?: string;
+  researchAbstracts?: string[];
 
   about: {
     metaTitle: string;
