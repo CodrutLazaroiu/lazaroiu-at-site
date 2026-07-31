@@ -14,8 +14,8 @@ const it: Dictionary = {
 
   footer: {
     linkedin: 'LinkedIn',
-    impressum: 'Impressum',
-    datenschutz: 'Datenschutzerklärung',
+    impressum: 'Legal notice',
+    datenschutz: 'Privacy',
   },
 
   home: {
