@@ -149,7 +149,6 @@ const it: Dictionary = {
           'La regolazione ora in applicazione moltiplicherà i circuiti nazionali senza collegarli.',
           'Il paper valuta i cinque strumenti oggi in uso, individua le tre giunture dove il regolamento si ferma e chiude con quattro test per operatori, merchant e investitori: gestire un circuito, aderire al layer, detenere l’opzione, o non costruire.',
         ],
-        linkNote: 'Applica il quadro di Molecules of Optionality (2026) all’economia circolare.',
         pdfLabel: 'Leggi il paper (PDF, 16 pagine)',
         pdfHref: '/papers/Lazaroiu_The-Settlement-Layer_2026.pdf',
         ssrnUrl: '',

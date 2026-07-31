@@ -149,7 +149,6 @@ const de: Dictionary = {
           'Die nun greifende Regulierung wird nationale Kreisläufe vervielfachen, ohne sie zu verbinden.',
           'Das Papier bepreist die fünf heute gebräuchlichen Instrumente, verortet die drei Nahtstellen, an denen die Verrechnung endet, und schließt mit vier Tests für Betreiber, Händler und Investoren: einen Kreislauf betreiben, dem Layer beitreten, die Option halten — oder nicht bauen.',
         ],
-        linkNote: 'Wendet den Rahmen von Molecules of Optionality (2026) auf die Kreislaufwirtschaft an.',
         pdfLabel: 'Paper lesen (PDF, 16 Seiten)',
         pdfHref: '/papers/Lazaroiu_The-Settlement-Layer_2026.pdf',
         ssrnUrl: '',

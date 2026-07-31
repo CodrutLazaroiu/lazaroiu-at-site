@@ -150,7 +150,6 @@ const en: Dictionary = {
           'The regulation now applying will multiply national loops without connecting them.',
           'The paper prices the five instruments in use today, locates the three seams where settlement stops, and closes with four tests for operators, merchants, and investors: run a loop, join the layer, hold the option, or don’t build.',
         ],
-        linkNote: 'Applies the framework of Molecules of Optionality (2026) to the circular economy.',
         pdfLabel: 'Read the paper (PDF, 16 pages)',
         pdfHref: '/papers/Lazaroiu_The-Settlement-Layer_2026.pdf',
         ssrnUrl: '',

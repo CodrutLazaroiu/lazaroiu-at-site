@@ -149,7 +149,6 @@ const ro: Dictionary = {
           'Reglementarea care se aplică acum va multiplica circuitele naționale fără a le conecta.',
           'Lucrarea evaluează cele cinci instrumente folosite astăzi, localizează cele trei rosturi unde decontarea se oprește și încheie cu patru teste pentru operatori, comercianți și investitori: operează un circuit, intră în strat, păstrează opțiunea — sau nu construi.',
         ],
-        linkNote: 'Aplică cadrul din Molecules of Optionality (2026) economiei circulare.',
         pdfLabel: 'Citește lucrarea (PDF, 16 pagini)',
         pdfHref: '/papers/Lazaroiu_The-Settlement-Layer_2026.pdf',
         ssrnUrl: '',
