@@ -90,8 +90,8 @@ export interface Dictionary {
 
   /** Per-paper PDF button labels for locales without a full research dictionary (AR/KO). */
   researchPdfLabels?: string[];
-  /** SSRN record label for locales without a full research dictionary (AR/KO). */
-  researchSsrnRecordLabel?: string;
+  /** Per-paper SSRN record labels for locales without a full research dictionary (AR/KO). */
+  researchSsrnRecordLabels?: string[];
 
   /**
    * For locales whose Research page stays in English (AR/KO launch scope),

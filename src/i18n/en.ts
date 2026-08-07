@@ -55,16 +55,16 @@ const en: Dictionary = {
         title:
           'Molecules of Optionality — Why Europe’s Pipeline Transition Is a Capital-Allocation Problem, Not an Engineering One',
         thesis: '“The pipe is replaceable; the corridor is not.”',
-        cta: 'Abstract and SSRN link → /research',
-        ctaShort: 'Abstract + SSRN → /research',
+        cta: 'Abstract and paper → /research',
+        ctaShort: 'Abstract + paper → /research',
         href: '/research/',
       },
       {
         eyebrow: 'Working Paper · August 2026',
         title: 'The Settlement Layer — The Missing Financial Infrastructure of the Circular Economy',
         thesis: '“Return is a settlement, not a virtue.”',
-        cta: 'Abstract and SSRN link → /research',
-        ctaShort: 'Abstract + SSRN → /research',
+        cta: 'Abstract and paper → /research',
+        ctaShort: 'Abstract + paper → /research',
         href: '/research/',
       },
     ],
@@ -136,9 +136,10 @@ const en: Dictionary = {
         ],
         pdfLabel: 'Read the paper (PDF, 12 pages)',
         pdfHref: '/papers/Lazaroiu_Molecules-of-Optionality_2026.pdf',
-        // SSRN URL placeholder — insert when assigned, before the LinkedIn announcement.
+        // Policy: the site is the sole download source. SSRN is cited by ID only,
+        // never linked — ssrnUrl stays empty so this renders as inert text.
         ssrnUrl: '',
-        ssrnRecordLabel: 'SSRN record ↗',
+        ssrnRecordLabel: 'SSRN Abstract ID: 7193238',
       },
       {
         eyebrow: 'Working Paper · August 2026',

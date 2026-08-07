@@ -58,16 +58,16 @@ const ar: Dictionary = {
         title:
           'Molecules of Optionality — Why Europe’s Pipeline Transition Is a Capital-Allocation Problem, Not an Engineering One',
         thesis: '«الأنبوب قابل للاستبدال؛ أمّا الممرّ فلا.»',
-        cta: 'الملخّص ورابط SSRN → /ar/research',
-        ctaShort: 'الملخّص + SSRN → /ar/research',
+        cta: 'الملخّص والورقة → /ar/research',
+        ctaShort: 'الملخّص + الورقة → /ar/research',
         href: '/research/',
       },
       {
         eyebrow: 'ورقة عمل · أغسطس 2026',
         title: 'The Settlement Layer — The Missing Financial Infrastructure of the Circular Economy',
         thesis: '«الإرجاع تسوية، لا فضيلة.»',
-        cta: 'الملخّص ورابط SSRN → /ar/research',
-        ctaShort: 'الملخّص + SSRN → /ar/research',
+        cta: 'الملخّص والورقة → /ar/research',
+        ctaShort: 'الملخّص + الورقة → /ar/research',
         href: '/research/',
       },
     ],
@@ -118,7 +118,7 @@ const ar: Dictionary = {
   },
 
   researchPdfLabels: ['قراءة الورقة (PDF، 12 صفحة)', 'قراءة الورقة (PDF، 16 صفحة)'],
-  researchSsrnRecordLabel: 'سجل SSRN ↗',
+  researchSsrnRecordLabels: ['SSRN Abstract ID: 7193238', 'سجل SSRN ↗'],
 
   researchAbstracts: [
     'تُحلَّل ممرات الأنابيب الأوروبية عادةً بوصفها أصولًا هندسية؛ بينما تعالجها هذه الورقة بوصفها خيارات مُسعَّرة تسعيرًا خاطئًا على أربعة مستقبلات جزيئية ممكنة. فالممرّ — المرخَّص والمتعاقَد عليه والمتصل فيزيائيًا عبر الحدود — هو الأصل الذي لا يمكن إعادة بنائه، أمّا الأنبوب داخله فيمكن استبداله. والقيد الحاكم للتحوّل هو مخاطر الطلب لا الجدوى التقنية؛ ومن ثمّ فإنّ المهمة المحورية للمشغّل هي تكديس الأدوات عبر الحدود: مواءمة السعات والعقود والأدوات التنظيمية بما يحفظ اختيارية الممرّ بدل إغلاقها.',

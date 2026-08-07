@@ -18,7 +18,7 @@ const r = t.research ?? en.research!;
 const pdfLabelFor = (i: number) =>
   t.research?.papers[i].pdfLabel ?? t.researchPdfLabels?.[i] ?? en.research!.papers[i].pdfLabel;
 const ssrnLabelFor = (i: number) =>
-  t.research?.papers[i].ssrnRecordLabel ?? t.researchSsrnRecordLabel ?? en.research!.papers[i].ssrnRecordLabel;
+  t.research?.papers[i].ssrnRecordLabel ?? t.researchSsrnRecordLabels?.[i] ?? en.research!.papers[i].ssrnRecordLabel;
 ---
 
 <section class="head container">
