@@ -152,7 +152,7 @@ const it: Dictionary = {
         pdfLabel: 'Leggi il paper (PDF, 16 pagine)',
         pdfHref: '/papers/Lazaroiu_The-Settlement-Layer_2026.pdf',
         ssrnUrl: '',
-        ssrnRecordLabel: 'Scheda SSRN ↗',
+        ssrnRecordLabel: 'SSRN Abstract ID: 7211658',
       },
     ],
   },

@@ -118,7 +118,7 @@ const ko: Dictionary = {
   },
 
   researchPdfLabels: ['논문 읽기 (PDF, 12쪽)', '논문 읽기 (PDF, 16쪽)'],
-  researchSsrnRecordLabels: ['SSRN Abstract ID: 7193238', 'SSRN 페이지 ↗'],
+  researchSsrnRecordLabels: ['SSRN Abstract ID: 7193238', 'SSRN Abstract ID: 7211658'],
 
   researchAbstracts: [
     '유럽의 파이프라인 회랑은 통상 엔지니어링 자산으로 분석되지만, 이 논문은 이를 네 가지 가능한 분자적 미래에 대한 가격이 잘못 매겨진 옵션으로 다룬다. 인허가와 계약을 갖추고 국경을 넘어 물리적으로 이어진 회랑은 다시 지을 수 없는 자산이며, 그 안의 파이프는 교체할 수 있다. 전환의 결정적 제약은 기술적 타당성이 아니라 수요 리스크다. 따라서 운영사의 핵심 과제는 국경을 넘어 수단을 쌓아 올리는 것 — 용량, 계약, 규제 수단을 정렬하여 회랑의 옵션 가치를 잃지 않고 보존하는 것이다.',
