@@ -109,7 +109,7 @@ const ro: Dictionary = {
     trackRecord: [
       'Douăzeci de ani de execuție la nivel executiv în infrastructura energetică în Europa, Orientul Mijlociu, Africa de Nord și de Vest și Asia Centrală; un portofoliu de proiecte de investiții de peste 8,5 miliarde de euro.',
       'Poziții senior la OMV, Wood Group, Nabucco și ILF Consulting Engineers.',
-      'În prezent: consultant independent într-un mandat de transformare a guvernanței la nivel de întreprindere pentru un grup european de conducte transfrontaliere.',
+      'Mandate curente selectate: transformarea guvernanței la nivel de întreprindere și a riscului pentru un grup european de conducte transfrontaliere, alături de angajamente de consultanță în Orientul Mijlociu și Asia Centrală.',
     ],
     closing:
       'În dezvoltare: o platformă de guvernanță a riscului la nivel de întreprindere, nativă Microsoft 365. Detalii la cerere.',
@@ -181,7 +181,7 @@ const ro: Dictionary = {
       },
       {
         label: 'În prezent',
-        text: 'Consultant independent într-un mandat de transformare a guvernanței la nivel de întreprindere pentru un grup european de conducte transfrontaliere.',
+        text: 'Transformarea guvernanței la nivel de întreprindere și a riscului pentru un grup european de conducte transfrontaliere, alături de angajamente de consultanță în Orientul Mijlociu și Asia Centrală.',
       },
       {
         label: 'Educație',

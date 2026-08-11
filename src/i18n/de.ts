@@ -109,7 +109,7 @@ const de: Dictionary = {
     trackRecord: [
       'Zwanzig Jahre Umsetzungsverantwortung auf Führungsebene in der Energieinfrastruktur in Europa, dem Nahen Osten, Nord- und Westafrika und Zentralasien; ein Kapitalprojekt-Portfolio von über 8,5 Milliarden Euro.',
       'Senior-Positionen bei OMV, Wood Group, Nabucco und ILF Consulting Engineers.',
-      'Unabhängiges Beratungsmandat zur Enterprise-Governance-Transformation für eine europäische grenzüberschreitende Pipelinegruppe.',
+      'Ausgewählte aktuelle Mandate: Enterprise-Governance- und Risikotransformation für eine europäische grenzüberschreitende Pipelinegruppe, daneben Beratungsmandate im Nahen Osten und in Zentralasien.',
     ],
     closing:
       'In Entwicklung: eine Microsoft-365-native Plattform für Enterprise Risk Governance. Details auf Anfrage.',
@@ -181,7 +181,7 @@ const de: Dictionary = {
       },
       {
         label: 'Aktuell',
-        text: 'Unabhängiges Beratungsmandat zur Enterprise-Governance-Transformation für eine europäische grenzüberschreitende Pipelinegruppe.',
+        text: 'Enterprise-Governance- und Risikotransformation für eine europäische grenzüberschreitende Pipelinegruppe, daneben Beratungsmandate im Nahen Osten und in Zentralasien.',
       },
       {
         label: 'Ausbildung',

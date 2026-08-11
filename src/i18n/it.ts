@@ -109,7 +109,7 @@ const it: Dictionary = {
     trackRecord: [
       'Vent’anni di delivery executive nelle infrastrutture energetiche in Europa, Medio Oriente, Africa settentrionale e occidentale e Asia centrale; un portafoglio di progetti di investimento superiore a 8,5 miliardi di euro.',
       'Ruoli senior in OMV, Wood Group, Nabucco e ILF Consulting Engineers.',
-      'Attualmente: advisor indipendente per un mandato di trasformazione della enterprise governance di un gruppo europeo di pipeline transfrontaliere.',
+      'Mandati attuali selezionati: trasformazione della enterprise governance e del rischio per un gruppo europeo di pipeline transfrontaliere, insieme a incarichi di advisory in Medio Oriente e Asia centrale.',
     ],
     closing:
       'In sviluppo: una piattaforma di enterprise risk governance nativa per Microsoft 365. Dettagli su richiesta.',
@@ -181,7 +181,7 @@ const it: Dictionary = {
       },
       {
         label: 'Attuale',
-        text: 'Advisor indipendente per un mandato di trasformazione della enterprise governance di un gruppo europeo di pipeline transfrontaliere.',
+        text: 'Trasformazione della enterprise governance e del rischio per un gruppo europeo di pipeline transfrontaliere, insieme a incarichi di advisory in Medio Oriente e Asia centrale.',
       },
       {
         label: 'Formazione',
