@@ -6,6 +6,7 @@ import en from '../src/i18n/en.ts';
 import de from '../src/i18n/de.ts';
 import it from '../src/i18n/it.ts';
 import ro from '../src/i18n/ro.ts';
+import es from '../src/i18n/es.ts';
 import ar from '../src/i18n/ar.ts';
 import ko from '../src/i18n/ko.ts';
 
@@ -49,6 +50,7 @@ AR and KO are drafts pending native review and are not to be treated as final.
 md += section('German (DE) — full site', de, 'For owner review (Section 4).');
 md += section('Italian (IT) — full site', it, 'For owner review (Section 4).');
 md += section('Romanian (RO) — full site', ro, 'For owner review.');
+md += section('Spanish (ES) — full site', es, 'Neutral international Spanish — for owner review.');
 md += section('Arabic (AR) — core pages', ar, 'Draft — pending native review.');
 md += section('Korean (KO) — core pages', ko, 'Draft — pending native review.');
 

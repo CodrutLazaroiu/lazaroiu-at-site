@@ -6,7 +6,7 @@ const ro: Dictionary = {
   siteName: 'Ioan-Codrut Lazaroiu',
 
   nav: {
-    advisory: 'Consultanță',
+    advisory: 'Advisory',
     research: 'Cercetare',
     about: 'Profil',
     contact: 'Contact',
@@ -29,7 +29,7 @@ const ro: Dictionary = {
     pillars: [
       {
         num: '01',
-        title: 'Consultanță',
+        title: 'Advisory',
         text: 'Proiectarea guvernanței riscului la nivel de întreprindere, mandate de transformare și sprijin decizional pentru operatori și investitori.',
         href: '/advisory/',
         cta: '→ /ro/advisory',
@@ -71,11 +71,11 @@ const ro: Dictionary = {
   },
 
   advisory: {
-    metaTitle: 'Consultanță — Ioan-Codrut Lazaroiu',
+    metaTitle: 'Advisory — Ioan-Codrut Lazaroiu',
     metaDescription:
       'Proiectarea și transformarea guvernanței riscului la nivel de întreprindere, cultura riscului și ownership, raportare executivă, managementul activelor și livrarea proiectelor, guvernanță transfrontalieră.',
-    eyebrow: 'Consultanță',
-    h1: 'Consultanță',
+    eyebrow: 'Advisory',
+    h1: 'Advisory',
     lede: 'Mandate pentru consilii și echipe executive ale operatorilor, investitorilor și consultanților din infrastructura energetică.',
     servicesLabel: 'Servicii',
     services: [

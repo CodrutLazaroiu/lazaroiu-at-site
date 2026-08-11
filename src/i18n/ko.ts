@@ -9,7 +9,7 @@ const ko: Dictionary = {
   siteName: 'Ioan-Codrut Lazaroiu',
 
   nav: {
-    advisory: '자문',
+    advisory: 'Advisory',
     research: '연구',
     about: '소개',
     contact: '연락처',
@@ -32,7 +32,7 @@ const ko: Dictionary = {
     pillars: [
       {
         num: '01',
-        title: '자문',
+        title: 'Advisory',
         text: '운영사와 투자자를 위한 전사적 리스크 거버넌스 설계, 전환 프로젝트, 경영진 의사결정 지원.',
         href: '/advisory/',
         cta: '→ /ko/advisory',
@@ -74,11 +74,11 @@ const ko: Dictionary = {
   },
 
   advisory: {
-    metaTitle: '자문 — Ioan-Codrut Lazaroiu',
+    metaTitle: 'Advisory — Ioan-Codrut Lazaroiu',
     metaDescription:
       '전사적 리스크 거버넌스 설계와 전환, 리스크 문화와 오너십, 경영진 보고, 자산 관리와 프로젝트 수행, 국경 간 거버넌스.',
-    eyebrow: '자문',
-    h1: '자문',
+    eyebrow: 'Advisory',
+    h1: 'Advisory',
     lede: '에너지 인프라 운영사·투자자·자문사의 이사회와 경영진을 위한 프로젝트를 수행합니다.',
     servicesLabel: '서비스',
     services: [

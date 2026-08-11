@@ -9,7 +9,7 @@ const ar: Dictionary = {
   siteName: 'Ioan-Codrut Lazaroiu',
 
   nav: {
-    advisory: 'الاستشارات',
+    advisory: 'Advisory',
     research: 'الأبحاث',
     about: 'نبذة',
     contact: 'التواصل',
@@ -32,7 +32,7 @@ const ar: Dictionary = {
     pillars: [
       {
         num: '01',
-        title: 'الاستشارات',
+        title: 'Advisory',
         text: 'تصميم حوكمة مخاطر المؤسسات، ومهام التحوّل، ودعم القرار التنفيذي للمشغّلين والمستثمرين.',
         href: '/advisory/',
         cta: '→ /ar/advisory',
@@ -74,11 +74,11 @@ const ar: Dictionary = {
   },
 
   advisory: {
-    metaTitle: 'الاستشارات — Ioan-Codrut Lazaroiu',
+    metaTitle: 'Advisory — Ioan-Codrut Lazaroiu',
     metaDescription:
       'تصميم حوكمة مخاطر المؤسسات ومهام التحوّل، ثقافة المخاطر ونماذج المسؤولية، التقارير التنفيذية، إدارة الأصول وتنفيذ المشاريع، والحوكمة العابرة للحدود.',
-    eyebrow: 'الاستشارات',
-    h1: 'الاستشارات',
+    eyebrow: 'Advisory',
+    h1: 'Advisory',
     lede: 'مهام لمجالس الإدارة والفرق التنفيذية لدى مشغّلي البنى التحتية للطاقة ومستثمريها ومستشاريها.',
     servicesLabel: 'الخدمات',
     services: [

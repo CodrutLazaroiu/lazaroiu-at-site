@@ -6,7 +6,7 @@ const de: Dictionary = {
   siteName: 'Ioan-Codrut Lazaroiu',
 
   nav: {
-    advisory: 'Beratung',
+    advisory: 'Advisory',
     research: 'Forschung',
     about: 'Profil',
     contact: 'Kontakt',
@@ -29,7 +29,7 @@ const de: Dictionary = {
     pillars: [
       {
         num: '01',
-        title: 'Beratung',
+        title: 'Advisory',
         text: 'Gestaltung von Enterprise Risk Governance, Transformationsmandate und Entscheidungsunterstützung für Betreiber und Investoren.',
         href: '/advisory/',
         cta: '→ /de/advisory',
@@ -71,11 +71,11 @@ const de: Dictionary = {
   },
 
   advisory: {
-    metaTitle: 'Beratung — Ioan-Codrut Lazaroiu',
+    metaTitle: 'Advisory — Ioan-Codrut Lazaroiu',
     metaDescription:
       'Gestaltung und Transformation von Enterprise Risk Governance, Risikokultur und Ownership, Executive Reporting, Asset Management und Projektabwicklung, grenzüberschreitende Governance.',
-    eyebrow: 'Beratung',
-    h1: 'Beratung',
+    eyebrow: 'Advisory',
+    h1: 'Advisory',
     lede: 'Mandate für Vorstände und Führungsteams von Betreibern, Investoren und Beratern der Energieinfrastruktur.',
     servicesLabel: 'Leistungen',
     services: [
