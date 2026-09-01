@@ -39,7 +39,7 @@ const es: Dictionary = {
       {
         num: '02',
         title: 'Investigación',
-        text: 'Working papers independientes sobre infraestructura, asignación de capital y riesgo.',
+        text: 'Working papers independientes sobre infraestructura, asignación de capital & riesgo y transformación.',
         href: '/research/',
         cta: '→ /es/research',
       },
@@ -120,10 +120,10 @@ const es: Dictionary = {
   research: {
     metaTitle: 'Investigación & Publicaciones — Ioan-Codrut Lazaroiu',
     metaDescription:
-      'Working papers independientes sobre infraestructura, asignación de capital y riesgo. Papers actuales: Molecules of Optionality y The Settlement Layer (agosto de 2026).',
+      'Working papers independientes sobre infraestructura, asignación de capital & riesgo y transformación. Papers actuales: Molecules of Optionality y The Settlement Layer (agosto de 2026).',
     eyebrow: 'Investigación & Publicaciones',
     h1: 'Investigación & Publicaciones',
-    lede: 'Working papers independientes sobre infraestructura, asignación de capital y riesgo.',
+    lede: 'Working papers independientes sobre infraestructura, asignación de capital & riesgo y transformación.',
     papers: [
       {
         eyebrow: 'Working paper · agosto de 2026',

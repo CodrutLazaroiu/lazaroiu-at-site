@@ -37,7 +37,7 @@ const de: Dictionary = {
       {
         num: '02',
         title: 'Forschung',
-        text: 'Unabhängige Working Papers zu Infrastruktur, Kapitalallokation und Risiko.',
+        text: 'Unabhängige Working Papers zu Infrastruktur, Kapitalallokation & Risiko sowie Transformation.',
         href: '/research/',
         cta: '→ /de/research',
       },
@@ -118,10 +118,10 @@ const de: Dictionary = {
   research: {
     metaTitle: 'Forschung & Publikationen — Ioan-Codrut Lazaroiu',
     metaDescription:
-      'Unabhängige Working Papers zu Infrastruktur, Kapitalallokation und Risiko. Aktuelle Papiere: Molecules of Optionality und The Settlement Layer (August 2026).',
+      'Unabhängige Working Papers zu Infrastruktur, Kapitalallokation & Risiko sowie Transformation. Aktuelle Papiere: Molecules of Optionality und The Settlement Layer (August 2026).',
     eyebrow: 'Forschung & Publikationen',
     h1: 'Forschung & Publikationen',
-    lede: 'Unabhängige Working Papers zu Infrastruktur, Kapitalallokation und Risiko.',
+    lede: 'Unabhängige Working Papers zu Infrastruktur, Kapitalallokation & Risiko sowie Transformation.',
     papers: [
       {
         eyebrow: 'Working Paper · August 2026',

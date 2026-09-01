@@ -37,7 +37,7 @@ const ro: Dictionary = {
       {
         num: '02',
         title: 'Cercetare',
-        text: 'Lucrări de cercetare independente despre infrastructură, alocarea capitalului și risc.',
+        text: 'Lucrări de cercetare independente despre infrastructură, alocarea capitalului & risc și transformare.',
         href: '/research/',
         cta: '→ /ro/research',
       },
@@ -118,10 +118,10 @@ const ro: Dictionary = {
   research: {
     metaTitle: 'Cercetare & Publicații — Ioan-Codrut Lazaroiu',
     metaDescription:
-      'Lucrări de cercetare independente despre infrastructură, alocarea capitalului și risc. Lucrările actuale: Molecules of Optionality și The Settlement Layer (august 2026).',
+      'Lucrări de cercetare independente despre infrastructură, alocarea capitalului & risc și transformare. Lucrările actuale: Molecules of Optionality și The Settlement Layer (august 2026).',
     eyebrow: 'Cercetare & Publicații',
     h1: 'Cercetare & Publicații',
-    lede: 'Lucrări de cercetare independente despre infrastructură, alocarea capitalului și risc.',
+    lede: 'Lucrări de cercetare independente despre infrastructură, alocarea capitalului & risc și transformare.',
     papers: [
       {
         eyebrow: 'Working paper · august 2026',

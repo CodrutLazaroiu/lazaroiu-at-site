@@ -40,7 +40,7 @@ const ko: Dictionary = {
       {
         num: '02',
         title: '연구',
-        text: '인프라, 자본 배분, 리스크에 관한 독립 워킹 페이퍼.',
+        text: '인프라, 자본 배분·리스크, 전환에 관한 독립 워킹 페이퍼.',
         href: '/research/',
         cta: '→ /ko/research',
       },
