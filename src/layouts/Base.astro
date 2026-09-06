@@ -40,6 +40,13 @@ const ldGraph: object[] = [
     name: OWNER,
     url: SITE_URL,
     jobTitle: 'Independent energy-infrastructure and risk governance advisor',
+    image: `${SITE_URL}/portrait.jpg`,
+    knowsAbout: [
+      'Enterprise risk governance',
+      'Energy infrastructure',
+      'Cross-border pipeline systems',
+      'Asset integrity',
+    ],
     address: { '@type': 'PostalAddress', addressLocality: 'Vienna', addressCountry: 'AT' },
     sameAs: [LINKEDIN_URL],
     worksFor: { '@id': orgId },
@@ -60,6 +67,9 @@ const ldGraph: object[] = [
     },
   },
 ];
+if (path === '/about/') {
+  ldGraph.push({ '@type': 'ProfilePage', mainEntity: { '@id': personId } });
+}
 if (path === '/research/') {
   for (const paper of en.research!.papers) {
     ldGraph.push({
