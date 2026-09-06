@@ -13,6 +13,7 @@ const t = getDict(locale);
   <p class="eyebrow">{t.advisory.eyebrow}</p>
   <h1>{t.advisory.h1}</h1>
   <p class="lede">{t.advisory.lede}</p>
+  <p class="capacity">{t.capacityLine}</p>
 </section>
 
 <section class="services container" aria-label={t.advisory.servicesLabel}>
@@ -36,7 +37,7 @@ const t = getDict(locale);
   </div>
 </section>
 
-<p class="closing container">{t.advisory.closing}</p>
+<p class="closing container">{t.productCaption}</p>
 
 <style>
   .head {
@@ -55,6 +56,14 @@ const t = getDict(locale);
     line-height: 1.6;
     color: var(--muted);
     margin: 0;
+    max-width: 640px;
+  }
+
+  .capacity {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--muted);
+    margin: 10px 0 0;
     max-width: 640px;
   }
 
