@@ -10,7 +10,6 @@ const es: Dictionary = {
   ctaLabel: 'Iniciar una conversación',
   contactLead:
     'Viena, Austria. Las consultas escritas se responden en un plazo de dos días laborables. Conviene indicar quién es usted, qué organización representa y la decisión a la que se enfrenta.',
-  capacityLine: 'Ejecución exclusivamente a nivel sénior. Un número limitado de mandatos al mismo tiempo.',
   productCaption:
     'En desarrollo: SALTUS, una plataforma de gobernanza del riesgo empresarial nativa de Microsoft 365. Detalles a petición.',
 

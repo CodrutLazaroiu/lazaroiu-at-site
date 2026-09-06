@@ -8,7 +8,6 @@ const de: Dictionary = {
   ctaLabel: 'Ein Gespräch beginnen',
   contactLead:
     'Wien, Österreich. Schriftliche Anfragen werden innerhalb von zwei Werktagen beantwortet. Hilfreich ist, wer Sie sind, welche Organisation Sie vertreten und welche Entscheidung ansteht.',
-  capacityLine: 'Ausschließlich auf Senior-Ebene. Eine begrenzte Zahl von Mandaten zur gleichen Zeit.',
   productCaption:
     'In Entwicklung: SALTUS, eine Microsoft-365-native Plattform für Enterprise Risk Governance. Details auf Anfrage.',
 

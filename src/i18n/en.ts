@@ -8,7 +8,6 @@ const en: Dictionary = {
   ctaLabel: 'Start a conversation',
   contactLead:
     'Vienna, Austria. Written enquiries are answered within two working days. It helps to say who you are, which organisation, and the decision you are facing.',
-  capacityLine: 'Senior-only delivery. A limited number of mandates at any one time.',
   productCaption:
     'In development: SALTUS, a Microsoft 365-native enterprise risk governance platform. Details on request.',
 

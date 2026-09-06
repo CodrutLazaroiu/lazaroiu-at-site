@@ -46,8 +46,6 @@ export interface Dictionary {
   ctaLabel: string;
   /** Contact page lead (location, response time, what to include). */
   contactLead: string;
-  /** Advisory capacity statement. */
-  capacityLine: string;
   /** Unbranded→named product caption (home hero + advisory closing). */
   productCaption: string;
 

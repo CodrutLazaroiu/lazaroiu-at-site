@@ -8,7 +8,6 @@ const it: Dictionary = {
   ctaLabel: 'Avvia una conversazione',
   contactLead:
     'Vienna, Austria. Le richieste scritte ricevono risposta entro due giorni lavorativi. È utile indicare chi siete, quale organizzazione rappresentate e la decisione che avete di fronte.',
-  capacityLine: 'Esecuzione esclusivamente a livello senior. Un numero limitato di mandati alla volta.',
   productCaption:
     'In sviluppo: SALTUS, una piattaforma di enterprise risk governance nativa per Microsoft 365. Dettagli su richiesta.',
 

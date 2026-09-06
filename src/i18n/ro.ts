@@ -8,7 +8,6 @@ const ro: Dictionary = {
   ctaLabel: 'Începeți o conversație',
   contactLead:
     'Viena, Austria. Solicitările scrise primesc răspuns în cel mult două zile lucrătoare. Este util să precizați cine sunteți, ce organizație reprezentați și decizia cu care vă confruntați.',
-  capacityLine: 'Livrare exclusiv la nivel senior. Un număr limitat de mandate în același timp.',
   productCaption:
     'În dezvoltare: SALTUS, o platformă de enterprise risk governance nativă Microsoft 365. Detalii la cerere.',
 
