@@ -5,12 +5,12 @@ const de: Dictionary = {
   dir: 'ltr',
   siteName: 'Ioan-Codrut Lazaroiu',
 
-  ctaLabel: 'Start a conversation', // TODO translate
-  contactLead: // TODO translate
-    'Vienna, Austria. Written enquiries are answered within two working days. It helps to say who you are, which organisation, and the decision you are facing.',
-  capacityLine: 'Senior-only delivery. A limited number of mandates at any one time.', // TODO translate
-  productCaption: // TODO translate
-    'In development: SALTUS, a Microsoft 365-native enterprise risk governance platform. Details on request.',
+  ctaLabel: 'Ein Gespräch beginnen',
+  contactLead:
+    'Wien, Österreich. Schriftliche Anfragen werden innerhalb von zwei Werktagen beantwortet. Hilfreich ist, wer Sie sind, welche Organisation Sie vertreten und welche Entscheidung ansteht.',
+  capacityLine: 'Ausschließlich auf Senior-Ebene. Eine begrenzte Zahl von Mandaten zur gleichen Zeit.',
+  productCaption:
+    'In Entwicklung: SALTUS, eine Microsoft-365-native Plattform für Enterprise Risk Governance. Details auf Anfrage.',
 
   nav: {
     advisory: 'Advisory',
