@@ -120,8 +120,6 @@ const es: Dictionary = {
       'Posiciones sénior en OMV, Wood Group, Nabucco e ILF Consulting Engineers.',
       'Mandatos actuales seleccionados: transformación de la gobernanza empresarial y del riesgo para un grupo europeo de pipelines transfronterizos, junto a mandatos de asesoramiento en Oriente Medio y Asia Central.',
     ],
-    closing:
-      'En desarrollo: una plataforma de gobernanza del riesgo empresarial nativa de Microsoft 365. Detalles a petición.',
   },
 
   research: {
@@ -213,7 +211,6 @@ const es: Dictionary = {
       'Contacto de Ioan-Codrut Lazaroiu — asesor independiente en infraestructura energética y gobernanza del riesgo, Viena, Austria.',
     eyebrow: 'Contacto',
     h1: 'Contacto',
-    lede: 'Viena, Austria.',
     emailLabel: 'Correo electrónico',
     linkedinLabel: 'LinkedIn',
   },

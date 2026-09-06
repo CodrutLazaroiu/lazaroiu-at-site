@@ -125,7 +125,6 @@ export interface Dictionary {
     metaDescription: string;
     eyebrow: string;
     h1: string;
-    lede: string;
     emailLabel: string;
     linkedinLabel: string;
   };

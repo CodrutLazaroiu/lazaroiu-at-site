@@ -118,8 +118,6 @@ const it: Dictionary = {
       'Ruoli senior in OMV, Wood Group, Nabucco e ILF Consulting Engineers.',
       'Mandati attuali selezionati: trasformazione della enterprise governance e del rischio per un gruppo europeo di pipeline transfrontaliere, insieme a incarichi di advisory in Medio Oriente e Asia centrale.',
     ],
-    closing:
-      'In sviluppo: una piattaforma di enterprise risk governance nativa per Microsoft 365. Dettagli su richiesta.',
   },
 
   research: {
@@ -211,7 +209,6 @@ const it: Dictionary = {
       'Contatti di Ioan-Codrut Lazaroiu — advisor indipendente per infrastrutture energetiche e risk governance, Vienna, Austria.',
     eyebrow: 'Contatti',
     h1: 'Contatti',
-    lede: 'Vienna, Austria.',
     emailLabel: 'E-mail',
     linkedinLabel: 'LinkedIn',
   },

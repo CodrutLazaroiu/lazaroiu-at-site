@@ -118,8 +118,6 @@ const ro: Dictionary = {
       'Poziții senior la OMV, Wood Group, Nabucco și ILF Consulting Engineers.',
       'Mandate curente selectate: transformarea guvernanței la nivel de întreprindere și a riscului pentru un grup european de conducte transfrontaliere, alături de angajamente de consultanță în Orientul Mijlociu și Asia Centrală.',
     ],
-    closing:
-      'În dezvoltare: o platformă de guvernanță a riscului la nivel de întreprindere, nativă Microsoft 365. Detalii la cerere.',
   },
 
   research: {
@@ -211,7 +209,6 @@ const ro: Dictionary = {
       'Contact Ioan-Codrut Lazaroiu — consultant independent în infrastructură energetică și guvernanța riscului, Viena, Austria.',
     eyebrow: 'Contact',
     h1: 'Contact',
-    lede: 'Viena, Austria.',
     emailLabel: 'E-mail',
     linkedinLabel: 'LinkedIn',
   },

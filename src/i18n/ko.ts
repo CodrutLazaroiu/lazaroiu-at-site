@@ -179,7 +179,6 @@ const ko: Dictionary = {
       'Ioan-Codrut Lazaroiu 연락처 — 오스트리아 빈의 독립 에너지 인프라·리스크 거버넌스 어드바이저.',
     eyebrow: '연락처',
     h1: '연락처',
-    lede: '오스트리아 빈.',
     emailLabel: '이메일',
     linkedinLabel: 'LinkedIn',
   },

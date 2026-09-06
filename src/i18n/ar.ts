@@ -179,7 +179,6 @@ const ar: Dictionary = {
       'التواصل مع Ioan-Codrut Lazaroiu — مستشار مستقل في البنى التحتية للطاقة وحوكمة المخاطر، فيينا، النمسا.',
     eyebrow: 'التواصل',
     h1: 'التواصل',
-    lede: 'فيينا، النمسا.',
     emailLabel: 'البريد الإلكتروني',
     linkedinLabel: 'LinkedIn',
   },
