@@ -42,6 +42,15 @@ export interface Dictionary {
   dir: 'ltr' | 'rtl';
   siteName: string;
 
+  /** Hero / contact CTA button label. */
+  ctaLabel: string;
+  /** Contact page lead (location, response time, what to include). */
+  contactLead: string;
+  /** Advisory capacity statement. */
+  capacityLine: string;
+  /** Unbranded→named product caption (home hero + advisory closing). */
+  productCaption: string;
+
   nav: {
     advisory: string;
     research: string;
