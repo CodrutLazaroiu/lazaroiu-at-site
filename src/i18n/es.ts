@@ -85,7 +85,7 @@ const es: Dictionary = {
       'Diseño y transformación de la gobernanza del riesgo empresarial, cultura de riesgo y ownership, reporting ejecutivo, gestión de activos y ejecución de proyectos, gobernanza transfronteriza.',
     eyebrow: 'Advisory',
     h1: 'Advisory',
-    lede: 'Mandatos para consejos y equipos directivos de operadores, inversores y asesores de infraestructura energética.',
+    lede: 'Mandatos seleccionados, exclusivamente para consejos de administración y equipos directivos de operadores, inversores y financiadores de infraestructuras energéticas.',
     servicesLabel: 'Servicios',
     services: [
       {

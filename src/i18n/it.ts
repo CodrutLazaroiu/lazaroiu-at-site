@@ -83,7 +83,7 @@ const it: Dictionary = {
       'Progettazione e trasformazione della enterprise risk governance, cultura del rischio e ownership, reporting executive, asset management e delivery dei progetti, governance transfrontaliera.',
     eyebrow: 'Advisory',
     h1: 'Advisory',
-    lede: 'Mandati per consigli e team executive di operatori, investitori e advisor delle infrastrutture energetiche.',
+    lede: 'Mandati selezionati, esclusivamente per consigli di amministrazione e vertici esecutivi di operatori, investitori e finanziatori nel settore delle infrastrutture energetiche.',
     servicesLabel: 'Servizi',
     services: [
       {

@@ -83,7 +83,7 @@ const de: Dictionary = {
       'Gestaltung und Transformation von Enterprise Risk Governance, Risikokultur und Ownership, Executive Reporting, Asset Management und Projektabwicklung, grenzüberschreitende Governance.',
     eyebrow: 'Advisory',
     h1: 'Advisory',
-    lede: 'Mandate für Vorstände und Führungsteams von Betreibern, Investoren und Beratern der Energieinfrastruktur.',
+    lede: 'Ausgewählte Mandate, ausschließlich für Aufsichtsräte und Geschäftsleitungen von Energieinfrastruktur-Betreibern, Investoren und Kreditgebern.',
     servicesLabel: 'Leistungen',
     services: [
       {

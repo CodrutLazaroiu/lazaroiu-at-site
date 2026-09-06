@@ -83,7 +83,7 @@ const en: Dictionary = {
       'Enterprise risk governance design and transformation mandates, risk culture and ownership models, executive reporting, asset management and project delivery, cross-border governance.',
     eyebrow: 'Advisory',
     h1: 'Advisory',
-    lede: 'Mandates for boards and executive teams of energy-infrastructure operators, investors, and advisors.',
+    lede: 'Selected mandates, exclusively for boards and executive teams of energy-infrastructure operators, investors, and lenders.',
     servicesLabel: 'Services',
     services: [
       {

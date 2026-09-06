@@ -83,7 +83,7 @@ const ro: Dictionary = {
       'Proiectarea și transformarea guvernanței riscului la nivel de întreprindere, cultura riscului și ownership, raportare executivă, managementul activelor și livrarea proiectelor, guvernanță transfrontalieră.',
     eyebrow: 'Advisory',
     h1: 'Advisory',
-    lede: 'Mandate pentru consilii și echipe executive ale operatorilor, investitorilor și consultanților din infrastructura energetică.',
+    lede: 'Mandate selectate, exclusiv pentru consiliile de administrație și echipele executive ale operatorilor, investitorilor și finanțatorilor din infrastructura energetică.',
     servicesLabel: 'Servicii',
     services: [
       {
