@@ -2,6 +2,7 @@
 import CorridorLine from '../CorridorLine.astro';
 import PlatformSchematic from '../PlatformSchematic.astro';
 import { getDict, localePath } from '../../i18n';
+import { CTA_MAILTO } from '../../config';
 
 interface Props {
   locale: string;
@@ -17,10 +18,11 @@ const t = getDict(locale);
       <p class="eyebrow"><span class="full">{t.home.eyebrow}</span><span class="short">{t.home.eyebrowShort}</span></p>
       <h1>{t.home.h1}</h1>
       <p class="lede">{t.home.lede}</p>
+      <a class="hero-cta" href={CTA_MAILTO}>{t.ctaLabel} <span class="cta-arrow" aria-hidden="true">→</span></a>
     </div>
     <div class="hero-visual">
       <PlatformSchematic />
-      <p class="platform-caption">{t.advisory.closing}</p>
+      <p class="platform-caption">{t.productCaption}</p>
     </div>
   </div>
 </section>
@@ -166,6 +168,33 @@ const t = getDict(locale);
 
   .hero-visual {
     min-width: 0;
+  }
+
+  /* The only CTA above the fold. Gold on navy: 7.9:1 contrast, ≥44px target. */
+  .hero-cta {
+    display: inline-block;
+    margin-top: 30px;
+    background: var(--gold);
+    color: var(--bg);
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    padding: 13px 26px;
+    min-height: 44px;
+    text-decoration: none;
+  }
+
+  .hero-cta:hover {
+    background: #e2b055;
+  }
+
+  .cta-arrow {
+    display: inline-block;
+    margin-inline-start: 6px;
+  }
+
+  :global([dir='rtl']) .cta-arrow {
+    transform: scaleX(-1);
   }
 
   .platform-caption {
