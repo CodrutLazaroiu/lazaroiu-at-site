@@ -1,6 +1,6 @@
 ---
 import { getDict } from '../../i18n';
-import { EMAIL, LINKEDIN_URL } from '../../config';
+import { EMAIL, LINKEDIN_URL, CTA_MAILTO } from '../../config';
 
 interface Props {
   locale: string;
@@ -13,18 +13,19 @@ const t = getDict(locale);
 <section class="head container">
   <p class="eyebrow">{t.contact.eyebrow}</p>
   <h1>{t.contact.h1}</h1>
-  <p class="lede">{t.contact.lede}</p>
+  <p class="lede">{t.contactLead}</p>
 </section>
 
 <section class="channels container">
   <div class="row">
     <p class="label eyebrow">{t.contact.emailLabel}</p>
-    <a class="value" href={`mailto:${EMAIL}`}>{EMAIL}</a>
+    <a class="value" href={CTA_MAILTO}>{EMAIL}</a>
   </div>
   <div class="row">
     <p class="label eyebrow">{t.contact.linkedinLabel}</p>
     <a class="value" href={LINKEDIN_URL} rel="me noopener" target="_blank">{t.contact.linkedinLabel} ↗</a>
   </div>
+  <a class="contact-cta" href={CTA_MAILTO}>{t.ctaLabel} <span class="cta-arrow" aria-hidden="true">→</span></a>
 </section>
 
 <style>
@@ -44,6 +45,33 @@ const t = getDict(locale);
     line-height: 1.6;
     color: var(--muted);
     margin: 0;
+    max-width: 640px;
+  }
+
+  .contact-cta {
+    display: inline-block;
+    margin-top: 28px;
+    background: var(--gold);
+    color: var(--bg);
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    padding: 13px 26px;
+    min-height: 44px;
+    text-decoration: none;
+  }
+
+  .contact-cta:hover {
+    background: #e2b055;
+  }
+
+  .cta-arrow {
+    display: inline-block;
+    margin-inline-start: 6px;
+  }
+
+  :global([dir='rtl']) .cta-arrow {
+    transform: scaleX(-1);
   }
 
   .channels {
