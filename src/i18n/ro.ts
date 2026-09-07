@@ -149,8 +149,6 @@ const ro: Dictionary = {
         ],
         pdfLabel: 'Citește lucrarea (PDF, 67 de pagini)',
         pdfHref: '/papers/Lazaroiu_The-Clock-Not-the-Culture_2026.pdf',
-        briefLabel: 'Citește rezumatul (PDF, 2 pagini)',
-        briefHref: '/papers/Lazaroiu_The-Clock-Not-the-Culture_Brief_2026.pdf',
         ssrnUrl: '',
         ssrnRecordLabel: 'SSRN Abstract ID: 7427178',
       },

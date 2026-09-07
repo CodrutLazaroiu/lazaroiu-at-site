@@ -133,7 +133,6 @@ const ar: Dictionary = {
   },
 
   researchPdfLabels: ['قراءة الورقة (PDF، 67 صفحة)', 'قراءة الورقة (PDF، 12 صفحة)', 'قراءة الورقة (PDF، 16 صفحة)'],
-  researchBriefLabels: ['قراءة الموجز (PDF، صفحتان)'],
   researchSsrnRecordLabels: ['SSRN Abstract ID: 7427178', 'SSRN Abstract ID: 7193238', 'SSRN Abstract ID: 7211658'],
 
   researchAbstracts: [

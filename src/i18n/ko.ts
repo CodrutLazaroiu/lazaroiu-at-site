@@ -133,7 +133,6 @@ const ko: Dictionary = {
   },
 
   researchPdfLabels: ['논문 읽기 (PDF, 67쪽)', '논문 읽기 (PDF, 12쪽)', '논문 읽기 (PDF, 16쪽)'],
-  researchBriefLabels: ['요약본 읽기 (PDF, 2쪽)'],
   researchSsrnRecordLabels: ['SSRN Abstract ID: 7427178', 'SSRN Abstract ID: 7193238', 'SSRN Abstract ID: 7211658'],
 
   researchAbstracts: [

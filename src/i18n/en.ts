@@ -149,8 +149,6 @@ const en: Dictionary = {
         ],
         pdfLabel: 'Read the paper (PDF, 67 pages)',
         pdfHref: '/papers/Lazaroiu_The-Clock-Not-the-Culture_2026.pdf',
-        briefLabel: 'Read the brief (PDF, 2 pages)',
-        briefHref: '/papers/Lazaroiu_The-Clock-Not-the-Culture_Brief_2026.pdf',
         ssrnUrl: '',
         ssrnRecordLabel: 'SSRN Abstract ID: 7427178',
       },

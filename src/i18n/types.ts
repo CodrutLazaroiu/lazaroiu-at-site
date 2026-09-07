@@ -33,9 +33,6 @@ export interface ResearchPaper {
   summary: string[];
   pdfLabel: string;
   pdfHref: string;
-  /** Optional companion brief; rendered as a second button when present. */
-  briefLabel?: string;
-  briefHref?: string;
   ssrnUrl: string;
   ssrnRecordLabel: string;
 }
@@ -102,8 +99,6 @@ export interface Dictionary {
   researchPdfLabels?: string[];
   /** Per-paper SSRN record labels for locales without a full research dictionary (AR/KO). */
   researchSsrnRecordLabels?: string[];
-  /** AR/KO: per-paper brief button labels (index-aligned; missing = no brief). */
-  researchBriefLabels?: string[];
 
   /**
    * For locales whose Research page stays in English (AR/KO launch scope),

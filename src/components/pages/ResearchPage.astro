@@ -19,8 +19,6 @@ const pdfLabelFor = (i: number) =>
   t.research?.papers[i].pdfLabel ?? t.researchPdfLabels?.[i] ?? en.research!.papers[i].pdfLabel;
 const ssrnLabelFor = (i: number) =>
   t.research?.papers[i].ssrnRecordLabel ?? t.researchSsrnRecordLabels?.[i] ?? en.research!.papers[i].ssrnRecordLabel;
-const briefLabelFor = (i: number) =>
-  t.research?.papers[i].briefLabel ?? t.researchBriefLabels?.[i] ?? en.research!.papers[i].briefLabel;
 ---
 
 <section class="head container">
@@ -50,11 +48,6 @@ const briefLabelFor = (i: number) =>
           <a class="btn" href={paper.pdfHref} target="_blank" rel="noopener">
             {pdfLabelFor(i)}
           </a>
-          {paper.briefHref && (
-            <a class="btn btn-secondary" href={paper.briefHref} target="_blank" rel="noopener">
-              {briefLabelFor(i)}
-            </a>
-          )}
           {paper.ssrnUrl ? (
             <a class="ssrn mono" href={paper.ssrnUrl} rel="noopener" target="_blank">
               {ssrnLabelFor(i)}
@@ -95,7 +88,11 @@ const briefLabelFor = (i: number) =>
     gap: 20px;
   }
 
-  /* Cards stretch to equal height; actions pin to the bottom for symmetry. */
+  .paper:first-child {
+    grid-row: span 2;
+  }
+
+  /* Cards in a row share a height; actions sit directly under the summary. */
   .paper {
     background: var(--bg-raise);
     border: 1px solid var(--line);
@@ -153,8 +150,7 @@ const briefLabelFor = (i: number) =>
     align-items: center;
     flex-wrap: wrap;
     gap: 12px 18px;
-    margin-top: auto;
-    padding-top: 22px;
+    padding-top: 12px;
   }
 
   .btn {
@@ -170,17 +166,6 @@ const briefLabelFor = (i: number) =>
 
   .btn:hover {
     background: #e2b055;
-  }
-
-  .btn-secondary {
-    background: transparent;
-    color: var(--gold);
-    border: 1px solid var(--gold);
-    padding: 10px 21px;
-  }
-
-  .btn-secondary:hover {
-    background: rgba(217, 164, 65, 0.12);
   }
 
   .ssrn {
@@ -217,6 +202,10 @@ const briefLabelFor = (i: number) =>
       margin: 28px 0 40px;
       grid-template-columns: 1fr;
       gap: 14px;
+    }
+
+    .paper:first-child {
+      grid-row: auto;
     }
 
     .paper {
