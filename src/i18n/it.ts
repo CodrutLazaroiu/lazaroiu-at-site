@@ -164,10 +164,10 @@ const it: Dictionary = {
   about: {
     metaTitle: 'Profilo — Ioan-Codrut Lazaroiu',
     metaDescription:
-      'Advisor indipendente per infrastrutture energetiche e risk governance, Vienna. Oltre 20 anni in Europa, Medio Oriente, Africa settentrionale e occidentale e Asia centrale.',
+      'Executive nelle infrastrutture energetiche e advisor indipendente, Vienna. Ricerca sulla previsione comportamentale nelle organizzazioni e nei team uomo-IA. Oltre 20 anni in Europa, Medio Oriente, Africa settentrionale e occidentale e Asia centrale.',
     eyebrow: 'Profilo',
     h1: 'Ioan-Codrut Lazaroiu',
-    lede: 'Advisor indipendente per infrastrutture energetiche e risk governance, Vienna.',
+    lede: 'Executive nelle infrastrutture energetiche e advisor indipendente, Vienna. Ricerca sulla previsione comportamentale nelle organizzazioni e nei team uomo-IA.',
     portraitAlt: 'Ioan-Codrut Lazaroiu',
     portraitCaption: 'Vienna, Austria',
     rows: [
@@ -205,7 +205,7 @@ const it: Dictionary = {
   contact: {
     metaTitle: 'Contatti — Ioan-Codrut Lazaroiu',
     metaDescription:
-      'Contatti di Ioan-Codrut Lazaroiu — advisor indipendente per infrastrutture energetiche e risk governance, Vienna, Austria.',
+      'Contatti di Ioan-Codrut Lazaroiu — executive nelle infrastrutture energetiche e advisor indipendente, Vienna, Austria.',
     eyebrow: 'Contatti',
     h1: 'Contatti',
     emailLabel: 'E-mail',

@@ -134,10 +134,10 @@ const ko: Dictionary = {
   about: {
     metaTitle: '소개 — Ioan-Codrut Lazaroiu',
     metaDescription:
-      '오스트리아 빈의 독립 에너지 인프라·리스크 거버넌스 어드바이저. 유럽, 중동, 북·서아프리카, 중앙아시아에서 20년 이상의 경력.',
+      '오스트리아 빈의 에너지 인프라 임원이자 독립 어드바이저. 조직과 인간-AI 팀의 행동 예측에 관한 연구. 유럽, 중동, 북·서아프리카, 중앙아시아에서 20년 이상의 경력.',
     eyebrow: '소개',
     h1: 'Ioan-Codrut Lazaroiu',
-    lede: '오스트리아 빈의 독립 에너지 인프라·리스크 거버넌스 어드바이저.',
+    lede: '오스트리아 빈의 에너지 인프라 임원이자 독립 어드바이저. 조직과 인간-AI 팀의 행동 예측에 관한 연구.',
     portraitAlt: 'Ioan-Codrut Lazaroiu',
     portraitCaption: '오스트리아 빈',
     rows: [
@@ -175,7 +175,7 @@ const ko: Dictionary = {
   contact: {
     metaTitle: '연락처 — Ioan-Codrut Lazaroiu',
     metaDescription:
-      'Ioan-Codrut Lazaroiu 연락처 — 오스트리아 빈의 독립 에너지 인프라·리스크 거버넌스 어드바이저.',
+      'Ioan-Codrut Lazaroiu 연락처 — 오스트리아 빈의 에너지 인프라 임원이자 독립 어드바이저.',
     eyebrow: '연락처',
     h1: '연락처',
     emailLabel: '이메일',
