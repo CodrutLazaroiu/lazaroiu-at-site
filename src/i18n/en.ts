@@ -43,7 +43,7 @@ const en: Dictionary = {
       {
         num: '02',
         title: 'Research',
-        text: 'Independent working papers on infrastructure, capital allocation & risk, and transformation.',
+        text: 'Independent working papers on infrastructure, capital allocation & risk, transformation, and behavioral prediction in organisations and human-AI teams.',
         href: '/research/',
         cta: '→ /research',
       },
@@ -56,6 +56,15 @@ const en: Dictionary = {
       },
     ],
     papers: [
+      {
+        eyebrow: 'Working Paper · September 2026',
+        title:
+          'The Clock, Not the Culture — Predicting Workplace Behavior from the Individual to the Multinational in the Age of AI Colleagues',
+        thesis: '“It is not the culture; it is the decision latency.”',
+        cta: 'Abstract and paper → /research',
+        ctaShort: 'Abstract + paper → /research',
+        href: '/research/',
+      },
       {
         eyebrow: 'Working Paper · August 2026',
         title:
@@ -122,11 +131,29 @@ const en: Dictionary = {
   research: {
     metaTitle: 'Research & Publications — Ioan-Codrut Lazaroiu',
     metaDescription:
-      'Independent working papers on infrastructure, capital allocation & risk, and transformation. Current papers: Molecules of Optionality and The Settlement Layer (August 2026).',
+      'Independent working papers on infrastructure, capital allocation & risk, transformation, and behavioral prediction in organisations and human-AI teams. Current papers: The Clock, Not the Culture (September 2026), Molecules of Optionality and The Settlement Layer (August 2026).',
     eyebrow: 'Research & Publications',
     h1: 'Research & Publications',
-    lede: 'Independent working papers on infrastructure, capital allocation & risk, and transformation.',
+    lede: 'Independent working papers on infrastructure, capital allocation & risk, transformation, and behavioral prediction in organisations and human-AI teams.',
     papers: [
+      {
+        eyebrow: 'Working Paper · September 2026',
+        title:
+          'The Clock, Not the Culture — Predicting Workplace Behavior from the Individual to the Multinational in the Age of AI Colleagues',
+        thesis: '“It is not the culture; it is the decision latency.”',
+        summary: [
+          'If one person’s behavior at work can be predicted, weakly, conditionally, but measurably, can a team’s? A team that includes an AI colleague? A company’s? A multinational’s? Five literatures each hold a piece of the answer and none holds the whole. This paper asks the question once, across all five levels, and finds that prediction does not fail as you climb; it changes its translation rule at every boundary.',
+          'The paper contributes original data at the level where the literature is thinnest: 9,772 measurements administering the instruments organisations use on people, a DISC-format inventory, a Big Five questionnaire and a battery of repeated-play games, to AI colleagues configured the way real functions configure them: six corporate roles, working documents included, across four model versions from two providers.',
+          'The role an organisation assigns to its advisors, human or artificial, follows its decision latency, not its national culture. Written strength predicts; unwritten strength does not. The function writes the AI colleague’s style; the model carries its behavior.',
+          'Characterise the situation before reading anyone’s profile. Design the team’s first round instead of predicting it. Contract the advisor’s role rather than letting the clock assign it. And before an AI colleague joins a team, profile it like a hire: per role, per model version, with the behavioral battery and not just the questionnaire, then re-profile on every update.',
+        ],
+        pdfLabel: 'Read the paper (PDF, 67 pages)',
+        pdfHref: '/papers/Lazaroiu_The-Clock-Not-the-Culture_2026.pdf',
+        briefLabel: 'Read the brief (PDF, 2 pages)',
+        briefHref: '/papers/Lazaroiu_The-Clock-Not-the-Culture_Brief_2026.pdf',
+        ssrnUrl: '',
+        ssrnRecordLabel: 'SSRN Abstract ID: 7427178',
+      },
       {
         eyebrow: 'Working Paper · August 2026',
         title:

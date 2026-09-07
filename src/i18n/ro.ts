@@ -43,7 +43,7 @@ const ro: Dictionary = {
       {
         num: '02',
         title: 'Cercetare',
-        text: 'Lucrări de cercetare independente despre infrastructură, alocarea capitalului & risc și transformare.',
+        text: 'Lucrări de cercetare independente despre infrastructură, alocarea capitalului & risc, transformare și predicția comportamentală în organizații și în echipele om–IA.',
         href: '/research/',
         cta: '→ /ro/research',
       },
@@ -56,6 +56,15 @@ const ro: Dictionary = {
       },
     ],
     papers: [
+      {
+        eyebrow: 'Working paper · septembrie 2026',
+        title:
+          'The Clock, Not the Culture — Predicting Workplace Behavior from the Individual to the Multinational in the Age of AI Colleagues',
+        thesis: '„Nu este cultura; este latența decizională.”',
+        cta: 'Abstract și lucrare → /ro/research',
+        ctaShort: 'Abstract + lucrare → /ro/research',
+        href: '/research/',
+      },
       {
         eyebrow: 'Working paper · august 2026',
         title:
@@ -122,11 +131,29 @@ const ro: Dictionary = {
   research: {
     metaTitle: 'Cercetare & Publicații — Ioan-Codrut Lazaroiu',
     metaDescription:
-      'Lucrări de cercetare independente despre infrastructură, alocarea capitalului & risc și transformare. Lucrările actuale: Molecules of Optionality și The Settlement Layer (august 2026).',
+      'Lucrări de cercetare independente despre infrastructură, alocarea capitalului & risc, transformare și predicția comportamentală în organizații și în echipele om–IA. Lucrările actuale: The Clock, Not the Culture (septembrie 2026), Molecules of Optionality și The Settlement Layer (august 2026).',
     eyebrow: 'Cercetare & Publicații',
     h1: 'Cercetare & Publicații',
-    lede: 'Lucrări de cercetare independente despre infrastructură, alocarea capitalului & risc și transformare.',
+    lede: 'Lucrări de cercetare independente despre infrastructură, alocarea capitalului & risc, transformare și predicția comportamentală în organizații și în echipele om–IA.',
     papers: [
+      {
+        eyebrow: 'Working paper · septembrie 2026',
+        title:
+          'The Clock, Not the Culture — Predicting Workplace Behavior from the Individual to the Multinational in the Age of AI Colleagues',
+        thesis: '„Nu este cultura; este latența decizională.”',
+        summary: [
+          'Dacă comportamentul unei persoane la locul de muncă poate fi prezis — slab, condiționat, dar măsurabil — poate fi prezis și cel al unei echipe? Al unei echipe care include un coleg IA? Al unei companii? Al unei multinaționale? Cinci literaturi dețin fiecare câte o parte a răspunsului și niciuna întregul. Lucrarea pune întrebarea o singură dată, pe toate cele cinci niveluri, și constată că predicția nu eșuează pe măsură ce urci: își schimbă regula de traducere la fiecare graniță.',
+          'Lucrarea aduce date originale la nivelul unde literatura este cea mai subțire: 9.772 de măsurători care administrează instrumentele pe care organizațiile le folosesc pe oameni — un inventar de tip DISC, un chestionar Big Five și o baterie de jocuri repetate — unor colegi IA configurați așa cum îi configurează funcțiile reale: șase roluri corporative, cu documente de lucru incluse, pe patru versiuni de model de la doi furnizori.',
+          'Rolul pe care o organizație îl atribuie consultanților săi, umani sau artificiali, urmează latența ei decizională, nu cultura națională. Forța scrisă prezice; cea nescrisă nu. Funcția scrie stilul colegului IA; modelul îi poartă comportamentul.',
+          'Caracterizați situația înainte de a citi profilul cuiva. Proiectați prima rundă a echipei în loc să o preziceți. Contractați rolul consultantului în loc să lăsați ceasul să îl atribuie. Iar înainte ca un coleg IA să intre într-o echipă, profilați-l ca pe o angajare: pe rol, pe versiune de model, cu bateria comportamentală și nu doar cu chestionarul, apoi reprofilați-l la fiecare actualizare.',
+        ],
+        pdfLabel: 'Citește lucrarea (PDF, 67 de pagini)',
+        pdfHref: '/papers/Lazaroiu_The-Clock-Not-the-Culture_2026.pdf',
+        briefLabel: 'Citește rezumatul (PDF, 2 pagini)',
+        briefHref: '/papers/Lazaroiu_The-Clock-Not-the-Culture_Brief_2026.pdf',
+        ssrnUrl: '',
+        ssrnRecordLabel: 'SSRN Abstract ID: 7427178',
+      },
       {
         eyebrow: 'Working paper · august 2026',
         title:

@@ -19,6 +19,8 @@ const pdfLabelFor = (i: number) =>
   t.research?.papers[i].pdfLabel ?? t.researchPdfLabels?.[i] ?? en.research!.papers[i].pdfLabel;
 const ssrnLabelFor = (i: number) =>
   t.research?.papers[i].ssrnRecordLabel ?? t.researchSsrnRecordLabels?.[i] ?? en.research!.papers[i].ssrnRecordLabel;
+const briefLabelFor = (i: number) =>
+  t.research?.papers[i].briefLabel ?? t.researchBriefLabels?.[i] ?? en.research!.papers[i].briefLabel;
 ---
 
 <section class="head container">
@@ -48,12 +50,17 @@ const ssrnLabelFor = (i: number) =>
           <a class="btn" href={paper.pdfHref} target="_blank" rel="noopener">
             {pdfLabelFor(i)}
           </a>
+          {paper.briefHref && (
+            <a class="btn btn-secondary" href={paper.briefHref} target="_blank" rel="noopener">
+              {briefLabelFor(i)}
+            </a>
+          )}
           {paper.ssrnUrl ? (
             <a class="ssrn mono" href={paper.ssrnUrl} rel="noopener" target="_blank">
               {ssrnLabelFor(i)}
             </a>
           ) : (
-            <span class="ssrn ssrn-pending mono">{ssrnLabelFor(i)}</span>
+            ssrnLabelFor(i) && <span class="ssrn ssrn-pending mono">{ssrnLabelFor(i)}</span>
           )}
         </div>
       </article>
@@ -84,7 +91,7 @@ const ssrnLabelFor = (i: number) =>
   .papers {
     margin: 44px 0 72px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 20px;
   }
 
@@ -93,7 +100,7 @@ const ssrnLabelFor = (i: number) =>
     background: var(--bg-raise);
     border: 1px solid var(--line);
     border-top: 2px solid var(--gold);
-    padding: 34px 40px 38px;
+    padding: 28px 28px 30px;
     display: flex;
     flex-direction: column;
   }
@@ -103,17 +110,16 @@ const ssrnLabelFor = (i: number) =>
   }
 
   h2 {
-    font-size: 27px;
+    font-size: 20px;
     font-weight: 600;
     line-height: 1.3;
     margin: 14px 0 10px;
-    max-width: 840px;
     text-wrap: pretty;
   }
 
   .thesis {
     font-style: italic;
-    font-size: 17px;
+    font-size: 15.5px;
     color: var(--text-body);
     margin: 0 0 18px;
   }
@@ -146,7 +152,7 @@ const ssrnLabelFor = (i: number) =>
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 22px;
+    gap: 12px 18px;
     margin-top: auto;
     padding-top: 22px;
   }
@@ -164,6 +170,17 @@ const ssrnLabelFor = (i: number) =>
 
   .btn:hover {
     background: #e2b055;
+  }
+
+  .btn-secondary {
+    background: transparent;
+    color: var(--gold);
+    border: 1px solid var(--gold);
+    padding: 10px 21px;
+  }
+
+  .btn-secondary:hover {
+    background: rgba(217, 164, 65, 0.12);
   }
 
   .ssrn {

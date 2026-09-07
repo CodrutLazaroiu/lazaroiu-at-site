@@ -43,7 +43,7 @@ const de: Dictionary = {
       {
         num: '02',
         title: 'Forschung',
-        text: 'Unabhängige Working Papers zu Infrastruktur, Kapitalallokation & Risiko sowie Transformation.',
+        text: 'Unabhängige Working Papers zu Infrastruktur, Kapitalallokation & Risiko, Transformation sowie Verhaltensvorhersage in Organisationen und Mensch-KI-Teams.',
         href: '/research/',
         cta: '→ /de/research',
       },
@@ -56,6 +56,15 @@ const de: Dictionary = {
       },
     ],
     papers: [
+      {
+        eyebrow: 'Working Paper · September 2026',
+        title:
+          'The Clock, Not the Culture — Predicting Workplace Behavior from the Individual to the Multinational in the Age of AI Colleagues',
+        thesis: '„Es ist nicht die Kultur; es ist die Entscheidungslatenz.“',
+        cta: 'Abstract und Paper → /de/research',
+        ctaShort: 'Abstract + Paper → /de/research',
+        href: '/research/',
+      },
       {
         eyebrow: 'Working Paper · August 2026',
         title:
@@ -122,11 +131,29 @@ const de: Dictionary = {
   research: {
     metaTitle: 'Forschung & Publikationen — Ioan-Codrut Lazaroiu',
     metaDescription:
-      'Unabhängige Working Papers zu Infrastruktur, Kapitalallokation & Risiko sowie Transformation. Aktuelle Papiere: Molecules of Optionality und The Settlement Layer (August 2026).',
+      'Unabhängige Working Papers zu Infrastruktur, Kapitalallokation & Risiko, Transformation sowie Verhaltensvorhersage in Organisationen und Mensch-KI-Teams. Aktuelle Papiere: The Clock, Not the Culture (September 2026), Molecules of Optionality und The Settlement Layer (August 2026).',
     eyebrow: 'Forschung & Publikationen',
     h1: 'Forschung & Publikationen',
-    lede: 'Unabhängige Working Papers zu Infrastruktur, Kapitalallokation & Risiko sowie Transformation.',
+    lede: 'Unabhängige Working Papers zu Infrastruktur, Kapitalallokation & Risiko, Transformation sowie Verhaltensvorhersage in Organisationen und Mensch-KI-Teams.',
     papers: [
+      {
+        eyebrow: 'Working Paper · September 2026',
+        title:
+          'The Clock, Not the Culture — Predicting Workplace Behavior from the Individual to the Multinational in the Age of AI Colleagues',
+        thesis: '„Es ist nicht die Kultur; es ist die Entscheidungslatenz.“',
+        summary: [
+          'Wenn sich das Verhalten eines einzelnen Menschen am Arbeitsplatz vorhersagen lässt – schwach, bedingt, aber messbar –, gilt das auch für ein Team? Für ein Team mit einem KI-Kollegen? Für ein Unternehmen? Für einen multinationalen Konzern? Fünf Forschungsstränge halten je ein Stück der Antwort, keiner das Ganze. Das Paper stellt die Frage einmal, über alle fünf Ebenen hinweg, und findet: Die Vorhersage versagt nicht beim Aufstieg – sie wechselt an jeder Grenze ihre Übersetzungsregel.',
+          'Das Paper liefert Originaldaten auf der Ebene, auf der die Literatur am dünnsten ist: 9.772 Messungen, bei denen die Instrumente, die Organisationen bei Menschen einsetzen – ein DISC-Inventar, ein Big-Five-Fragebogen und eine Batterie wiederholter Spiele –, auf KI-Kollegen angewandt werden, konfiguriert wie in realen Funktionen: sechs Unternehmensrollen, Arbeitsdokumente inklusive, über vier Modellversionen zweier Anbieter.',
+          'Die Rolle, die eine Organisation ihren Beratern zuweist – ob Mensch oder Maschine –, folgt ihrer Entscheidungslatenz, nicht ihrer Landeskultur. Geschriebene Stärke sagt voraus; ungeschriebene nicht. Die Funktion schreibt den Stil des KI-Kollegen; das Modell trägt sein Verhalten.',
+          'Die Situation charakterisieren, bevor man ein Profil liest. Die erste Runde des Teams gestalten, statt sie vorherzusagen. Die Rolle des Beraters vertraglich festlegen, statt sie der Uhr zu überlassen. Und bevor ein KI-Kollege in ein Team kommt: profilieren wie eine Neueinstellung – pro Rolle, pro Modellversion, mit der Verhaltensbatterie und nicht nur dem Fragebogen – und bei jedem Update erneut.',
+        ],
+        pdfLabel: 'Paper lesen (PDF, 67 Seiten)',
+        pdfHref: '/papers/Lazaroiu_The-Clock-Not-the-Culture_2026.pdf',
+        briefLabel: 'Kurzfassung lesen (PDF, 2 Seiten)',
+        briefHref: '/papers/Lazaroiu_The-Clock-Not-the-Culture_Brief_2026.pdf',
+        ssrnUrl: '',
+        ssrnRecordLabel: 'SSRN Abstract ID: 7427178',
+      },
       {
         eyebrow: 'Working Paper · August 2026',
         title:

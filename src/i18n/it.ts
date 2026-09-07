@@ -43,7 +43,7 @@ const it: Dictionary = {
       {
         num: '02',
         title: 'Ricerca',
-        text: 'Working paper indipendenti su infrastrutture, allocazione del capitale & rischio e trasformazione.',
+        text: 'Working paper indipendenti su infrastrutture, allocazione del capitale & rischio, trasformazione e previsione comportamentale nelle organizzazioni e nei team uomo-IA.',
         href: '/research/',
         cta: '→ /it/research',
       },
@@ -56,6 +56,15 @@ const it: Dictionary = {
       },
     ],
     papers: [
+      {
+        eyebrow: 'Working paper · settembre 2026',
+        title:
+          'The Clock, Not the Culture — Predicting Workplace Behavior from the Individual to the Multinational in the Age of AI Colleagues',
+        thesis: '«Non è la cultura; è la latenza decisionale.»',
+        cta: 'Abstract e paper → /it/research',
+        ctaShort: 'Abstract + paper → /it/research',
+        href: '/research/',
+      },
       {
         eyebrow: 'Working paper · agosto 2026',
         title:
@@ -122,11 +131,29 @@ const it: Dictionary = {
   research: {
     metaTitle: 'Ricerca & Pubblicazioni — Ioan-Codrut Lazaroiu',
     metaDescription:
-      'Working paper indipendenti su infrastrutture, allocazione del capitale & rischio e trasformazione. Paper attuali: Molecules of Optionality e The Settlement Layer (agosto 2026).',
+      'Working paper indipendenti su infrastrutture, allocazione del capitale & rischio, trasformazione e previsione comportamentale nelle organizzazioni e nei team uomo-IA. Paper attuali: The Clock, Not the Culture (settembre 2026), Molecules of Optionality e The Settlement Layer (agosto 2026).',
     eyebrow: 'Ricerca & Pubblicazioni',
     h1: 'Ricerca & Pubblicazioni',
-    lede: 'Working paper indipendenti su infrastrutture, allocazione del capitale & rischio e trasformazione.',
+    lede: 'Working paper indipendenti su infrastrutture, allocazione del capitale & rischio, trasformazione e previsione comportamentale nelle organizzazioni e nei team uomo-IA.',
     papers: [
+      {
+        eyebrow: 'Working paper · settembre 2026',
+        title:
+          'The Clock, Not the Culture — Predicting Workplace Behavior from the Individual to the Multinational in the Age of AI Colleagues',
+        thesis: '«Non è la cultura; è la latenza decisionale.»',
+        summary: [
+          'Se il comportamento di una persona al lavoro può essere previsto — debolmente, condizionatamente, ma in modo misurabile — può esserlo quello di un team? Di un team che include un collega IA? Di un’azienda? Di una multinazionale? Cinque letterature detengono ciascuna un pezzo della risposta e nessuna l’intero. Il paper pone la domanda una volta sola, su tutti e cinque i livelli, e trova che la previsione non fallisce salendo: cambia la sua regola di traduzione a ogni confine.',
+          'Il paper contribuisce dati originali al livello in cui la letteratura è più sottile: 9.772 misurazioni che somministrano gli strumenti che le organizzazioni usano sulle persone — un inventario in formato DISC, un questionario Big Five e una batteria di giochi ripetuti — a colleghi IA configurati come li configurano le funzioni reali: sei ruoli aziendali, documenti di lavoro inclusi, su quattro versioni di modello di due fornitori.',
+          'Il ruolo che un’organizzazione assegna ai suoi advisor, umani o artificiali, segue la sua latenza decisionale, non la sua cultura nazionale. La forza scritta predice; quella non scritta no. La funzione scrive lo stile del collega IA; il modello ne porta il comportamento.',
+          'Caratterizzare la situazione prima di leggere il profilo di chiunque. Progettare il primo round del team invece di prevederlo. Contrattualizzare il ruolo dell’advisor invece di lasciare che sia l’orologio ad assegnarlo. E prima che un collega IA entri in un team, profilarlo come un’assunzione: per ruolo, per versione di modello, con la batteria comportamentale e non solo il questionario, e riprofilarlo a ogni aggiornamento.',
+        ],
+        pdfLabel: 'Leggi il paper (PDF, 67 pagine)',
+        pdfHref: '/papers/Lazaroiu_The-Clock-Not-the-Culture_2026.pdf',
+        briefLabel: 'Leggi la sintesi (PDF, 2 pagine)',
+        briefHref: '/papers/Lazaroiu_The-Clock-Not-the-Culture_Brief_2026.pdf',
+        ssrnUrl: '',
+        ssrnRecordLabel: 'SSRN Abstract ID: 7427178',
+      },
       {
         eyebrow: 'Working paper · agosto 2026',
         title:
