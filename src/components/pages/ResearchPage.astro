@@ -45,7 +45,14 @@ const ssrnLabelFor = (i: number) =>
           ))}
         </div>
         <div class="actions">
-          <a class="btn" href={paper.pdfHref} target="_blank" rel="noopener">
+          <a
+            class="btn"
+            href={paper.pdfHref}
+            target="_blank"
+            rel="noopener"
+            data-umami-event="Paper Download"
+            data-umami-event-paper={paper.pdfHref.split('/').pop()}
+          >
             {pdfLabelFor(i)}
           </a>
           {paper.ssrnUrl ? (

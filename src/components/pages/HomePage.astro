@@ -18,7 +18,7 @@ const t = getDict(locale);
       <p class="eyebrow"><span class="full">{t.home.eyebrow}</span><span class="short">{t.home.eyebrowShort}</span></p>
       <h1>{t.home.h1}</h1>
       <p class="lede">{t.home.lede}</p>
-      <a class="hero-cta plausible-event-name=Contact+Click" href={CTA_MAILTO}>{t.ctaLabel} <span class="cta-arrow" aria-hidden="true">→</span></a>
+      <a class="hero-cta" href={CTA_MAILTO} data-umami-event="Contact Click">{t.ctaLabel} <span class="cta-arrow" aria-hidden="true">→</span></a>
     </div>
     <div class="hero-visual">
       <PlatformSchematic />
