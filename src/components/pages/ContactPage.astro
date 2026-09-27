@@ -19,13 +19,13 @@ const t = getDict(locale);
 <section class="channels container">
   <div class="row">
     <p class="label eyebrow">{t.contact.emailLabel}</p>
-    <a class="value" href={CTA_MAILTO}>{EMAIL}</a>
+    <a class="value plausible-event-name=Contact+Click" href={CTA_MAILTO}>{EMAIL}</a>
   </div>
   <div class="row">
     <p class="label eyebrow">{t.contact.linkedinLabel}</p>
     <a class="value" href={LINKEDIN_URL} rel="me noopener" target="_blank">{t.contact.linkedinLabel} ↗</a>
   </div>
-  <a class="contact-cta" href={CTA_MAILTO}>{t.ctaLabel} <span class="cta-arrow" aria-hidden="true">→</span></a>
+  <a class="contact-cta plausible-event-name=Contact+Click" href={CTA_MAILTO}>{t.ctaLabel} <span class="cta-arrow" aria-hidden="true">→</span></a>
 </section>
 
 <style>
