@@ -8,9 +8,6 @@ const en: Dictionary = {
   ctaLabel: 'Start a conversation',
   contactLead:
     'Vienna, Austria. Written enquiries are answered within two working days. It helps to say who you are, which organisation, and the decision you are facing.',
-  productCaption:
-    'In development: SALTUS, a Microsoft 365-native enterprise risk governance platform. Details on request.',
-
   nav: {
     advisory: 'Advisory',
     research: 'Research',
@@ -28,22 +25,35 @@ const en: Dictionary = {
     metaTitle: 'Ioan-Codrut Lazaroiu — Strategy, risk, and capital for irreplaceable infrastructure',
     metaDescription:
       'Independent energy-infrastructure and risk governance advisor, Vienna. Enterprise risk governance, asset integrity, and cross-border infrastructure strategy.',
-    eyebrow: 'Independent Advisory — Vienna, Austria',
-    eyebrowShort: 'Independent Advisory — Vienna',
+    eyebrow: 'Independent advisory · Vienna',
+    eyebrowShort: 'Independent advisory · Vienna',
     h1: 'Strategy, risk, and capital for irreplaceable infrastructure.',
-    lede: 'Senior advisor at the intersection of enterprise risk governance, asset integrity, and cross-border infrastructure strategy. Twenty years of executive delivery in energy infrastructure; now advising at board level and publishing independent research.',
+    h1Accent: 'irreplaceable infrastructure.',
+    figures: [
+      { value: '20+', label: 'years in energy infrastructure', count: '20', suffix: '+' },
+      {
+        value: 'EUR 8.5 billion',
+        label: 'capital-project portfolio',
+        count: '8.5',
+        decimals: '1',
+        prefix: 'EUR ',
+        suffix: ' billion',
+      },
+      { value: 'Europe · the Middle East · North and West Africa · Central Asia', label: 'regions' },
+    ],
+    lede: 'Enterprise risk governance, asset integrity and cross-border infrastructure strategy. Twenty years of executive delivery in energy infrastructure. Now advising boards and publishing independent research.',
     pillars: [
       {
         num: '01',
         title: 'Advisory',
-        text: 'Enterprise risk governance design, transformation mandates, and executive decision-support for operators and investors.',
+        text: 'Risk governance design, transformation mandates and decision support for operators and investors.',
         href: '/advisory/',
         cta: '→ /advisory',
       },
       {
         num: '02',
         title: 'Research',
-        text: 'Independent working papers on infrastructure, capital allocation & risk, transformation, and behavioral prediction in organisations and human-AI teams.',
+        text: 'Working papers on infrastructure, capital and risk, transformation, and behaviour in organisations and human-AI teams.',
         href: '/research/',
         cta: '→ /research',
       },
@@ -131,10 +141,10 @@ const en: Dictionary = {
   research: {
     metaTitle: 'Research & Publications — Ioan-Codrut Lazaroiu',
     metaDescription:
-      'Independent working papers on infrastructure, capital allocation & risk, transformation, and behavioral prediction in organisations and human-AI teams. Current papers: The Clock, Not the Culture (September 2026), Molecules of Optionality and The Settlement Layer (August 2026).',
+      'Independent working papers on infrastructure, capital allocation & risk, transformation, and behavioural prediction in organisations and human-AI teams. Current papers: The Clock, Not the Culture (September 2026), Molecules of Optionality and The Settlement Layer (August 2026).',
     eyebrow: 'Research & Publications',
     h1: 'Research & Publications',
-    lede: 'Independent working papers on infrastructure, capital allocation & risk, transformation, and behavioral prediction in organisations and human-AI teams.',
+    lede: 'Independent working papers on infrastructure, capital allocation & risk, transformation, and behavioural prediction in organisations and human-AI teams.',
     papers: [
       {
         eyebrow: 'Working Paper · September 2026',
@@ -191,10 +201,10 @@ const en: Dictionary = {
   about: {
     metaTitle: 'About — Ioan-Codrut Lazaroiu',
     metaDescription:
-      'Energy infrastructure executive and independent advisor, Vienna. Research on behavioral prediction in organisations and human-AI teams. 20+ years across Europe, the Middle East, North and West Africa, and Central Asia.',
+      'Energy infrastructure executive and independent advisor in Vienna. 20+ years across Europe, the Middle East, North and West Africa, and Central Asia.',
     eyebrow: 'About',
     h1: 'Ioan-Codrut Lazaroiu',
-    lede: 'Energy infrastructure executive and independent advisor, Vienna. Research on behavioral prediction in organisations and human-AI teams.',
+    lede: 'Energy infrastructure executive and independent advisor based in Vienna. Researches how behaviour can be predicted in organisations and human-AI teams.',
     portraitAlt: 'Ioan-Codrut Lazaroiu',
     portraitCaption: 'Vienna, Austria',
     rows: [
@@ -204,7 +214,7 @@ const en: Dictionary = {
       },
       {
         label: 'Portfolio',
-        text: 'Capital-project portfolio exceeding EUR 8.5 billion — design, construction, commissioning, and turnaround of terminals, tank storage, refineries, and international pipeline systems.',
+        text: 'Capital projects exceeding EUR 8.5 billion: design, construction, commissioning and turnaround of terminals, tank storage, refineries and international pipeline systems.',
       },
       {
         label: 'Senior roles',
@@ -216,7 +226,7 @@ const en: Dictionary = {
       },
       {
         label: 'Education',
-        text: 'Engineering, Technical University of Construction, Bucharest · Bachelor in Economics, Spiru Haret University, Bucharest · MIT Sloan School of Management — Executive Programme in General Management, Cohort 15.',
+        text: 'Engineering, Technical University of Construction, Bucharest · Bachelor in Economics, Spiru Haret University, Bucharest · MIT Sloan School of Management, Executive Programme in General Management, Cohort 15.',
       },
       {
         label: 'Credentials',

@@ -46,8 +46,6 @@ export interface Dictionary {
   ctaLabel: string;
   /** Contact page lead (location, response time, what to include). */
   contactLead: string;
-  /** Unbranded→named product caption (home hero + advisory closing). */
-  productCaption: string;
 
   nav: {
     advisory: string;
@@ -68,7 +66,18 @@ export interface Dictionary {
     eyebrow: string;
     eyebrowShort: string;
     h1: string;
+    /** Trailing part of h1 set as the italic accent; must match the end of h1 exactly. */
+    h1Accent?: string;
     lede: string;
+    /** Figures band under the hero. `count` fields drive the counter; `value` is the final text. */
+    figures?: {
+      value: string;
+      label: string;
+      count?: string;
+      decimals?: string;
+      prefix?: string;
+      suffix?: string;
+    }[];
     pillars: Pillar[];
     papers: HomePaperTeaser[];
   };
@@ -83,7 +92,6 @@ export interface Dictionary {
     services: Service[];
     trackRecordLabel: string;
     trackRecord: string[];
-    closing: string;
   };
 
   research?: {

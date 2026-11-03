@@ -8,9 +8,6 @@ const de: Dictionary = {
   ctaLabel: 'Ein Gespräch beginnen',
   contactLead:
     'Wien, Österreich. Schriftliche Anfragen werden innerhalb von zwei Werktagen beantwortet. Hilfreich ist, wer Sie sind, welche Organisation Sie vertreten und welche Entscheidung ansteht.',
-  productCaption:
-    'In Entwicklung: SALTUS, eine Microsoft-365-native Plattform für Enterprise Risk Governance. Details auf Anfrage.',
-
   nav: {
     advisory: 'Advisory',
     research: 'Forschung',
@@ -28,22 +25,34 @@ const de: Dictionary = {
     metaTitle: 'Ioan-Codrut Lazaroiu — Strategie, Risiko und Kapital für unersetzliche Infrastruktur',
     metaDescription:
       'Unabhängiger Berater für Energieinfrastruktur und Risk Governance, Wien. Enterprise Risk Governance, Asset Integrity und grenzüberschreitende Infrastrukturstrategie.',
-    eyebrow: 'Unabhängige Beratung — Wien, Österreich',
-    eyebrowShort: 'Unabhängige Beratung — Wien',
+    eyebrow: 'Unabhängige Beratung · Wien',
+    eyebrowShort: 'Unabhängige Beratung · Wien',
     h1: 'Strategie, Risiko und Kapital für unersetzliche Infrastruktur.',
-    lede: 'Senior Advisor an der Schnittstelle von Enterprise Risk Governance, Asset Integrity und grenzüberschreitender Infrastrukturstrategie. Zwanzig Jahre Executive-Erfahrung in der Energieinfrastruktur; heute Beratung auf Vorstandsebene und unabhängige Forschung.',
+    h1Accent: 'unersetzliche Infrastruktur.',
+    figures: [
+      { value: '20+', label: 'Jahre Energieinfrastruktur', count: '20', suffix: '+' },
+      {
+        value: '8,5 Milliarden Euro',
+        label: 'Kapitalprojekt-Portfolio',
+        count: '8.5',
+        decimals: '1',
+        suffix: ' Milliarden Euro',
+      },
+      { value: 'Europa · Naher Osten · Nord- und Westafrika · Zentralasien', label: 'Regionen' },
+    ],
+    lede: 'Enterprise Risk Governance, Asset Integrity und grenzüberschreitende Infrastrukturstrategie. Zwanzig Jahre Executive-Erfahrung in der Energieinfrastruktur. Heute Beratung von Aufsichtsräten und Vorständen sowie unabhängige Forschung.',
     pillars: [
       {
         num: '01',
         title: 'Advisory',
-        text: 'Gestaltung von Enterprise Risk Governance, Transformationsmandate und Entscheidungsunterstützung für Betreiber und Investoren.',
+        text: 'Gestaltung von Risk Governance, Transformationsmandate und Entscheidungsunterstützung für Betreiber und Investoren.',
         href: '/advisory/',
         cta: '→ /de/advisory',
       },
       {
         num: '02',
         title: 'Forschung',
-        text: 'Unabhängige Working Papers zu Infrastruktur, Kapitalallokation & Risiko, Transformation sowie Verhaltensvorhersage in Organisationen und Mensch-KI-Teams.',
+        text: 'Working Papers zu Infrastruktur, Kapital und Risiko, Transformation sowie Verhalten in Organisationen und Mensch-KI-Teams.',
         href: '/research/',
         cta: '→ /de/research',
       },
@@ -189,10 +198,10 @@ const de: Dictionary = {
   about: {
     metaTitle: 'Profil — Ioan-Codrut Lazaroiu',
     metaDescription:
-      'Executive in der Energieinfrastruktur und unabhängiger Berater, Wien. Forschung zu Verhaltensvorhersage in Organisationen und Mensch-KI-Teams. Über 20 Jahre in Europa, dem Nahen Osten, Nord- und Westafrika und Zentralasien.',
+      'Executive in der Energieinfrastruktur und unabhängiger Berater in Wien. Über 20 Jahre in Europa, dem Nahen Osten, Nord- und Westafrika und Zentralasien.',
     eyebrow: 'Profil',
     h1: 'Ioan-Codrut Lazaroiu',
-    lede: 'Executive in der Energieinfrastruktur und unabhängiger Berater, Wien. Forschung zu Verhaltensvorhersage in Organisationen und Mensch-KI-Teams.',
+    lede: 'Executive in der Energieinfrastruktur und unabhängiger Berater mit Sitz in Wien. Forscht dazu, wie sich Verhalten in Organisationen und Mensch-KI-Teams vorhersagen lässt.',
     portraitAlt: 'Ioan-Codrut Lazaroiu',
     portraitCaption: 'Wien, Österreich',
     rows: [
@@ -202,7 +211,7 @@ const de: Dictionary = {
       },
       {
         label: 'Portfolio',
-        text: 'Kapitalprojekt-Portfolio von über 8,5 Milliarden Euro — Planung, Bau, Inbetriebnahme und Turnaround von Terminals, Tanklagern, Raffinerien und internationalen Pipelinesystemen.',
+        text: 'Kapitalprojekte von über 8,5 Milliarden Euro: Planung, Bau, Inbetriebnahme und Turnaround von Terminals, Tanklagern, Raffinerien und internationalen Pipelinesystemen.',
       },
       {
         label: 'Senior-Positionen',
@@ -214,7 +223,7 @@ const de: Dictionary = {
       },
       {
         label: 'Ausbildung',
-        text: 'Ingenieurstudium, Technische Universität für Bauwesen, Bukarest · Bachelor in Wirtschaftswissenschaften, Spiru-Haret-Universität, Bukarest · MIT Sloan School of Management — Executive Programme in General Management, Cohort 15.',
+        text: 'Ingenieurstudium, Technische Universität für Bauwesen, Bukarest · Bachelor in Wirtschaftswissenschaften, Spiru-Haret-Universität, Bukarest · MIT Sloan School of Management, Executive Programme in General Management, Cohort 15.',
       },
       {
         label: 'Qualifikationen',

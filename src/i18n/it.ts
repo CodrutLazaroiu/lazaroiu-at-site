@@ -8,9 +8,6 @@ const it: Dictionary = {
   ctaLabel: 'Avvia una conversazione',
   contactLead:
     'Vienna, Austria. Le richieste scritte ricevono risposta entro due giorni lavorativi. È utile indicare chi siete, quale organizzazione rappresentate e la decisione che avete di fronte.',
-  productCaption:
-    'In sviluppo: SALTUS, una piattaforma di enterprise risk governance nativa per Microsoft 365. Dettagli su richiesta.',
-
   nav: {
     advisory: 'Advisory',
     research: 'Ricerca',
@@ -28,22 +25,34 @@ const it: Dictionary = {
     metaTitle: 'Ioan-Codrut Lazaroiu — Strategia, rischio e capitale per infrastrutture insostituibili',
     metaDescription:
       'Advisor indipendente per infrastrutture energetiche e risk governance, Vienna. Enterprise risk governance, integrità degli asset e strategia infrastrutturale transfrontaliera.',
-    eyebrow: 'Advisory indipendente — Vienna, Austria',
-    eyebrowShort: 'Advisory indipendente — Vienna',
+    eyebrow: 'Advisory indipendente · Vienna',
+    eyebrowShort: 'Advisory indipendente · Vienna',
     h1: 'Strategia, rischio e capitale per infrastrutture insostituibili.',
-    lede: 'Senior advisor all’intersezione tra enterprise risk governance, integrità degli asset e strategia infrastrutturale transfrontaliera. Vent’anni di delivery executive nelle infrastrutture energetiche; oggi advisory a livello di consiglio e ricerca indipendente.',
+    h1Accent: 'infrastrutture insostituibili.',
+    figures: [
+      { value: '20+', label: 'anni nelle infrastrutture energetiche', count: '20', suffix: '+' },
+      {
+        value: '8,5 miliardi di euro',
+        label: 'portafoglio di progetti di investimento',
+        count: '8.5',
+        decimals: '1',
+        suffix: ' miliardi di euro',
+      },
+      { value: 'Europa · Medio Oriente · Africa settentrionale e occidentale · Asia centrale', label: 'regioni' },
+    ],
+    lede: 'Enterprise risk governance, integrità degli asset e strategia infrastrutturale transfrontaliera. Vent’anni di delivery executive nelle infrastrutture energetiche. Oggi advisory per consigli di amministrazione e ricerca indipendente.',
     pillars: [
       {
         num: '01',
         title: 'Advisory',
-        text: 'Progettazione della enterprise risk governance, mandati di trasformazione e supporto decisionale per operatori e investitori.',
+        text: 'Progettazione della risk governance, mandati di trasformazione e supporto decisionale per operatori e investitori.',
         href: '/advisory/',
         cta: '→ /it/advisory',
       },
       {
         num: '02',
         title: 'Ricerca',
-        text: 'Working paper indipendenti su infrastrutture, allocazione del capitale & rischio, trasformazione e previsione comportamentale nelle organizzazioni e nei team uomo-IA.',
+        text: 'Working paper su infrastrutture, capitale e rischio, trasformazione e comportamento nelle organizzazioni e nei team uomo-IA.',
         href: '/research/',
         cta: '→ /it/research',
       },
@@ -189,10 +198,10 @@ const it: Dictionary = {
   about: {
     metaTitle: 'Profilo — Ioan-Codrut Lazaroiu',
     metaDescription:
-      'Executive nelle infrastrutture energetiche e advisor indipendente, Vienna. Ricerca sulla previsione comportamentale nelle organizzazioni e nei team uomo-IA. Oltre 20 anni in Europa, Medio Oriente, Africa settentrionale e occidentale e Asia centrale.',
+      'Executive nelle infrastrutture energetiche e advisor indipendente a Vienna. Oltre 20 anni in Europa, Medio Oriente, Africa settentrionale e occidentale e Asia centrale.',
     eyebrow: 'Profilo',
     h1: 'Ioan-Codrut Lazaroiu',
-    lede: 'Executive nelle infrastrutture energetiche e advisor indipendente, Vienna. Ricerca sulla previsione comportamentale nelle organizzazioni e nei team uomo-IA.',
+    lede: 'Executive nelle infrastrutture energetiche e advisor indipendente con base a Vienna. Studia come il comportamento possa essere previsto nelle organizzazioni e nei team uomo-IA.',
     portraitAlt: 'Ioan-Codrut Lazaroiu',
     portraitCaption: 'Vienna, Austria',
     rows: [
@@ -202,7 +211,7 @@ const it: Dictionary = {
       },
       {
         label: 'Portafoglio',
-        text: 'Portafoglio di progetti di investimento superiore a 8,5 miliardi di euro — progettazione, costruzione, commissioning e turnaround di terminal, parchi serbatoi, raffinerie e sistemi internazionali di pipeline.',
+        text: 'Progetti di investimento superiori a 8,5 miliardi di euro: progettazione, costruzione, commissioning e turnaround di terminal, parchi serbatoi, raffinerie e sistemi internazionali di pipeline.',
       },
       {
         label: 'Ruoli senior',
@@ -214,7 +223,7 @@ const it: Dictionary = {
       },
       {
         label: 'Formazione',
-        text: 'Ingegneria, Università Tecnica di Costruzioni, Bucarest · Laurea in Economia, Università Spiru Haret, Bucarest · MIT Sloan School of Management — Executive Programme in General Management, Coorte 15.',
+        text: 'Ingegneria, Università Tecnica di Costruzioni, Bucarest · Laurea in Economia, Università Spiru Haret, Bucarest · MIT Sloan School of Management, Executive Programme in General Management, Cohort 15.',
       },
       {
         label: 'Credenziali',

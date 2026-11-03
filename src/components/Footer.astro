@@ -17,14 +17,14 @@ const t = getDict(locale);
 
 <footer class="site-footer">
   <div class="group">
-    <a href={`mailto:${EMAIL}`} class="light" data-umami-event="Contact Click">{EMAIL}</a>
+    <a href={`mailto:${EMAIL}`} class="light link-draw" data-umami-event="Contact Click">{EMAIL}</a>
     <span aria-hidden="true">·</span>
-    <a href={LINKEDIN_URL} class="light" rel="me noopener" target="_blank" data-umami-event="LinkedIn Click">{t.footer.linkedin} ↗</a>
+    <a href={LINKEDIN_URL} class="light link-draw" rel="me noopener" target="_blank" data-umami-event="LinkedIn Click">{t.footer.linkedin} ↗</a>
   </div>
   <div class="group">
-    <a href="/impressum/">{t.footer.impressum}</a>
+    <a href="/impressum/" class="link-draw">{t.footer.impressum}</a>
     <span aria-hidden="true">·</span>
-    <a href="/datenschutz/">{t.footer.datenschutz}</a>
+    <a href="/datenschutz/" class="link-draw">{t.footer.datenschutz}</a>
   </div>
   <LanguageSwitcher locale={locale} path={path} alternates={alternates} variant="footer" />
 </footer>

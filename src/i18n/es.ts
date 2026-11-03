@@ -10,9 +10,6 @@ const es: Dictionary = {
   ctaLabel: 'Iniciar una conversación',
   contactLead:
     'Viena, Austria. Las consultas escritas se responden en un plazo de dos días laborables. Conviene indicar quién es usted, qué organización representa y la decisión a la que se enfrenta.',
-  productCaption:
-    'En desarrollo: SALTUS, una plataforma de gobernanza del riesgo empresarial nativa de Microsoft 365. Detalles a petición.',
-
   nav: {
     advisory: 'Advisory',
     research: 'Investigación',
@@ -30,22 +27,33 @@ const es: Dictionary = {
     metaTitle: 'Ioan-Codrut Lazaroiu — Estrategia, riesgo y capital para infraestructuras insustituibles',
     metaDescription:
       'Asesor independiente en infraestructura energética y gobernanza del riesgo, Viena. Gobernanza del riesgo empresarial, integridad de activos y estrategia de infraestructura transfronteriza.',
-    eyebrow: 'Advisory independiente — Viena, Austria',
-    eyebrowShort: 'Advisory independiente — Viena',
+    eyebrow: 'Advisory independiente · Viena',
+    eyebrowShort: 'Advisory independiente · Viena',
     h1: 'Estrategia, riesgo y capital para infraestructuras insustituibles.',
-    lede: 'Senior advisor en la intersección de la gobernanza del riesgo empresarial, la integridad de activos y la estrategia de infraestructura transfronteriza. Veinte años de ejecución a nivel directivo en infraestructura energética; hoy, asesoramiento a nivel de consejo e investigación independiente.',
+    h1Accent: 'infraestructuras insustituibles.',
+    figures: [
+      { value: '20+', label: 'años en infraestructura energética', count: '20', suffix: '+' },
+      {
+        value: '8.500 millones de euros',
+        label: 'cartera de proyectos de inversión',
+        count: '8500',
+        suffix: ' millones de euros',
+      },
+      { value: 'Europa · Oriente Medio · África del Norte y Occidental · Asia Central', label: 'regiones' },
+    ],
+    lede: 'Gobernanza del riesgo empresarial, integridad de activos y estrategia de infraestructura transfronteriza. Veinte años de ejecución a nivel directivo en infraestructura energética. Hoy, asesoramiento a consejos de administración e investigación independiente.',
     pillars: [
       {
         num: '01',
         title: 'Advisory',
-        text: 'Diseño de la gobernanza del riesgo empresarial, mandatos de transformación y apoyo a la decisión ejecutiva para operadores e inversores.',
+        text: 'Diseño de la gobernanza del riesgo, mandatos de transformación y apoyo a la decisión para operadores e inversores.',
         href: '/advisory/',
         cta: '→ /es/advisory',
       },
       {
         num: '02',
         title: 'Investigación',
-        text: 'Working papers independientes sobre infraestructura, asignación de capital & riesgo, transformación y predicción del comportamiento en organizaciones y equipos humano-IA.',
+        text: 'Working papers sobre infraestructura, capital y riesgo, transformación y comportamiento en organizaciones y equipos humano-IA.',
         href: '/research/',
         cta: '→ /es/research',
       },
@@ -191,10 +199,10 @@ const es: Dictionary = {
   about: {
     metaTitle: 'Perfil — Ioan-Codrut Lazaroiu',
     metaDescription:
-      'Ejecutivo de infraestructura energética y asesor independiente, Viena. Investigación sobre predicción del comportamiento en organizaciones y equipos humano-IA. Más de 20 años en Europa, Oriente Medio, África del Norte y Occidental y Asia Central.',
+      'Ejecutivo de infraestructura energética y asesor independiente en Viena. Más de 20 años en Europa, Oriente Medio, África del Norte y Occidental y Asia Central.',
     eyebrow: 'Perfil',
     h1: 'Ioan-Codrut Lazaroiu',
-    lede: 'Ejecutivo de infraestructura energética y asesor independiente, Viena. Investigación sobre predicción del comportamiento en organizaciones y equipos humano-IA.',
+    lede: 'Ejecutivo de infraestructura energética y asesor independiente con base en Viena. Investiga cómo puede predecirse el comportamiento en organizaciones y equipos humano-IA.',
     portraitAlt: 'Ioan-Codrut Lazaroiu',
     portraitCaption: 'Viena, Austria',
     rows: [
@@ -204,7 +212,7 @@ const es: Dictionary = {
       },
       {
         label: 'Cartera',
-        text: 'Cartera de proyectos de inversión superior a 8.500 millones de euros — diseño, construcción, puesta en marcha y turnaround de terminales, parques de tanques, refinerías y sistemas internacionales de pipelines.',
+        text: 'Proyectos de inversión superiores a 8.500 millones de euros: diseño, construcción, puesta en marcha y turnaround de terminales, parques de tanques, refinerías y sistemas internacionales de pipelines.',
       },
       {
         label: 'Posiciones sénior',
@@ -216,7 +224,7 @@ const es: Dictionary = {
       },
       {
         label: 'Formación',
-        text: 'Ingeniería, Universidad Técnica de Construcción, Bucarest · Licenciatura en Economía, Universidad Spiru Haret, Bucarest · MIT Sloan School of Management — Executive Programme in General Management, Cohort 15.',
+        text: 'Ingeniería, Universidad Técnica de Construcción, Bucarest · Licenciatura en Economía, Universidad Spiru Haret, Bucarest · MIT Sloan School of Management, Executive Programme in General Management, Cohort 15.',
       },
       {
         label: 'Credenciales',

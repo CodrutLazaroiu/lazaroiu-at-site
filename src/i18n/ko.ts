@@ -11,9 +11,6 @@ const ko: Dictionary = {
   ctaLabel: '대화 시작하기',
   contactLead:
     '오스트리아 빈. 서면 문의에는 영업일 기준 2일 이내에 답변드립니다. 귀하가 누구인지, 어느 조직을 대표하는지, 그리고 직면한 결정이 무엇인지 알려주시면 도움이 됩니다.',
-  productCaption:
-    '개발 중: SALTUS, Microsoft 365 네이티브 전사적 리스크 거버넌스 플랫폼. 세부 사항은 요청 시 제공.',
-
   nav: {
     advisory: 'Advisory',
     research: '연구',
@@ -31,22 +28,33 @@ const ko: Dictionary = {
     metaTitle: 'Ioan-Codrut Lazaroiu — 대체 불가능한 인프라를 위한 전략, 리스크, 자본',
     metaDescription:
       '오스트리아 빈의 독립 에너지 인프라·리스크 거버넌스 어드바이저. 전사적 리스크 거버넌스, 자산 건전성, 국경 간 인프라 전략.',
-    eyebrow: '독립 자문 — 오스트리아 빈',
-    eyebrowShort: '독립 자문 — 빈',
+    // pending native review
+    eyebrow: '독립 자문 · 빈',
+    eyebrowShort: '독립 자문 · 빈',
     h1: '대체 불가능한 인프라를 위한 전략, 리스크, 자본.',
-    lede: '전사적 리스크 거버넌스, 자산 건전성, 국경 간 인프라 전략이 교차하는 영역의 시니어 어드바이저. 에너지 인프라 분야 20년의 실행 경험을 바탕으로, 현재는 이사회 수준의 자문과 독립 연구를 수행하고 있습니다.',
+    // No h1Accent: in Korean word order "irreplaceable infrastructure" opens the sentence, so the headline stays plain.
+    // pending native review
+    figures: [
+      { value: '20+', label: '에너지 인프라 경력 연수', count: '20', suffix: '+' },
+      { value: '85억 유로', label: '자본 프로젝트 포트폴리오', count: '85', suffix: '억 유로' },
+      { value: '유럽 · 중동 · 북·서아프리카 · 중앙아시아', label: '활동 지역' },
+    ],
+    // pending native review
+    lede: '전사적 리스크 거버넌스, 자산 건전성, 국경 간 인프라 전략. 에너지 인프라 분야 20년의 실행 경험. 현재는 이사회 자문과 독립 연구를 수행하고 있습니다.',
     pillars: [
       {
         num: '01',
         title: 'Advisory',
-        text: '운영사와 투자자를 위한 전사적 리스크 거버넌스 설계, 전환 프로젝트, 경영진 의사결정 지원.',
+        // pending native review
+        text: '운영사와 투자자를 위한 리스크 거버넌스 설계, 전환 프로젝트, 의사결정 지원.',
         href: '/advisory/',
         cta: '→ /ko/advisory',
       },
       {
         num: '02',
         title: '연구',
-        text: '인프라, 자본 배분·리스크, 전환, 그리고 조직과 인간-AI 팀의 행동 예측에 관한 독립 워킹 페이퍼.',
+        // pending native review
+        text: '인프라, 자본과 리스크, 전환, 그리고 조직과 인간-AI 팀의 행동에 관한 워킹 페이퍼.',
         href: '/research/',
         cta: '→ /ko/research',
       },
@@ -129,7 +137,6 @@ const ko: Dictionary = {
       'OMV, Wood Group, Nabucco, ILF Consulting Engineers에서 시니어 직책을 역임했습니다.',
       '현재 수행 중인 주요 프로젝트: 유럽 국경 간 파이프라인 그룹의 전사적 거버넌스·리스크 전환, 그리고 중동과 중앙아시아에서의 자문 프로젝트.',
     ],
-    closing: '개발 중: Microsoft 365 네이티브 전사적 리스크 거버넌스 플랫폼. 세부 사항은 문의 바랍니다.',
   },
 
   researchPdfLabels: ['논문 읽기 (PDF, 67쪽)', '논문 읽기 (PDF, 12쪽)', '논문 읽기 (PDF, 16쪽)'],
@@ -144,10 +151,12 @@ const ko: Dictionary = {
   about: {
     metaTitle: '소개 — Ioan-Codrut Lazaroiu',
     metaDescription:
-      '오스트리아 빈의 에너지 인프라 임원이자 독립 어드바이저. 조직과 인간-AI 팀의 행동 예측에 관한 연구. 유럽, 중동, 북·서아프리카, 중앙아시아에서 20년 이상의 경력.',
+      // pending native review
+      '오스트리아 빈의 에너지 인프라 임원이자 독립 어드바이저. 유럽, 중동, 북·서아프리카, 중앙아시아에서 20년 이상의 경력.',
     eyebrow: '소개',
     h1: 'Ioan-Codrut Lazaroiu',
-    lede: '오스트리아 빈의 에너지 인프라 임원이자 독립 어드바이저. 조직과 인간-AI 팀의 행동 예측에 관한 연구.',
+    // pending native review
+    lede: '오스트리아 빈에 기반을 둔 에너지 인프라 임원이자 독립 어드바이저. 조직과 인간-AI 팀에서 행동을 어떻게 예측할 수 있는지 연구합니다.',
     portraitAlt: 'Ioan-Codrut Lazaroiu',
     portraitCaption: '오스트리아 빈',
     rows: [
@@ -157,7 +166,8 @@ const ko: Dictionary = {
       },
       {
         label: '포트폴리오',
-        text: '85억 유로를 상회하는 자본 프로젝트 포트폴리오 — 터미널, 저장 탱크, 정유소, 국제 파이프라인 시스템의 설계·건설·시운전·턴어라운드.',
+        // pending native review
+        text: '85억 유로를 상회하는 자본 프로젝트: 터미널, 저장 탱크, 정유소, 국제 파이프라인 시스템의 설계·건설·시운전·턴어라운드.',
       },
       {
         label: '주요 경력',
@@ -169,7 +179,7 @@ const ko: Dictionary = {
       },
       {
         label: '학력',
-        text: '공학, 부쿠레슈티 건설기술대학교 · 경제학 학사, 부쿠레슈티 스피루 하레트 대학교 · MIT Sloan School of Management — Executive Programme in General Management, 15기.',
+        text: '공학, 부쿠레슈티 건설기술대학교 · 경제학 학사, 부쿠레슈티 스피루 하레트 대학교 · MIT Sloan School of Management, Executive Programme in General Management, Cohort 15.',
       },
       {
         label: '자격',

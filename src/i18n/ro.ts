@@ -8,9 +8,6 @@ const ro: Dictionary = {
   ctaLabel: 'Începeți o conversație',
   contactLead:
     'Viena, Austria. Solicitările scrise primesc răspuns în cel mult două zile lucrătoare. Este util să precizați cine sunteți, ce organizație reprezentați și decizia cu care vă confruntați.',
-  productCaption:
-    'În dezvoltare: SALTUS, o platformă de enterprise risk governance nativă Microsoft 365. Detalii la cerere.',
-
   nav: {
     advisory: 'Advisory',
     research: 'Cercetare',
@@ -28,22 +25,34 @@ const ro: Dictionary = {
     metaTitle: 'Ioan-Codrut Lazaroiu — Strategie, risc și capital pentru infrastructuri de neînlocuit',
     metaDescription:
       'Consultant independent în infrastructură energetică și guvernanța riscului, Viena. Guvernanța riscului la nivel de întreprindere, integritatea activelor și strategie de infrastructură transfrontalieră.',
-    eyebrow: 'Consultanță independentă — Viena, Austria',
-    eyebrowShort: 'Consultanță independentă — Viena',
+    eyebrow: 'Consultanță independentă · Viena',
+    eyebrowShort: 'Consultanță independentă · Viena',
     h1: 'Strategie, risc și capital pentru infrastructuri de neînlocuit.',
-    lede: 'Senior advisor la intersecția dintre guvernanța riscului la nivel de întreprindere, integritatea activelor și strategia infrastructurii transfrontaliere. Douăzeci de ani de execuție la nivel executiv în infrastructura energetică; astăzi, consultanță la nivel de consiliu și cercetare independentă.',
+    h1Accent: 'infrastructuri de neînlocuit.',
+    figures: [
+      { value: '20+', label: 'ani în infrastructura energetică', count: '20', suffix: '+' },
+      {
+        value: '8,5 miliarde de euro',
+        label: 'portofoliu de proiecte de investiții',
+        count: '8.5',
+        decimals: '1',
+        suffix: ' miliarde de euro',
+      },
+      { value: 'Europa · Orientul Mijlociu · Africa de Nord și de Vest · Asia Centrală', label: 'regiuni' },
+    ],
+    lede: 'Guvernanța riscului la nivel de întreprindere, integritatea activelor și strategia infrastructurii transfrontaliere. Douăzeci de ani de execuție la nivel executiv în infrastructura energetică. Astăzi, consultanță pentru consilii de administrație și cercetare independentă.',
     pillars: [
       {
         num: '01',
         title: 'Advisory',
-        text: 'Proiectarea guvernanței riscului la nivel de întreprindere, mandate de transformare și sprijin decizional pentru operatori și investitori.',
+        text: 'Proiectarea guvernanței riscului, mandate de transformare și sprijin decizional pentru operatori și investitori.',
         href: '/advisory/',
         cta: '→ /ro/advisory',
       },
       {
         num: '02',
         title: 'Cercetare',
-        text: 'Lucrări de cercetare independente despre infrastructură, alocarea capitalului & risc, transformare și predicția comportamentală în organizații și în echipele om–IA.',
+        text: 'Lucrări de cercetare despre infrastructură, capital și risc, transformare și comportament în organizații și în echipele om–IA.',
         href: '/research/',
         cta: '→ /ro/research',
       },
@@ -189,10 +198,10 @@ const ro: Dictionary = {
   about: {
     metaTitle: 'Profil — Ioan-Codrut Lazaroiu',
     metaDescription:
-      'Executiv în infrastructura energetică și consultant independent, Viena. Cercetare privind predicția comportamentală în organizații și în echipele om–IA. Peste 20 de ani în Europa, Orientul Mijlociu, Africa de Nord și de Vest și Asia Centrală.',
+      'Executiv în infrastructura energetică și consultant independent la Viena. Peste 20 de ani în Europa, Orientul Mijlociu, Africa de Nord și de Vest și Asia Centrală.',
     eyebrow: 'Profil',
     h1: 'Ioan-Codrut Lazaroiu',
-    lede: 'Executiv în infrastructura energetică și consultant independent, Viena. Cercetare privind predicția comportamentală în organizații și în echipele om–IA.',
+    lede: 'Executiv în infrastructura energetică și consultant independent cu sediul la Viena. Cercetează cum poate fi prezis comportamentul în organizații și în echipele om–IA.',
     portraitAlt: 'Ioan-Codrut Lazaroiu',
     portraitCaption: 'Viena, Austria',
     rows: [
@@ -202,7 +211,7 @@ const ro: Dictionary = {
       },
       {
         label: 'Portofoliu',
-        text: 'Portofoliu de proiecte de investiții de peste 8,5 miliarde de euro — proiectarea, construcția, punerea în funcțiune și turnaround-ul unor terminale, parcuri de rezervoare, rafinării și sisteme internaționale de conducte.',
+        text: 'Proiecte de investiții de peste 8,5 miliarde de euro: proiectarea, construcția, punerea în funcțiune și turnaround-ul unor terminale, parcuri de rezervoare, rafinării și sisteme internaționale de conducte.',
       },
       {
         label: 'Poziții senior',
@@ -214,7 +223,7 @@ const ro: Dictionary = {
       },
       {
         label: 'Educație',
-        text: 'Inginerie, Universitatea Tehnică de Construcții, București · Licență în Economie, Universitatea Spiru Haret, București · MIT Sloan School of Management — Executive Programme in General Management, Cohort 15.',
+        text: 'Inginerie, Universitatea Tehnică de Construcții, București · Licență în Economie, Universitatea Spiru Haret, București · MIT Sloan School of Management, Executive Programme in General Management, Cohort 15.',
       },
       {
         label: 'Acreditări',
