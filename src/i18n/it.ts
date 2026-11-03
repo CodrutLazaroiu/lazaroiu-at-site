@@ -65,6 +65,10 @@ const it: Dictionary = {
         cta: '→ /it/about',
       },
     ],
+    researchPhoto: {
+      alt: "Ioan-Codrut Lazaroiu durante una presentazione in un'aula della MIT Sloan Executive Education, agosto 2026.",
+      caption: 'MIT Sloan Executive Education · Cambridge · agosto 2026',
+    },
     papers: [
       {
         eyebrow: 'Working paper · settembre 2026',

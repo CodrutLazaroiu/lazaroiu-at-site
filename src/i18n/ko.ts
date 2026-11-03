@@ -68,6 +68,11 @@ const ko: Dictionary = {
         cta: '→ /ko/about',
       },
     ],
+    // pending native review
+    researchPhoto: {
+      alt: '2026년 8월 MIT Sloan Executive Education 강의실에서 발표 중인 Ioan-Codrut Lazaroiu.',
+      caption: 'MIT Sloan Executive Education · 케임브리지 · 2026년 8월',
+    },
     papers: [
       {
         eyebrow: '워킹 페이퍼 · 2026년 9월',

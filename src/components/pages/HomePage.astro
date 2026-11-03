@@ -80,7 +80,8 @@ const splitTitle = (title: string): [string, string] => {
 
 <!-- 3.13 paper-tone reading section for the papers -->
 <section class="papers paper-tone">
-  <ul class="paper-list container" role="list">
+  <div class="research-band__grid container">
+  <ul class="paper-list research-band__list" role="list">
     {
       t.home.papers.map((paper, i) => (
         <li class="reveal" style={`--i:${i}`}>
@@ -103,6 +104,20 @@ const splitTitle = (title: string): [string, string] => {
       ))
     }
   </ul>
+  <figure class="research-band__photo reveal">
+    <img
+      src="/images/home-mit-2026-640.jpg"
+      srcset="/images/home-mit-2026-320.jpg 320w, /images/home-mit-2026-640.jpg 640w, /images/home-mit-2026-960.jpg 960w"
+      sizes="(max-width: 1023px) 60vw, (max-width: 1500px) 260px, 320px"
+      width="960"
+      height="1130"
+      loading="lazy"
+      decoding="async"
+      alt={t.home.researchPhoto.alt}
+    />
+    <figcaption class="label meta">{t.home.researchPhoto.caption}</figcaption>
+  </figure>
+  </div>
 </section>
 
 <style>
@@ -260,9 +275,62 @@ const splitTitle = (title: string): [string, string] => {
     padding-block: 2rem 4rem;
   }
 
+  /* Two columns: the three rows and, as counterweight, the photo. Dividers stay in the list column. */
+  .research-band__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 320px;
+    column-gap: 4rem;
+    align-items: center;
+  }
+
+  .research-band__list {
+    min-width: 0;
+  }
+
   .paper-list {
     list-style: none;
     margin: 0;
+    padding: 0;
+  }
+
+  .research-band__photo {
+    margin: 0;
+    transition-delay: 150ms; /* after the first row, which reveals with no delay */
+  }
+
+  .research-band__photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+  }
+
+  .research-band__photo figcaption {
+    margin-top: 0.75rem;
+  }
+
+  /* The grid mirrors itself in RTL; the photo is never mirrored. */
+  :global([dir='rtl']) .research-band__photo img {
+    transform: none;
+  }
+
+  @media (max-width: 1500px) {
+    .research-band__grid {
+      grid-template-columns: minmax(0, 1fr) 260px;
+      column-gap: 3rem;
+    }
+  }
+
+  @media (max-width: 1023px) {
+    .research-band__grid {
+      grid-template-columns: 1fr;
+      row-gap: 2.5rem;
+    }
+
+    .research-band__photo {
+      width: 60%;
+      justify-self: start;
+    }
   }
 
   .paper-list li {
