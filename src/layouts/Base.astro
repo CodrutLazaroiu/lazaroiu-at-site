@@ -158,6 +158,8 @@ const ogLocales: Record<string, string> = {
     <script>
       // Handoff section 4: reveal, tilt, magnetic, counters. No dependencies, no network.
       const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+      // SVG (SMIL) pulses on the corridor nodes are not covered by the CSS reduced-motion block.
+      if (reduce) document.querySelectorAll('svg').forEach((svg) => (svg as SVGSVGElement).pauseAnimations());
 
       function initReveal() {
         const map = new Map<Element, Element>();
