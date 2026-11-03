@@ -82,6 +82,8 @@ export interface Dictionary {
     }[];
     pillars: Pillar[];
     papers: HomePaperTeaser[];
+    /** Photo column beside the papers list on Home. */
+    researchPhoto: { alt: string; caption: string };
   };
 
   advisory: {

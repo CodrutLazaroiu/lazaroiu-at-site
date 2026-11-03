@@ -75,6 +75,11 @@ const ar: Dictionary = {
         cta: '→ /ar/about',
       },
     ],
+    // pending native review
+    researchPhoto: {
+      alt: 'يوان-كودروت لازارويو يقدّم عرضًا في قاعة دراسية في MIT Sloan Executive Education، أغسطس 2026.',
+      caption: 'MIT Sloan Executive Education · كامبريدج · أغسطس 2026',
+    },
     papers: [
       {
         eyebrow: 'ورقة عمل · سبتمبر 2026',
