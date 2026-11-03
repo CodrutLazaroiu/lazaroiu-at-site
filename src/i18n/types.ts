@@ -46,8 +46,8 @@ export interface Dictionary {
   ctaLabel: string;
   /** Contact page lead (location, response time, what to include). */
   contactLead: string;
-  /** Unbranded→named product caption (home hero + advisory closing). */
-  productCaption: string;
+  /** Legacy product caption; no longer rendered. Removed from EN, deleted per locale in the locale pass. */
+  productCaption?: string;
 
   nav: {
     advisory: string;
