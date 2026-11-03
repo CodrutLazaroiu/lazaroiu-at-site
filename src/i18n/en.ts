@@ -31,6 +31,19 @@ const en: Dictionary = {
     eyebrow: 'Independent Advisory — Vienna, Austria',
     eyebrowShort: 'Independent Advisory — Vienna',
     h1: 'Strategy, risk, and capital for irreplaceable infrastructure.',
+    h1Accent: 'irreplaceable infrastructure.',
+    figures: [
+      { value: '20+', label: 'years in energy infrastructure', count: '20', suffix: '+' },
+      {
+        value: 'EUR 8.5 billion',
+        label: 'capital-project portfolio',
+        count: '8.5',
+        decimals: '1',
+        prefix: 'EUR ',
+        suffix: ' billion',
+      },
+      { value: 'Europe · the Middle East · North and West Africa · Central Asia', label: 'regions' },
+    ],
     lede: 'Senior advisor at the intersection of enterprise risk governance, asset integrity, and cross-border infrastructure strategy. Twenty years of executive delivery in energy infrastructure; now advising at board level and publishing independent research.',
     pillars: [
       {

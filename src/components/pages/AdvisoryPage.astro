@@ -10,15 +10,15 @@ const t = getDict(locale);
 ---
 
 <section class="head container">
-  <p class="eyebrow">{t.advisory.eyebrow}</p>
-  <h1>{t.advisory.h1}</h1>
-  <p class="lede">{t.advisory.lede}</p>
+  <p class="label rise" style="--i:0">{t.advisory.eyebrow}</p>
+  <h1 class="rise" style="--i:1">{t.advisory.h1}</h1>
+  <p class="lede rise" style="--i:2">{t.advisory.lede}</p>
 </section>
 
 <section class="services container" aria-label={t.advisory.servicesLabel}>
   {
-    t.advisory.services.map((service) => (
-      <div class="service">
+    t.advisory.services.map((service, i) => (
+      <div class="service reveal" style={`--i:${i}`}>
         <p class="num mono">{service.num}</p>
         <div>
           <h2>{service.title}</h2>
@@ -30,8 +30,8 @@ const t = getDict(locale);
 </section>
 
 <section class="track container">
-  <div class="track-inner">
-    <p class="eyebrow">{t.advisory.trackRecordLabel}</p>
+  <div class="track-inner reveal">
+    <p class="label">{t.advisory.trackRecordLabel}</p>
     {t.advisory.trackRecord.map((para) => <p class="track-text">{para}</p>)}
   </div>
 </section>
@@ -44,31 +44,29 @@ const t = getDict(locale);
   }
 
   h1 {
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 1.15;
-    margin: 14px 0 10px;
+    font-size: var(--step-h2);
+    line-height: 1.1;
+    margin: 1rem 0 0.75rem;
   }
 
   .lede {
-    font-size: 15px;
-    line-height: 1.6;
-    color: var(--muted);
+    font-size: 1rem;
+    line-height: 1.65;
+    color: var(--fg-muted);
     margin: 0;
-    max-width: 640px;
+    max-width: 40rem;
   }
 
-
   .services {
-    margin-top: 44px;
+    margin-top: 2.75rem;
   }
 
   .service {
     border-top: 1px solid var(--line-strong);
-    padding: 20px 0;
+    padding: 1.5rem 0;
     display: grid;
-    grid-template-columns: 160px 1fr;
-    gap: 24px;
+    grid-template-columns: 10rem 1fr;
+    gap: 1.5rem;
   }
 
   .service:last-child {
@@ -76,106 +74,100 @@ const t = getDict(locale);
   }
 
   .num {
-    font-size: 11.5px;
-    color: var(--gold);
-    padding-top: 3px;
+    font-size: 0.75rem;
+    color: var(--copper);
+    padding-top: 0.4rem;
   }
 
   h2 {
-    font-size: 17px;
-    font-weight: 600;
-    margin: 0 0 6px;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    margin: 0 0 0.5rem;
   }
 
   .text {
-    font-size: 14.5px;
+    font-size: 0.9375rem;
     line-height: 1.65;
     color: var(--text-body);
     margin: 0;
-    max-width: 700px;
+    max-width: 44rem;
   }
 
   .track {
-    margin-top: 56px;
+    margin-top: 3.5rem;
   }
 
   .track-inner {
-    background: var(--bg-raise);
+    background: var(--bg-card);
     border: 1px solid var(--line);
-    border-top: 2px solid var(--gold);
-    padding: 34px 40px 38px;
+    border-top: 2px solid var(--copper);
+    border-radius: var(--radius);
+    padding: 2.125rem 2.5rem 2.375rem;
   }
 
   .track-text {
-    font-size: 14.5px;
+    font-size: 0.9375rem;
     line-height: 1.7;
     color: var(--text-body);
-    margin: 14px 0 0;
-    max-width: 760px;
+    margin: 0.875rem 0 0;
+    max-width: 47.5rem;
   }
 
   .closing {
-    font-size: 13px;
+    font-size: 0.8125rem;
     line-height: 1.6;
-    color: var(--muted);
+    color: var(--fg-muted);
     font-style: italic;
-    margin: 40px 0 72px;
+    margin: 2.5rem 0 4.5rem;
   }
 
   @media (max-width: 820px) {
     .head {
-      padding-top: 40px;
-    }
-
-    h1 {
-      font-size: 27px;
-      line-height: 1.2;
-      margin: 12px 0 8px;
+      padding-top: 2.5rem;
     }
 
     .lede {
-      font-size: 13.5px;
+      font-size: 0.9375rem;
     }
 
     .services {
-      margin-top: 28px;
+      margin-top: 1.75rem;
     }
 
     .service {
       grid-template-columns: 1fr;
-      gap: 6px;
-      padding: 14px 0;
+      gap: 0.375rem;
+      padding: 0.875rem 0;
     }
 
     .num {
-      font-size: 11px;
       padding-top: 0;
     }
 
     h2 {
-      font-size: 16px;
+      font-size: 1.25rem;
     }
 
     .text {
-      font-size: 13.5px;
+      font-size: 0.9rem;
     }
 
     .track {
-      margin-top: 28px;
+      margin-top: 1.75rem;
     }
 
     .track-inner {
-      padding: 24px 22px 28px;
+      padding: 1.5rem 1.375rem 1.75rem;
     }
 
     .track-text {
-      font-size: 13.5px;
-      margin-top: 12px;
+      font-size: 0.9rem;
+      margin-top: 0.75rem;
     }
 
     .closing {
-      font-size: 12.5px;
-      margin: 28px 0 40px;
+      font-size: 0.78rem;
+      margin: 1.75rem 0 2.5rem;
     }
   }
 </style>

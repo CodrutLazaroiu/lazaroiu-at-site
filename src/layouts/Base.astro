@@ -1,9 +1,6 @@
 ---
-import '@fontsource/ibm-plex-sans/400.css';
-import '@fontsource/ibm-plex-sans/400-italic.css';
-import '@fontsource/ibm-plex-sans/600.css';
-import '@fontsource/ibm-plex-mono/400.css';
-// Loaded on every page for the endonym language switcher (العربية, 한국어).
+// Latin faces (Fraunces, Instrument Sans, JetBrains Mono) are @font-face rules in global.css,
+// served from /public/fonts. Loaded on every page for the endonym language switcher (العربية, 한국어):
 // unicode-range subsetting means only the needed glyph subsets download.
 import '@fontsource/noto-naskh-arabic/400.css';
 import '@fontsource/noto-sans-kr/400.css';
@@ -115,6 +112,7 @@ const ogLocales: Record<string, string> = {
     <link rel="alternate" hreflang="x-default" href={`${SITE_URL}${path}`} />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="preload" href="/fonts/fraunces-variable.woff2" as="font" type="font/woff2" crossorigin />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content={OWNER} />
     <meta property="og:title" content={title} />
@@ -125,7 +123,7 @@ const ogLocales: Record<string, string> = {
     <meta property="og:image:height" content="630" />
     <meta property="og:locale" content={ogLocales[locale] ?? 'en_US'} />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="theme-color" content="#0C1626" />
+    <meta name="theme-color" content="#1b2231" />
     <script type="application/ld+json" is:inline set:html={ldJson} />
     <!-- Cloudflare Web Analytics --><script
       is:inline
@@ -153,6 +151,96 @@ const ogLocales: Record<string, string> = {
       )
     }
     <Footer locale={locale} path={path} alternates={alternates} />
+    <script>
+      // Handoff section 4: reveal, tilt, magnetic, counters. No dependencies, no network.
+      const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      function initReveal() {
+        const map = new Map<Element, Element>();
+        document.querySelectorAll('.reveal, .mask-reveal').forEach((el) => {
+          // An element clipped to zero is invisible to IntersectionObserver, so watch its parent.
+          const watched = el.classList.contains('mask-reveal') && el.parentElement ? el.parentElement : el;
+          map.set(watched, el);
+        });
+        if (!('IntersectionObserver' in window)) {
+          map.forEach((el) => el.classList.add('is-in'));
+          return;
+        }
+        const io = new IntersectionObserver(
+          (entries) =>
+            entries.forEach((e) => {
+              if (!e.isIntersecting) return;
+              map.get(e.target)?.classList.add('is-in');
+              io.unobserve(e.target);
+            }),
+          { threshold: 0.15, rootMargin: '0px 0px -8% 0px' },
+        );
+        map.forEach((_, w) => io.observe(w));
+      }
+
+      function initTilt() {
+        document.querySelectorAll<HTMLElement>('[data-tilt]').forEach((el) => {
+          el.addEventListener('pointermove', (e) => {
+            const r = el.getBoundingClientRect();
+            const x = (e.clientX - r.left) / r.width;
+            const y = (e.clientY - r.top) / r.height;
+            el.style.setProperty('--mx', x * 100 + '%');
+            el.style.setProperty('--my', y * 100 + '%');
+            if (!reduce) {
+              el.style.setProperty('--ry', (x - 0.5) * 6 + 'deg');
+              el.style.setProperty('--rx', (0.5 - y) * 6 + 'deg');
+            }
+          });
+          el.addEventListener('pointerleave', () => {
+            el.style.setProperty('--rx', '0deg');
+            el.style.setProperty('--ry', '0deg');
+          });
+        });
+      }
+
+      function initMagnetic(strength = 0.22) {
+        if (reduce) return;
+        document.querySelectorAll<HTMLElement>('[data-magnetic]').forEach((el) => {
+          el.addEventListener('pointermove', (e) => {
+            const r = el.getBoundingClientRect();
+            el.style.transform = `translate(${(e.clientX - r.left - r.width / 2) * strength}px, ${(e.clientY - r.top - r.height / 2) * strength}px)`;
+          });
+          el.addEventListener('pointerleave', () => {
+            el.style.transform = '';
+          });
+        });
+      }
+
+      function initCounters() {
+        if (reduce) return;
+        document.querySelectorAll<HTMLElement>('[data-count]').forEach((el) => {
+          const to = parseFloat(el.dataset.count || '');
+          if (Number.isNaN(to)) return;
+          const dec = +(el.dataset.decimals || 0);
+          const pre = el.dataset.prefix || '';
+          const suf = el.dataset.suffix || '';
+          const final = el.textContent;
+          const io = new IntersectionObserver(([e]) => {
+            if (!e.isIntersecting) return;
+            io.disconnect();
+            const t0 = performance.now();
+            const step = (t: number) => {
+              const p = Math.min(1, (t - t0) / 1600);
+              const v = to * (1 - Math.pow(1 - p, 3));
+              el.textContent = p < 1 ? pre + v.toFixed(dec) + suf : final;
+              if (p < 1) requestAnimationFrame(step);
+            };
+            requestAnimationFrame(step);
+          });
+          io.observe(el);
+        });
+      }
+
+      initReveal();
+      initTilt();
+      initMagnetic();
+      initCounters();
+    </script>
   </body>
 </html>
 
