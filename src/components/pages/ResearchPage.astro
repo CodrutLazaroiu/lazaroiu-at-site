@@ -27,11 +27,13 @@ const ssrnLabelFor = (i: number) =>
   <p class="lede rise" style="--i:2">{r.lede}</p>
 </section>
 
-<!-- 3.13 paper-tone reading section; the three-column layout is unchanged. -->
+<!-- 3.13 paper-tone reading section; the three-column layout is unchanged.
+     The first card is in the first viewport, so it enters with the CSS rise animation and does
+     not wait for the scroll-reveal script; the others reveal as they scroll in. -->
 <section class="papers paper-tone container">
   {
     r.papers.map((paper, i) => (
-      <article class="paper reveal" style={`--i:${i}`}>
+      <article class:list={['paper', i === 0 ? 'rise' : 'reveal']} style={`--i:${i}`}>
         <p class="label meta paper-eyebrow">{paper.eyebrow}</p>
         <h2>{paper.title}</h2>
         <p class="thesis">{paper.thesis}</p>
@@ -126,6 +128,7 @@ const ssrnLabelFor = (i: number) =>
   .thesis {
     font-family: var(--font-display);
     font-style: italic;
+    font-weight: 300;
     font-size: 1.0625rem;
     line-height: 1.5;
     color: var(--paper-muted);

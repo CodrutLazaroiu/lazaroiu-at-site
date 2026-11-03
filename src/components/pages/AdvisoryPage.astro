@@ -15,10 +15,12 @@ const t = getDict(locale);
   <p class="lede rise" style="--i:2">{t.advisory.lede}</p>
 </section>
 
+<!-- The first service sits in the first viewport, so it enters with the CSS rise animation
+     rather than waiting for the scroll-reveal script; the rest reveal as they scroll in. -->
 <section class="services container" aria-label={t.advisory.servicesLabel}>
   {
     t.advisory.services.map((service, i) => (
-      <div class="service reveal" style={`--i:${i}`}>
+      <div class:list={['service', i === 0 ? 'rise' : 'reveal']} style={`--i:${i}`}>
         <p class="num mono">{service.num}</p>
         <div>
           <h2>{service.title}</h2>

@@ -113,6 +113,10 @@ const ogLocales: Record<string, string> = {
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="sitemap" href="/sitemap-index.xml" />
     <link rel="preload" href="/fonts/fraunces-variable.woff2" as="font" type="font/woff2" crossorigin />
+    {/* The italic face is only above the fold in the Home hero accent. */}
+    {path === '/' && <link rel="preload" href="/fonts/fraunces-italic-variable.woff2" as="font" type="font/woff2" crossorigin />}
+    <link rel="preload" href="/fonts/jetbrains-mono-variable.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/instrument-sans-regular.woff2" as="font" type="font/woff2" crossorigin />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content={OWNER} />
     <meta property="og:title" content={title} />

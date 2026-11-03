@@ -1,11 +1,13 @@
 /* Corridor redesign: tokens from the handoff (section 2), effects (section 3).
    Aliases at the end of :root keep the names older components still use. */
 
-/* Self-hosted fonts (SIL OFL). Latin + Latin Extended subsets in /public/fonts. */
+/* Self-hosted fonts (SIL OFL). Latin + Latin Extended subsets in /public/fonts.
+   Fraunces keeps its optical-size axis; weight is instanced to what the site uses
+   (400 upright, 300 italic) to keep the headline's critical path small. */
 @font-face {
   font-family: 'Fraunces';
   font-style: normal;
-  font-weight: 100 900;
+  font-weight: 400;
   font-display: swap;
   src: url('/fonts/fraunces-variable.woff2') format('woff2-variations'),
     url('/fonts/fraunces-variable.woff2') format('woff2');
@@ -14,7 +16,7 @@
 @font-face {
   font-family: 'Fraunces';
   font-style: italic;
-  font-weight: 100 900;
+  font-weight: 300;
   font-display: swap;
   src: url('/fonts/fraunces-italic-variable.woff2') format('woff2-variations'),
     url('/fonts/fraunces-italic-variable.woff2') format('woff2');
@@ -52,10 +54,21 @@
   src: url('/fonts/instrument-sans-semibold.woff2') format('woff2');
 }
 
+/* Metric-matched local fallback for Instrument Sans, so text wraps the same before and after
+   the web font arrives (no layout shift on swap). Ratio measured against Arial. */
+@font-face {
+  font-family: 'Instrument Sans Fallback';
+  src: local('Arial'), local('Helvetica Neue'), local('Roboto');
+  size-adjust: 103.3%;
+  ascent-override: 97%;
+  descent-override: 25%;
+  line-gap-override: 0%;
+}
+
 @font-face {
   font-family: 'JetBrains Mono';
   font-style: normal;
-  font-weight: 100 800;
+  font-weight: 400 500;
   font-display: swap;
   src: url('/fonts/jetbrains-mono-variable.woff2') format('woff2-variations'),
     url('/fonts/jetbrains-mono-variable.woff2') format('woff2');
@@ -76,7 +89,7 @@
 
   /* type */
   --font-display: 'Fraunces', Georgia, serif;
-  --font-sans: 'Instrument Sans', system-ui, sans-serif;
+  --font-sans: 'Instrument Sans', 'Instrument Sans Fallback', system-ui, sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, monospace;
   --step-hero: clamp(3rem, 7vw, 6rem);
   --step-h2: clamp(2.25rem, 4vw, 3rem);

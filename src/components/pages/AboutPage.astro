@@ -41,6 +41,8 @@ const withCounters = (text: string) =>
         fallbackFormat="jpg"
         widths={[360, 720]}
         sizes="(max-width: 820px) calc(100vw - 44px), 360px"
+        loading="eager"
+        fetchpriority="high"
         alt={t.about.portraitAlt}
       />
     </div>
