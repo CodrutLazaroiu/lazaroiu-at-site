@@ -44,6 +44,8 @@ export interface Dictionary {
 
   /** Hero / contact CTA button label. */
   ctaLabel: string;
+  /** Hero film: accessible name of the video and the two control labels in both states. */
+  film: { label: string; play: string; pause: string; music: string; mute: string };
   /** Contact page lead (location, response time, what to include). */
   contactLead: string;
 

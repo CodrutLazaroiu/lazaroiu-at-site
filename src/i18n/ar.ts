@@ -9,6 +9,8 @@ const ar: Dictionary = {
   siteName: 'Ioan-Codrut Lazaroiu',
 
   ctaLabel: 'ابدأ حواراً',
+  // pending native review
+  film: { label: 'فيلم عن الاستشارات في البنى التحتية', play: 'تشغيل الفيلم', pause: 'إيقاف الفيلم مؤقتاً', music: 'تشغيل الموسيقى', mute: 'كتم الموسيقى' },
   contactLead:
     'فيينا، النمسا. يُرد على الاستفسارات الخطية في غضون يومي عمل. من المفيد ذكر من أنتم، وأي جهة تمثلون، والقرار الذي تواجهونه.',
   nav: {
