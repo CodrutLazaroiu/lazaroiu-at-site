@@ -213,10 +213,22 @@ const ogLocales: Record<string, string> = {
 
       function initCounters() {
         if (reduce) return;
+        // Intermediate values follow the page language (8,5 in German, 8.500 in Spanish), always
+        // with Latin digits as the site's copy uses; the exact final text is restored at the end.
+        const lang = (document.documentElement.lang || 'en') + '-u-nu-latn';
+        const formatter = (dec: number) => {
+          const opts = { minimumFractionDigits: dec, maximumFractionDigits: dec };
+          try {
+            return new Intl.NumberFormat(lang, { ...opts, useGrouping: 'always' as never });
+          } catch {
+            return new Intl.NumberFormat(lang, opts);
+          }
+        };
         document.querySelectorAll<HTMLElement>('[data-count]').forEach((el) => {
           const to = parseFloat(el.dataset.count || '');
           if (Number.isNaN(to)) return;
           const dec = +(el.dataset.decimals || 0);
+          const fmt = formatter(dec);
           const pre = el.dataset.prefix || '';
           const suf = el.dataset.suffix || '';
           const final = el.textContent;
@@ -227,7 +239,7 @@ const ogLocales: Record<string, string> = {
             const step = (t: number) => {
               const p = Math.min(1, (t - t0) / 1600);
               const v = to * (1 - Math.pow(1 - p, 3));
-              el.textContent = p < 1 ? pre + v.toFixed(dec) + suf : final;
+              el.textContent = p < 1 ? pre + fmt.format(v) + suf : final;
               if (p < 1) requestAnimationFrame(step);
             };
             requestAnimationFrame(step);

@@ -54,7 +54,8 @@ const splitTitle = (title: string): [string, string] => {
       figures.map((f, i) => (
         <li class="reveal" style={`--i:${i}`}>
           <span
-            class:list={['figure-value', { 'figure-value--text': !f.count }]}
+            class:list={['figure-value', { 'figure-value--text': !f.count, 'figure-value--long': f.value.length > 20 }]}
+            dir={/^[\x20-\x7e]+$/.test(f.value) ? 'ltr' : undefined}
             data-count={f.count}
             data-decimals={f.decimals}
             data-prefix={f.prefix}
@@ -194,6 +195,11 @@ const splitTitle = (title: string): [string, string] => {
     line-height: 1;
     letter-spacing: -0.02em;
     font-variant-numeric: tabular-nums;
+  }
+
+  /* Long locale formats (e.g. "8.500 millones de euros") step down so the band stays one line. */
+  .figure-value--long {
+    font-size: clamp(1.75rem, 2.5vw, 2.25rem);
   }
 
   .figure-value--text {

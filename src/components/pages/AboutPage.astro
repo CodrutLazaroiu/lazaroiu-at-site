@@ -2,6 +2,7 @@
 import { Picture } from 'astro:assets';
 import portrait from '../../assets/portrait.jpg';
 import { getDict } from '../../i18n';
+import en from '../../i18n/en';
 import { CTA_MAILTO } from '../../config';
 
 interface Props {
@@ -11,17 +12,24 @@ interface Props {
 const { locale } = Astro.props;
 const t = getDict(locale);
 
-// 3.9 counters on the About figures. Only the exact live figures are wrapped; the HTML
-// keeps the final value so the text reads correctly without JS or with reduced motion.
+// 3.9 counters on the About figures. A row gets a counter only where it contains one of the
+// locale's own figure strings (the same ones the Home figures band shows), so the HTML keeps the
+// exact final text and reads correctly without JS or with reduced motion.
 const escape = (s: string) =>
   s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+const counterFigures = (t.home.figures ?? en.home.figures!).filter((f) => f.count);
 const withCounters = (text: string) =>
-  escape(text)
-    .replace(/\b20\+/g, '<span data-count="20" data-suffix="+">20+</span>')
-    .replace(
-      /EUR 8\.5 billion/g,
-      '<span data-count="8.5" data-decimals="1" data-prefix="EUR " data-suffix=" billion">EUR 8.5 billion</span>',
-    );
+  counterFigures.reduce((html, f) => {
+    const attrs = [
+      `data-count="${f.count}"`,
+      f.decimals && `data-decimals="${f.decimals}"`,
+      f.prefix && `data-prefix="${escape(f.prefix)}"`,
+      f.suffix && `data-suffix="${escape(f.suffix)}"`,
+    ]
+      .filter(Boolean)
+      .join(' ');
+    return html.split(escape(f.value)).join(`<span ${attrs}>${escape(f.value)}</span>`);
+  }, escape(text));
 ---
 
 <section class="about container">

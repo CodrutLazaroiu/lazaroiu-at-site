@@ -111,6 +111,9 @@ html[lang='ar'] {
 html[lang='ko'] {
   --font-sans: 'Noto Sans KR', 'Instrument Sans', system-ui, sans-serif;
   --font-display: 'Noto Sans KR', sans-serif;
+  /* Korean breaks lines between words, not inside them; still wrap anywhere if a word is wider than the column. */
+  word-break: keep-all;
+  overflow-wrap: anywhere;
 }
 
 html[lang='ar'] .accent,

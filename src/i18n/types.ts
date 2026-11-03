@@ -46,8 +46,6 @@ export interface Dictionary {
   ctaLabel: string;
   /** Contact page lead (location, response time, what to include). */
   contactLead: string;
-  /** Legacy product caption; no longer rendered. Removed from EN, deleted per locale in the locale pass. */
-  productCaption?: string;
 
   nav: {
     advisory: string;
@@ -94,8 +92,6 @@ export interface Dictionary {
     services: Service[];
     trackRecordLabel: string;
     trackRecord: string[];
-    /** Legacy Advisory closing line; still present in AR/KO until the locale pass removes it. */
-    closing?: string;
   };
 
   research?: {
