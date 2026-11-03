@@ -37,6 +37,26 @@ const splitTitle = (title: string): [string, string] => {
     <circle cx="680" cy="210" r="3" fill="var(--copper)"><animate attributeName="r" values="2;5;2" dur="3s" repeatCount="indefinite"></animate></circle>
     <circle cx="650" cy="120" r="3" fill="var(--copper)"><animate attributeName="r" values="2;5;2" dur="4s" repeatCount="indefinite"></animate></circle>
   </svg>
+  <!-- Branch routes: a second layer that fills the hero to the right of the text column.
+       It starts at 64rem from the inline start, beyond the headline box (max-width 60rem plus
+       padding), so no route can cross text at any width. Shown from 1440px up; the routes enter
+       from the top and left edges, redirect at the nodes where they meet and leave at the bottom
+       or right edge, so the flow never starts or stops inside the frame. -->
+  <svg class="branches" viewBox="0 0 920 900" preserveAspectRatio="xMinYMin slice" aria-hidden="true">
+    <path class="base" d="M-10 40 C 120 20, 300 40, 400 120 S 500 330, 560 400 S 720 470, 930 520"></path>
+    <path class="flow" style="animation-duration:16s;opacity:.6;stroke-width:1.4" d="M-10 40 C 120 20, 300 40, 400 120 S 500 330, 560 400 S 720 470, 930 520"></path>
+    <path class="base" d="M-10 100 C 80 170, 170 250, 180 360 S 270 500, 340 580 S 470 700, 480 910"></path>
+    <path class="flow" style="animation-duration:20s;opacity:.5;stroke-width:1.4" d="M-10 100 C 80 170, 170 250, 180 360 S 270 500, 340 580 S 470 700, 480 910"></path>
+    <path class="base" d="M540 -10 C 545 150, 520 260, 440 330 S 270 380, 170 400 S 40 460, 30 580 S 40 760, 20 910"></path>
+    <path class="flow" style="animation-duration:24s;opacity:.55;stroke-width:1.4" d="M540 -10 C 545 150, 520 260, 440 330 S 270 380, 170 400 S 40 460, 30 580 S 40 760, 20 910"></path>
+    <path class="base" d="M600 -10 C 600 160, 565 320, 475 405 S 300 480, 230 545 S 130 700, 110 910"></path>
+    <path class="flow" style="animation-duration:19s;opacity:.45;stroke-width:1.4" d="M600 -10 C 600 160, 565 320, 475 405 S 300 480, 230 545 S 130 700, 110 910"></path>
+    <!-- Nodes where the routes meet and redirect. -->
+    <circle cx="495" cy="261" r="3" fill="var(--copper)"><animate attributeName="r" values="2;5;2" dur="3.5s" repeatCount="indefinite"></animate></circle>
+    <circle cx="525" cy="340" r="3" fill="var(--copper)"><animate attributeName="r" values="2;5;2" dur="4.5s" repeatCount="indefinite"></animate></circle>
+    <circle cx="186" cy="396" r="3" fill="var(--copper)"><animate attributeName="r" values="2;5;2" dur="3s" repeatCount="indefinite"></animate></circle>
+    <circle cx="272" cy="514" r="3" fill="var(--copper)"><animate attributeName="r" values="2;5;2" dur="5s" repeatCount="indefinite"></animate></circle>
+  </svg>
   <div class="hero-veil" aria-hidden="true"></div>
   <div class="hero-content container">
     <p class="label rise" style="--i:0"><span class="full">{t.home.eyebrow}</span><span class="short">{t.home.eyebrowShort}</span></p>
@@ -166,6 +186,25 @@ const splitTitle = (title: string): [string, string] => {
 
   .cta-row {
     margin: 2rem 0 0;
+  }
+
+  /* Branch routes: only where the hero is wide enough to leave the text column free. */
+  .branches {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    inset-inline-start: 64rem;
+    width: calc(100% - 64rem);
+    max-width: 57.5rem; /* the viewBox at 1:1; wider screens keep the routes at the same scale */
+    height: 100%;
+    color: var(--fg);
+  }
+
+  @media (min-width: 90em) {
+    .branches {
+      display: block;
+    }
   }
 
   /* ---------- figures band ---------- */
