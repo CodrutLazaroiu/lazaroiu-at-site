@@ -6,6 +6,7 @@ const en: Dictionary = {
   siteName: 'Ioan-Codrut Lazaroiu',
 
   ctaLabel: 'Start a conversation',
+  film: { label: 'Infrastructure advisory film', play: 'Play film', pause: 'Pause film', music: 'Enable music', mute: 'Mute music' },
   contactLead:
     'Vienna, Austria. Written enquiries are answered within two working days. It helps to say who you are, which organisation, and the decision you are facing.',
   nav: {

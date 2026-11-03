@@ -9,6 +9,8 @@ const ko: Dictionary = {
   siteName: 'Ioan-Codrut Lazaroiu',
 
   ctaLabel: '대화 시작하기',
+  // pending native review
+  film: { label: '인프라 자문 영상', play: '영상 재생', pause: '영상 일시정지', music: '음악 켜기', mute: '음악 끄기' },
   contactLead:
     '오스트리아 빈. 서면 문의에는 영업일 기준 2일 이내에 답변드립니다. 귀하가 누구인지, 어느 조직을 대표하는지, 그리고 직면한 결정이 무엇인지 알려주시면 도움이 됩니다.',
   nav: {

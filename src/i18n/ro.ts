@@ -6,6 +6,7 @@ const ro: Dictionary = {
   siteName: 'Ioan-Codrut Lazaroiu',
 
   ctaLabel: 'Începeți o conversație',
+  film: { label: 'Film despre consultanța în infrastructură', play: 'Redă filmul', pause: 'Pune filmul pe pauză', music: 'Pornește muzica', mute: 'Oprește muzica' },
   contactLead:
     'Viena, Austria. Solicitările scrise primesc răspuns în cel mult două zile lucrătoare. Este util să precizați cine sunteți, ce organizație reprezentați și decizia cu care vă confruntați.',
   nav: {

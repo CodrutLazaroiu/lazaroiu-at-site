@@ -1,0 +1,66 @@
+---
+// Self-hosted hero film: no external requests or dependencies. Labels come from the
+// locale dictionary so the controls are named in the page language.
+import type { Dictionary } from '../i18n/types';
+
+interface Props {
+  labels: Dictionary['film'];
+}
+const { labels } = Astro.props;
+---
+
+<div class="advisory-film-layer">
+  <video aria-label={labels.label} src="/videos/advisory-film-music.mp4" poster="/videos/advisory-poster.jpg" muted loop playsinline preload="none"></video>
+  <div class="advisory-film-veil"></div>
+</div>
+<div class="advisory-film-controls" data-play={labels.play} data-pause={labels.pause} data-music={labels.music} data-mute={labels.mute}>
+  <button type="button" data-film-play aria-label={labels.play} title={labels.play}>▶</button>
+  <button type="button" data-film-sound aria-label={labels.music} title={labels.music} aria-pressed="false">♫</button>
+</div>
+<style>
+  /* The film fades in after the text has painted; reduced-motion visitors get it at once. */
+  .advisory-film-layer { position:absolute; inset:0; pointer-events:none; animation: film-in 1.2s ease-out 0.2s both; }
+  @keyframes film-in { from { opacity: 0; } to { opacity: 1; } }
+  video { width:100%; height:100%; object-fit:cover; }
+  .advisory-film-veil { position:absolute; inset:0; background:linear-gradient(90deg,oklch(.14 .02 255 / 78%),oklch(.14 .02 255 / 20%)),linear-gradient(0deg,var(--bg,oklch(.19 .02 255)),transparent 45%); }
+  :global([dir='rtl']) .advisory-film-veil { background:linear-gradient(270deg,oklch(.14 .02 255 / 78%),oklch(.14 .02 255 / 20%)),linear-gradient(0deg,var(--bg,oklch(.19 .02 255)),transparent 45%); }
+  .advisory-film-controls { position:absolute; bottom:22px; right:28px; z-index:3; display:flex; gap:6px; padding:4px; border:1px solid var(--line); border-radius:4px; background:oklch(.14 .02 255 / 75%); }
+  button { cursor:pointer; width:38px; height:38px; border:0; border-radius:4px; background:transparent; color:var(--fg); font-size:18px; }
+  button:hover,button:focus-visible { background:var(--bg-card); outline:1px solid var(--copper); }
+  :global(.hero:has(.advisory-film-layer)) { min-height:min(760px,calc(100svh - 175px)); }
+  :global(.hero:has(.advisory-film-layer) .hero-content) { z-index:2; }
+  :global(.hero:has(.advisory-film-layer) .hero-veil) { display:none; }
+  @media(max-width:640px) { :global(.hero:has(.advisory-film-layer)) { min-height:620px; padding-bottom:95px; } }
+</style>
+<script>
+  function setupAdvisoryFilm() {
+    const video = document.querySelector<HTMLVideoElement>('.advisory-film-layer video');
+    const play = document.querySelector<HTMLButtonElement>('[data-film-play]');
+    const sound = document.querySelector<HTMLButtonElement>('[data-film-sound]');
+    if (!video || !play || !sound || video.dataset.ready) return;
+    video.dataset.ready = 'true';
+    video.muted = true; // always start silent, whatever the browser restored
+    const l = (play.parentElement as HTMLElement).dataset;
+    const sync = () => {
+      play.textContent = video.paused ? '▶' : 'Ⅱ';
+      play.title = play.ariaLabel = (video.paused ? l.play : l.pause) ?? '';
+      sound.textContent = video.muted ? '♫' : '♪';
+      sound.title = sound.ariaLabel = (video.muted ? l.music : l.mute) ?? '';
+      sound.setAttribute('aria-pressed', String(!video.muted));
+    };
+    video.addEventListener('play', sync); video.addEventListener('pause', sync);
+    play.addEventListener('click', () => { if (video.paused) video.play().catch(sync); else video.pause(); });
+    sound.addEventListener('click', () => { video.muted = !video.muted; if (!video.muted) video.play().catch(sync); sync(); });
+    sync();
+    // Autoplay only when the visitor has not asked for reduced motion or reduced data, and only
+    // once the page has finished loading, so the film never competes with the text and fonts.
+    const saveData = (navigator as Navigator & { connection?: { saveData?: boolean } }).connection?.saveData;
+    if (!matchMedia('(prefers-reduced-motion: reduce)').matches && !saveData) {
+      const start = () => setTimeout(() => video.play().catch(sync), 300);
+      if (document.readyState === 'complete') start();
+      else addEventListener('load', start, { once: true });
+    }
+  }
+  setupAdvisoryFilm();
+  document.addEventListener('astro:page-load', setupAdvisoryFilm);
+</script>

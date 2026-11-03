@@ -6,6 +6,7 @@ const de: Dictionary = {
   siteName: 'Ioan-Codrut Lazaroiu',
 
   ctaLabel: 'Ein Gespräch beginnen',
+  film: { label: 'Film zur Infrastrukturberatung', play: 'Film abspielen', pause: 'Film anhalten', music: 'Musik einschalten', mute: 'Musik stummschalten' },
   contactLead:
     'Wien, Österreich. Schriftliche Anfragen werden innerhalb von zwei Werktagen beantwortet. Hilfreich ist, wer Sie sind, welche Organisation Sie vertreten und welche Entscheidung ansteht.',
   nav: {
